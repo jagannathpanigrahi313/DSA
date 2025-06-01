@@ -1,7 +1,4 @@
-#include <iostream>
-using namespace std;
+To run a c++ file through terminal in linux
 
-int main() {
-    cout << "Hello, C++ is working!" << endl;
-    return 0;
-}
+g++ filename.cpp -o filename && ./filename
+    

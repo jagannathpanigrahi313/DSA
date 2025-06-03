@@ -6,3 +6,9 @@ any one binary number is of 1 bit
 variables are containersto store data 
           it can be letter/word But word must not stand from any digit
 
+| You write           | Works? | Good Practice? | Why?                                                                       |
+| ------------------- | ------ | -------------- | -------------------------------------------------------------------------- |
+| `float a = 3.14;`   | ✅      | ❌              | 3.14 is a `double`, not exact match                                        |
+| `float a = 3.14f;`  | ✅      | ✅              | `f` matches float exactly                                                  |
+| `double b = 3.14;`  | ✅      | ✅              | `3.14` is already `double`                                                 |
+| `double b = 3.14f;` | ✅      | ❌              | You’re giving a float to a double (less precise → more precise, not ideal) |

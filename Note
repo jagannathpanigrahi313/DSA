@@ -17,3 +17,15 @@ variables are containersto store data
 | `double b = 3.14f;` | ✅      | ❌              | You’re giving a float to a double (less precise → more precise, not ideal) |
 
 
+Q  diffrence between \n and << end l
+
+#include <iostream>             | OUTPUT: hello world 
+using namespace std;            |         jaga 
+                                |
+int main() {                    | if not put \n then output is 
+                                |                              hello worldjaga
+    cout << "hello world\n";    |
+    cout << "jaga"<<endl;       | NOTE: \n we put only between this "  " only
+                                |
+ return 0;                      |
+}                               |

@@ -38,7 +38,7 @@ int main() {
   return 0; 
 }
 
-(3) float
+(3) float  it stores decimal no.
 
 #include <iostream>
 using namespace std;
@@ -50,3 +50,32 @@ int main() {
 
  return 0;
 }
+
+(4) bool    it gives only boolean value i.e true (1) or false(0)
+  
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  bool issafe = true;
+  cout << issafe << endl;
+
+ return 0;
+}
+
+(5) double it stores decimal no.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  double price = 100.9;
+  cout << price << endl;
+
+ return 0;
+}
+
+
+

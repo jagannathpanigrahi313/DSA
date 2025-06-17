@@ -10,6 +10,6 @@ int main() {
 
    cout <<"your age is:"<< age << endl; 
    return 0;               
-}                          
-
-   
+}
+INPUT:                                         OUTPUT: 
+         Enter the age ______                           your age is _______ 

@@ -22,7 +22,18 @@ int main() {
     (Explicit) this Programmer does 
 Big byte to small byte
 
-Ex 1 :
+Ex 1 :double to int
 
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+  double (price) = 100.99;
+  int newprice = (imt)price;// here double data type changed to int data type
+  cout << newprice  << emdl;
+  
+  return 0; 
+}
   
    

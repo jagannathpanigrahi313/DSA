@@ -94,7 +94,7 @@ int main () {
   int oddsum = 0;
 
   for (int i = 1 ; i <= n; i++){
-      if (i%2 != 2){
+      if (i%2 != 0){
           oddsum += i ;
           }
       }

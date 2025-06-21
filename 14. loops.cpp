@@ -36,7 +36,7 @@ int main () {
   cout <<endl;
  return 0;
 }
-
+_______________________________________________________________________________________
 2 ) for loop
  #include <iostream>     
 using namespace std;     
@@ -104,4 +104,59 @@ int main () {
       
   cout <<"odd sum = "<< oddsum <<endl;// output: oddsum = 625 
  return 0;
+}
+_____________________________________________________________________________________________
+3) do-while loop
+#include <iostream>           
+using namespace std;          
+                        
+int main () {
+ do {
+       cout<< "hello world\n";
+ }while (3 > 5);
+       
+ return 0;
+}
+
+Q 1) print 1 to n numbers
+#include <iostream>           
+using namespace std;          
+                        
+int main () {
+    int n = 10;
+    int i = 1; 
+    
+     do {
+         cout<< i << " ";
+         i++;  
+     }while (i <= n );
+
+      cout << endl;//1 2 3 4 5 6 7 8 9 10 
+      return 0;
+}
+
+Q 2) check if a number is prime or not
+#include <iostream>           
+using namespace std;          
+                        
+int main () {
+    int n = 7;
+    bool isprime = true;
+
+    for (int i = 2;i <= n-1; i++){
+        if(n % i == 0 ) {
+           isprime = false ;
+            break;
+        }
+    }
+
+if(isprime == true){
+   cout << "prime no\n";
+} else {
+    cout << "non prime no\n";
+}
+
+// isprime -> true -> prime
+// isprime -> false -> non prime
+return 0;
 }

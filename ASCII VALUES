@@ -1,0 +1,15 @@
+ASCII ( American Standard Code for Information Interchange) Value Ranges:
+Uppercase A–Z: 65–90
+
+Lowercase a–z: 97–122
+
+Digits 0–9: 48–57
+
+32	Space	' '
+
+58–64	More punctuation	: ; < = > ? @
+
+
+
+
+ASCII is grouped by type: control → symbols → digits → uppercase → more symbols → lowercase.

@@ -29,3 +29,11 @@ int main() {                    | if not put \n then output is
                                 |
  return 0;                      |
 }                               |
+
+
+syntax --> means Rules of c++
+
+An operand is a value or variable on which an operator works.
+EX: a + b here a and b are operand
+               + is operator
+

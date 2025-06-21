@@ -1,4 +1,7 @@
-note: count = count +1 OR count + =1 OR count++
+note: count = count +1 OR count + = 1 OR count++
+      i =  i +2 OR i + = 2 OR i+2
+  
+1 ) while loop
 
 Q 1. print 1 to 10 
   
@@ -29,7 +32,22 @@ int main () {           |
     cout << count <<" ";
     count++;//if i not put this then output will infinite times 1
   }
+  
+  cout <<endl;
+ return 0;
+}
+
+2 ) for loop
+ #include <iostream>     |output : 1 3 5 7 9
+using namespace std;     |
+                         |
+int main () {            |
+  int n = 10;
+
+  for (int i = 1; i <= n;i+2){
+     count << i <<" ";
   }
+  
   cout <<endl;
  return 0;
 }

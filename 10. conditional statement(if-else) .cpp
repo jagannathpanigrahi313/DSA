@@ -1,6 +1,6 @@
 general 
 
-#include <istream>
+#include <iostream>
 using namespace std;
 
 int main(){
@@ -17,7 +17,7 @@ return 0;
 ______________________________________________________________________________
 Q 1) to check a number is positive or negative
 
-#include <istream>
+#include <iostream>
 using namespace std;
 
 int main(){
@@ -32,7 +32,7 @@ return 0;
 }
 
 Q 2) to check a person can vote or not through its age
-#include <istream>
+#include <iostream>
 using namespace std;
 
 int main(){
@@ -50,7 +50,7 @@ return 0;
 }
 
 Q 3) to check a number is odd or even 
-#include <istream>
+#include <iostream>
 using namespace std;
 
 int main(){

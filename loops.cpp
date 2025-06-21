@@ -10,7 +10,7 @@ int main () {            |
 
   while (count <= 10){
     cout << count <<" ";
-    count++;
+    count++;// if i not put this then output will infinite times 1
   }
   cout <<endl;
  return 0;
@@ -27,7 +27,8 @@ int main () {           |
 
   while (count <= n){
     cout << count <<" ";
-    count++;
+    count++;//if i not put this then output will infinite times 1
+  }
   }
   cout <<endl;
  return 0;

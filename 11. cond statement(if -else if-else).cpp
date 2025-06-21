@@ -1,5 +1,5 @@
 general
-#include <istream>
+#include <iostream>
 using namespace std;
 
 int main(){
@@ -24,7 +24,7 @@ return 0;
 ___________________________________________________________________________________
 
 Q 1. to check a student grade through marks
-#include <istream>
+#include <iostream>
 using namespace std;
 
 int main(){

@@ -4,7 +4,7 @@ psuedo code
 2 sum = a + b
 3 print sum
 
-code 
+CODE :
 #include <iostream>
 using namespace std;
 

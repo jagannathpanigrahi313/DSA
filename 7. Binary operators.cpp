@@ -1,3 +1,5 @@
+this operator needs two operand
+
 ARITMETIC OPERATOR
 
 #include <iostream>

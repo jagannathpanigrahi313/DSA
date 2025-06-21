@@ -35,14 +35,16 @@ Q 2) to check a number is odd or even
 using namespace std;
 
 int main(){
-  int age;
-  cout << "enter the age:";
-  cin >> age;
+  int n;
+  cout << "enter the number:";
+  cin >> n;
 
-  if (age >= 18){
- cout << "you can vote\n";
+  if (n%2 == 0){
+ cout << "even\n";
+ cout << "bye \n";//you can put maby outputs 
+     
   } else {
-    cout <<"you can't vote\n";
+    cout <<"odd\n";
   }
 
 return 0;

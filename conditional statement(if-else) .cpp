@@ -14,7 +14,7 @@ if (condition ){
 }
 return 0;
 }
-
+______________________________________________________________________________
 Q 1) to check a number is positive or negative
 
 #include <istream>

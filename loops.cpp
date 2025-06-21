@@ -6,10 +6,10 @@ note: count = count +1 OR count + = 1 OR count++
 Q 1. print 1 to 10 
   
   #include <iostream>    |output : 1 2 3 4 5 6 7 8 9 10 
-using namespace std;     |
-                         |
-int main () {            |
-  int count = 1;         |
+using namespace std;     
+                         
+int main () {            
+  int count = 1;         
 
   while (count <= 10){
     cout << count <<" ";
@@ -22,10 +22,10 @@ int main () {            |
 Q 2. print 1 to n 
 
 #include <iostream>     |output :1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 
-using namespace std;    |
-                        |
-int main () {           |  
-  int n = 50;           |
+using namespace std;    
+                        
+int main () {           
+  int n = 50;           
   int count = 1;
 
   while (count <= n){
@@ -47,7 +47,58 @@ int main () {            |
   for (int i = 1; i <= n;i+2){
      count << i <<" ";
   }
-  
-  cout <<endl;
+
+Q 1) print sum of numbers from 1 to n
+      
+#include <iostream>           |output : sum = 1275
+using namespace std;          |
+                              |
+int main () {
+  int n = 50;
+  int sum  = 0;
+      
+ for( int i= 1;i <= n; i++){
+       sum += i;
+ }
+      
+  cout<<"sum = "<< sum << endl;
+ return 0;
+}
+
+
+
+#include <iostream>           
+using namespace std;          
+                        
+int main () {
+  int n = 50;
+  int sum  = 0;
+      
+ for( int i= 1;i <= n; i++){
+       sum += i;
+       if(i == 5){
+           break;// this is a keyword which tkes out from loop 
+       }
+ }
+      
+  cout<<"sum = "<< sum << endl;//output : sum = 15
+ return 0;
+}
+
+Q 2) sum of all odd numbers from 1 to n
+#include <iostream>     
+using namespace std;     
+                         
+int main () {            
+  int n  = 50;
+  int oddsum = 0;
+
+  for (int i = 1 ; i <= n; i++){
+      if (i%2 != 2){
+          oddsum += i ;
+          }
+      }
+      
+  cout <<"odd sum = "<< oddsum <<endl;// output: oddsum = 625 
  return 0;
 }

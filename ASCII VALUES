@@ -13,3 +13,37 @@ Digits 0–9: 48–57
 
 
 ASCII is grouped by type: control → symbols → digits → uppercase → more symbols → lowercase.
+
+Q  find character lowercase or uppercase
+
+#include <iostream> 
+using namespace std;
+
+int main () {
+  char ch;
+  cout <<"enter char:";
+  cin >> ch ;
+
+  if (ch >= 'a'&& ch <= 'z'){
+    cout << "lowercase\n";
+  }else{
+    cout << "uppercase\n";
+  }
+ return 0;
+}
+_________________ANOTHER METHOD IS THAT __________________________________________________
+#include <iostream> 
+using namespace std;
+
+int main () {
+  char ch;
+  cout <<"enter char:";
+  cin >> ch ;
+
+  if (ch >= 65 && ch <= 90){
+    cout << "uppercase\n";
+  }else{
+    cout << "lowercase\n";
+  }
+ return 0;
+}

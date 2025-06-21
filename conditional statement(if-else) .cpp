@@ -1,3 +1,22 @@
+general 
+
+#include <istream>
+using namespace std;
+
+int main(){
+
+if (condition ){
+    cout <<"________\n";//true then 
+   
+} else {
+      cout << "________\n";//false then
+   
+}
+return 0;
+}
+
+Q 1) to check a number is positive or negative
+
 #include <istream>
 using namespace std;
 
@@ -12,7 +31,7 @@ if (n >= 0){
 return 0;
 }
 
-Q 1) to check a person can vote or not through its age
+Q 2) to check a person can vote or not through its age
 #include <istream>
 using namespace std;
 
@@ -30,7 +49,7 @@ int main(){
 return 0;
 }
 
-Q 2) to check a number is odd or even 
+Q 3) to check a number is odd or even 
 #include <istream>
 using namespace std;
 

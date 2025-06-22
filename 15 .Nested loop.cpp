@@ -32,13 +32,29 @@ Q 3) to print x times * in 5 line
 using namespace std;
 
 int main() {
-    for (int i= 1 ; i<=x ;i++) {
+    for (int i= 1 ; i<=5 ;i++) {
         int x = 10;
         for (int i= 1 ; i<=x ;i++){
              cout <<"x";
         }
         cout << endl;
      }
-return o;
+return 0;
 }
-  c
+
+Q 4) to print x times * in n line
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5;
+    for (int i= 1 ; i <= n ;i++) {//line
+        int x = 10;
+        for (int i= 1 ; i<=x ;i++){//no. of stars
+             cout <<"x";
+        }
+        cout << endl;
+     }
+return 0;
+}

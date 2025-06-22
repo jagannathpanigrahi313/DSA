@@ -135,7 +135,9 @@ int main () {
       return 0;
 }
 
-Q 2) check if a number is prime or not
+**Q 2) check if a number is prime or not
+      
+
 #include <iostream>           
 using namespace std;          
                         
@@ -143,7 +145,7 @@ int main () {
     int n = 7;
     bool isprime = true;
 
-    for (int i = 2;i <= n-1; i++){
+    for (int i = 2;i <= n-1; i++){//loop is running from 2 to n-1 
         if(n % i == 0 ) {
            isprime = false ;
             break;
@@ -160,3 +162,31 @@ if(isprime == true){
 // isprime -> false -> non prime
 return 0;
 }
+
+
+----------------------------------------------another method-----------------------------------------------------------------------
+   #include <iostream>           
+using namespace std;          
+                        
+int main () {
+    int n = 7;
+    bool isprime = true;
+
+    for (int i = 2; i * i <= n ; i++){//loop is runing from 2 to (underroot of n) Here maximum i value is underroot of n
+        if(n % i == 0 ) {
+           isprime = false ;
+            break;
+        }
+    }
+
+if(isprime == true){
+   cout << "prime no\n";
+} else {
+    cout << "non prime no\n";
+}
+
+// isprime -> true -> prime
+// isprime -> false -> non prime
+return 0;
+}
+   

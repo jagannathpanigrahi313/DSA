@@ -49,9 +49,9 @@ using namespace std;
 
 int main() {
     int n = 5;
-    for (int i= 1 ; i <= n ;i++) {//line
+    for (int i= 1 ; i <= n ;i++) {//outerloop
         int x = 10;
-        for (int j= 1 ; j<=x ;j++){//no. of stars
+        for (int j= 1 ; j<=x ;j++){//inner loop
              cout <<"x";
         }
         cout << endl;

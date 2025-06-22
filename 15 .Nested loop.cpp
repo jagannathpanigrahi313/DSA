@@ -51,7 +51,7 @@ int main() {
     int n = 5;
     for (int i= 1 ; i <= n ;i++) {//line
         int x = 10;
-        for (int i= 1 ; i<=x ;i++){//no. of stars
+        for (int j= 1 ; j<=x ;j++){//no. of stars
              cout <<"x";
         }
         cout << endl;

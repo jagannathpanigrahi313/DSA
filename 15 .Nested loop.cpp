@@ -25,3 +25,20 @@ int main() {
     }
 return 0;
 }
+
+Q 3) to print x times * in 5 line 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i= 1 ; i<=x ;i++) {
+        int x = 10;
+        for (int i= 1 ; i<=x ;i++){
+             cout <<"x";
+        }
+        cout << endl;
+     }
+return o;
+}
+  c

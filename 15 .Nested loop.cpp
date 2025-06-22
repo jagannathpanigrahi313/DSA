@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 
-    for (int i=1; i<= 5; i++){
+    for (int i=1; i<= 5; i++){// this middle term will run then update this is known as iteration
         cout << "*****"<<endl;
     }
 return 0;

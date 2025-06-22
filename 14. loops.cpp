@@ -44,7 +44,7 @@ using namespace std;
 int main () {            
   int n = 10;
 
-  for (int i = 1; i <= n;i = i+2){
+  for (int i = 1; i <= n;i = i+2){// this middle term will run then update this is known as iteration
      cout << i <<" ";//output : 1 3 5 7 9
   }
       cout << endl;

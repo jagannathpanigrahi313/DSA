@@ -5,7 +5,7 @@ note: count = count +1 OR count + = 1 OR count++
 
 Q 1. print 1 to 10 
   
-  #include <iostream>    
+#include <iostream>    
 using namespace std;     
                          
 int main () {            
@@ -38,7 +38,7 @@ int main () {
 }
 _______________________________________________________________________________________
 2 ) for loop
- #include <iostream>     
+#include <iostream>     
 using namespace std;     
                          
 int main () {            
@@ -165,7 +165,7 @@ return 0;
 
 
 ----------------------------------------------another method-----------------------------------------------------------------------
-   #include <iostream>           
+#include <iostream>           
 using namespace std;          
                         
 int main () {

@@ -12,3 +12,16 @@ int main() {
     }
 return 0;
 }
+
+Q 2) to print x times * in one line 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+    for (int i= 1 ; i<=x ;i++){
+        cout <<"x";
+    }
+return 0;
+}

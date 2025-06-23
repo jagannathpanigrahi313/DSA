@@ -2,7 +2,7 @@
 |||||||||To print n symbols (or words) in each line, the inner
           loop must run n times for each outer loop iteration.
 
-Q 
+1) square pattern
 
 #include <iostream>
 using namespace std;
@@ -19,5 +19,6 @@ int main () {
    }
    return 0;
 }
-
+----------------------------------------------------------------------------------------------------------
+          
 

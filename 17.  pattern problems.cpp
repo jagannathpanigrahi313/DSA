@@ -62,6 +62,8 @@ int main () {
 }
 -----------------------------------------------------------------------------------------------------
                               continous square pattern 
+i) in form of numbers
+
 #include <iostream>
 using namespace std;
 
@@ -69,6 +71,29 @@ int main () {
    int n = 4;
    
    int num = 1;
+
+   for(int i=0; i<n; i++){
+       for(int j= 0; j< n; j++){
+           cout << num <<" ";
+           num++;
+       }
+       cout << endl;
+   }
+   
+   cout << "after pattern : "<< num << endl;//this is to verify your dry run thinking is correct or not
+
+   return 0;
+}
+__________________________________________________________________________________________________________
+ii) in form of characters
+
+#include <iostream>
+using namespace std;
+
+int main () {
+   int n = 4;
+   
+   int char = "";
 
    for(int i=0; i<n; i++){
        for(int j= 0; j< n; j++){

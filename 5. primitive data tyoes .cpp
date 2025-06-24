@@ -12,7 +12,7 @@ int main() {
   return 0; 
 }
 
-(1) int 
+(1) int ----> it stores interger number
 
 #include <iostream>
 using namespace std;

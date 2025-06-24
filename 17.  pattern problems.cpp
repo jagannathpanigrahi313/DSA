@@ -93,17 +93,17 @@ using namespace std;
 int main () {
    int n = 4;
    
-   int char = "";
+   char ch = "a";
 
    for(int i=0; i<n; i++){
        for(int j= 0; j< n; j++){
-           cout << num <<" ";
-           num++;
+           cout << ch <<" ";
+           ch++;
        }
        cout << endl;
    }
    
-   cout << "after pattern : "<< num << endl;//this is to verify your dry run thinking is correct or not
+   cout << "after pattern : "<< ch << endl;//this is to verify your dry run thinking is correct or not
 
    return 0;
 }

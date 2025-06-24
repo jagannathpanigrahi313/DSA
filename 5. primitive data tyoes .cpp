@@ -32,13 +32,13 @@ using namespace std;
 
 int main() {
   
-  char (grade) = 'A'; //to put small char   "a" like this you can put
+  char (grade) = 'A'; //to put small char----> "a" (like this you can put)
   cout << grade << emdl;
   
   return 0; 
 }
 
-(3) float  it stores decimal no.
+(3) float------->it stores decimal no.
 
 #include <iostream>
 using namespace std;
@@ -51,7 +51,7 @@ int main() {
  return 0;
 }
 
-(4) bool    it gives only boolean value i.e true (1) or false(0)
+(4) bool---> it gives only boolean value i.e true (1) or false(0)
   
 #include <iostream>
 using namespace std;
@@ -64,7 +64,7 @@ int main() {
  return 0;
 }
 
-(5) double it stores decimal no.
+(5) double----> it stores decimal no.
 
 #include <iostream>
 using namespace std;

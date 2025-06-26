@@ -7,6 +7,8 @@ generaly we start the algorithm loops from i=0 to j=0
                                        i=0 to n-1 (to print n no. numbers of line)----| this both are same
 
 1) square pattern
+                   HERE, outerloop (no. lines)---> n times
+                         inner loop(no. words) ----> n no's in each line ntimes
   i) in the form of numbers
 
 #include <iostream>

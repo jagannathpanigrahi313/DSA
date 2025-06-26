@@ -1,6 +1,10 @@
+Outer loop	Controls the rows
+Inner loop	Prints character multiple times per row
+
 HERE, outerloop (no. lines)---> 0 to n-1
       inner loop(no. words) ----> 1 to i+1
                                   0 to i
+
 
 1) in the from of  numbers
 
@@ -41,7 +45,11 @@ int main () {
    }
    
    return 0;
-}
+}OUTPUT:1 
+//                            2 2 
+//                            3 3 3 
+//                            4 4 4 4
+
 ---------------------------------------------------------------
 3) in the from of characters 
 
@@ -49,17 +57,39 @@ int main () {
 using namespace std;
 
 int main () {
-   int n = 4;
-   
-   for(int i=0; i<n; i++){
-       for(int j= 0; j< i+1; j++){
-           cout <<(i+1)<<" ";
+    char ch = 'a';  // start with 'a'
+
+    for(int i = 1; i <= 5; i++) {  // total 5 rows (change as needed)
+        for(int j = 1; j <= i; j++) {
+            cout << ch << " ";
+        }
+        ch++;  // move to next character for next row
+        cout << endl;  //OUTPUT: a
+                     //          b b 
+                    //           c c c 
+                   //            d d d d 
+                  //             e e e e e 
+    }
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main () {
+   char ch = 'a';
+
+   for(int i = 0; i < 5; i++) {  // limit number of rows (say 5 rows)
+       for(int j = 0; j <= i; j++) {
+           cout << ch++ << " ";//OUTPUT: a 
+                              //         b c 
+                              //         d e f 
+                              //         g h i j 
+                              //         k l m n o 
        }
-       cout << endl;// OUTPUT:1 
-//                            2 2 
-//                            3 3 3 
-//                            4 4 4 4
+       cout << endl;
    }
-   
+
    return 0;
 }

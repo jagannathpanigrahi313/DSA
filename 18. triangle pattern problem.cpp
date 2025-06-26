@@ -5,7 +5,7 @@ HERE, outerloop (no. lines)---> 0 to n-1
       inner loop(no. words) ----> 1 to i+1
                                   0 to i
 
-
+                                           1st type( Same Character Repeated Per Row)
 1) in the from of  numbers
 
 #include <iostream>
@@ -45,11 +45,7 @@ int main () {
    }
    
    return 0;
-}OUTPUT:1 
-//                            2 2 
-//                            3 3 3 
-//                            4 4 4 4
-
+}
 ---------------------------------------------------------------
 3) in the from of characters 
 
@@ -72,8 +68,8 @@ int main () {
     }
     return 0;
 }
-
-
+----------------------------------------------------------------------------------------------
+                                        2nd type (Character Increment Pattern)
 #include <iostream>
 using namespace std;
 
@@ -92,4 +88,45 @@ int main () {
    }
 
    return 0;
+}
+------------------------------------------------------------------------------------------------------
+                         3rd type ( Left-Aligned Number Triangle)      
+#include <iostream>
+using namespace std;
+
+int main () {
+    int n = 5 ;
+
+    for(int i = 1; i <= n; i++) { 
+        for(int j = 1; j <= i; j++) {
+            cout << j << " ";//OUTPUT:1 
+                             //       1 2 
+                             //       1 2 3 
+                             //       1 2 3 4 
+                             //       1 2 3 4 5 
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------
+                                            REVERSE triangle pattern
+#include <iostream>
+using namespace std;
+
+int main () {
+    int n = 4;
+
+    for(int i = 0; i < n; i++) { 
+        for(int j = i+1; j > 0; j--) {
+            cout << j << " ";
+        }
+        cout << endl;// OUTPUT : 1 
+                    //           2 1 
+                    //           3 2 1 
+                    //           4 3 2 1 
+    }
+
+    return 0;
 }

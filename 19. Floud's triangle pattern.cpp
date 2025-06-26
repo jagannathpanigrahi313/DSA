@@ -36,7 +36,10 @@ char ch = 'A';
            cout << ch << " ";
            ch++;
        }
-       cout << endl;
+       cout << endl;// OUTPUT : A 
+                    //          B C 
+                    //          D E F 
+                    //          G H I J
    }
    return 0;
 }

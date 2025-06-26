@@ -112,6 +112,8 @@ int main () {
 }
 ----------------------------------------------------------------------------------------------------------
                                             REVERSE triangle pattern
+I ) in the form of numbers
+
 #include <iostream>
 using namespace std;
 
@@ -131,6 +133,7 @@ int main () {
     return 0;
 }
 
+ii) in the form of characters
 
 #include <iostream>
 using namespace std;
@@ -139,14 +142,15 @@ int main () {
     int n = 4;
 
     for(int i = 0; i < n; i++) { 
-        for(int j = i+1; j > 0; j--) {// bacward loop
-            cout << j << " ";
-        }
-        cout << endl;// OUTPUT : A
-                    //           B A 
-                    //           C B A 
-                    //           D C B A 
+        char ch = 'A' + i;         // Start letter for this row
+
+        for(int j = 0; j <= i; j++) {
+            cout << char(ch - j) << " ";  // Print letters in reverse    // OUTPUT : A
+        }                                                                //          B A
+                                                                         //          C B A
+        cout << endl;              // Move to next line                  //          D C B A
     }
 
     return 0;
 }
+

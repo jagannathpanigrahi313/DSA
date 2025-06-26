@@ -33,7 +33,7 @@ Q2)
 using namespace std;
 
 int main () {
-    char ch = 'A'; // starting character
+    char ch = 'B'; // starting character
 
     for (int i = 0; i < 3; i++) { // 3 lines
         // Print spaces
@@ -82,4 +82,3 @@ int main () {
 
     return 0;
 }
-    

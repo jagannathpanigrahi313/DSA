@@ -10,7 +10,7 @@ Digits 0–9: 48–57
 58–64	More punctuation	: ; < = > ? @
 
 ASCII is grouped by type: control → symbols → digits → uppercase → more symbols → lowercase.
-
+------------------------------------------------------------------------------------------------------------
 1. Single Quotes ' '
 Used for: Single characters
 Data type: char
@@ -25,7 +25,7 @@ A single letter (e.g., char ch = 'A';)
 
 ASCII value calculations
 Character comparisons (like if (ch >= 'A' && ch <= 'Z'))
-
+----------------------------------------------------------------------------
 2. Double Quotes " "`
 Used for: Strings of characters
 Data type: const char* (or string)
@@ -48,7 +48,7 @@ A word or sentence (e.g., string name = "Alice";)
 Printing full text (e.g., cout << "Hello";)
 Comparing text (e.g., if (name == "Admin"))
                + is operator
-
+------------------------------------------------------------------------------
 
 Q  find character lowercase or uppercase
 

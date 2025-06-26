@@ -14,7 +14,9 @@ int main () {
 
         //nums
         for( int j = 0;j< n-i;j++){
-            cout << i+1 ;//output:1111
+            cout << i+1 ;//if you will put <<" "; this then we will get pyramid structure
+            
+                         //output:1111
                           //       222
                           //        33
                           //         4
@@ -24,12 +26,13 @@ int main () {
 
     return 0;
 }
-
+--------------------------------------------------------------------
+    
 #include <iostream>
 using namespace std;
 
 int main () {
-    char ch = 'B'; // starting character
+    char ch = 'A'; // starting character
 
     for (int i = 0; i < 3; i++) { // 3 lines
         // Print spaces
@@ -39,9 +42,84 @@ int main () {
 
         // Print characters (3 - i times)
         for (int j = 0; j < 3 - i; j++) {
-            cout << char(ch + i);//OUTPUT :BBB
-        }                       //          CC
-                               //            D
+            cout << char(ch + i);//if you will put <<" "; this then we will get pyramid structure
+                                 //OUTPUT :
+                                 //         BBB
+        }                       //           CC
+                                //            D
+        cout << endl;
+    }
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    char ch = 'A'; // starting character
+
+    for (int i = 0; i < 3; i++) { // 3 lines
+        // Print spaces
+        for (int j = 0; j < i; j++) {
+            cout << " ";
+        }
+
+        // Print characters (3 - i times)
+        for (int j = 0; j < 3 - i; j++) {
+            cout << char(ch + i);//if you will put <<" "; this then we will get pyramid structure
+                                 //OUTPUT :AAAA
+                                 //         BBB
+        }                       //           CC
+                                //            D
+        cout << endl;
+    }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main () {
+    char ch = 'A'; // starting character
+
+    for (int i = 0; i < 3; i++) { // 3 lines
+        // Print spaces
+        for (int j = 0; j < i; j++) {
+            cout << " ";
+        }
+
+        // Print characters (3 - i times)
+        for (int j#include <iostream>
+using namespace std;
+
+int main () {
+    char ch = 'A'; // starting character
+
+    for (int i = 0; i < 3; i++) { // 3 lines
+        // Print spaces
+        for (int j = 0; j < i; j++) {
+            cout << " ";
+        }
+
+        // Print characters (3 - i times)
+        for (int j = 0; j < 3 - i; j++) {
+            cout << char(ch + i);//if you will put <<" "; this then we will get pyramid structure
+                                 //OUTPUT :AAAA
+                                 //         BBB
+        }                       //           CC
+                                //            D
+        cout << endl;
+    }
+
+    return 0;
+}
+ = 0; j < 3 - i; j++) {
+            cout << char(ch + i);//if you will put <<" "; this then we will get pyramid structure
+                                 //OUTPUT :AAAA
+                                 //         BBB
+        }                       //           CC
+                                //            D
         cout << endl;
     }
 

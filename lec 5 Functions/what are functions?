@@ -1,0 +1,8 @@
+Function defination : it is used when we have to any same thing again & again after sometimes 
+Function syntax : returntype printhello(){
+
+                  cout <<"hello";
+
+                  }
+
+                  

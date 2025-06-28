@@ -23,7 +23,8 @@ int main () {
     }     
     return 0;
 }
-OUTPUT :   1
+OUTPUT :
+   1
   121
  12321
 1234321

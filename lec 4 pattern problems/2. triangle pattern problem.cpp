@@ -110,6 +110,8 @@ int main () {
 
     return 0;
 }
+----------------------------------------------------------------------------------------------------
+      NOTE : THE cout line where output comes due that all types made till here
 ----------------------------------------------------------------------------------------------------------
                                             REVERSE triangle pattern
 I ) in the form of numbers

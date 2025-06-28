@@ -4,9 +4,7 @@ Function syntax : returntype printhello(){
                   cout <<"hello";
 
                   }
-parameters---->means input
-Function syntax means input
-  
+Not to bring returndency we use this means same code again and again
 -----------------------------------------------------------------------------------------
 
 #include <iostream>
@@ -46,6 +44,10 @@ int main() {
 OUTPUT:hello
        val = 3
 -----------------------------------------------------------------------------------
+parameters---->means input---> i.e are nothing but the copy of arguments
+arguments are the actual values passed through a function--> they are literals means values that cannot change
+Function syntax means input
+  
 #include <iostream>
 using namespace std;
 
@@ -76,5 +78,39 @@ int main() {
 }
 OUTPUT : 15.9
   -----------------------------------------------------------------------------
-  
+  #include <iostream>
+using namespace std;
 
+//min of two numbers
+int minoftwo (int a, int b ){// parameters are nothing but the copy of arguments 
+    if (a < b){
+        return a;
+    } else {
+    return b;
+    }
+}
+
+int main() {
+    cout << "min = "<< minoftwo(5,3) << endl;//arguments are the actual values passed through a function
+
+    return 0;
+}
+OUTPUT : min = 3
+__________________________________________________________________________________________________
+Q 1) calculate sum of numbers from 1 to N
+#include <iostream>
+using namespace std;
+
+int sumN (int n){
+    int sum = 0;
+
+    for (int i = 1; i <= n; i++){
+        sum += i;
+    }
+    return sum ;
+}
+int main (){
+    cout << sumN(5) << endl;
+    cout << sumN(10) << endl;
+    return 0;
+}

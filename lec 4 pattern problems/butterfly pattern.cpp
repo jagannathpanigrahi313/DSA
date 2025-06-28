@@ -16,6 +16,15 @@ int main() {
         for (int j = 1; j <= 2 * (n - i); j++) {
             cout << " ";
         }
+OUTPUT:
+*      *         // 1 star, 6 spaces, 1 star
+**    **         // 2 stars, 4 spaces, 2 stars
+***  ***         // 3 stars, 2 spaces, 3 stars
+********         // 4 stars, 0 spaces, 4 stars
+********         // Lower half starts
+***  ***
+**    **
+*      *
 
         // Print right stars (same as left)
         for (int j = 1; j <= i; j++) {

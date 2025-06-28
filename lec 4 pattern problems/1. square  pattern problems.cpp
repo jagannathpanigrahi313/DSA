@@ -9,8 +9,32 @@ generaly we start the algorithm loops from i=0 to j=0
 1) square pattern
                    HERE, outerloop (no. lines)---> n times
                          inner loop(no. words) ----> n no's in each line ntimes
-                    1st type(character increment per row) 
-  i) in the form of numbers
+          
+                            1st type                    
+i) in the form of stars
+
+#include <iostream>
+using namespace std;
+
+int main () {
+   int n = 4;
+
+   for(int i=0; i<n; i++){//OR PUT(int i=0 ; i<=n-1 ; i++ )
+       for(int j= 1; j<= n; j++){
+           cout << " * ";// in this case to put space between stars in eaach line we can put her only 
+       }
+       cout << endl;
+   }
+   return 0;
+}
+OUTPUT:
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+----------------------------------------------------------------------------------------------------------
+                           2nd type
+i) in the form of numbers
 
 #include <iostream>
 using namespace std;
@@ -32,28 +56,6 @@ OUTPUT:
 1 2 3 4 
 1 2 3 4 
 1 2 3 4 
-----------------------------------------------------------------------------------------------------------
-ii) in the form of stars
-
-#include <iostream>
-using namespace std;
-
-int main () {
-   int n = 4;
-
-   for(int i=0; i<n; i++){//OR PUT(int i=0 ; i<=n-1 ; i++ )
-       for(int j= 1; j<= n; j++){
-           cout << " * ";// in this case to put space between stars in eaach line we can put her only 
-       }
-       cout << endl;
-   }
-   return 0;
-}
-OUTPUT:
- *  *  *  * 
- *  *  *  * 
- *  *  *  * 
- *  *  *  * 
 ------------------------------------------------------------------------------------------------       
 iii) in the form of characters
           
@@ -82,7 +84,7 @@ A B C D
 A B C D 
 A B C D 
 -----------------------------------------------------------------------------------------------------
-                              continous square pattern 
+                             3rd type continous square pattern 
                            (Here we make a variable & update that)
 i) in form of numbers
 

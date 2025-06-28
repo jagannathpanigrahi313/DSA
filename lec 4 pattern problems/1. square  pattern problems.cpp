@@ -26,6 +26,11 @@ int main () {
    }
    return 0;
 }
+OUTPUT:
+1 2 3 4 
+1 2 3 4 
+1 2 3 4 
+1 2 3 4 
 ----------------------------------------------------------------------------------------------------------
 ii) in the form of stars
 
@@ -43,6 +48,11 @@ int main () {
    }
    return 0;
 }
+OUTPUT:
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
+ *  *  *  * 
 ------------------------------------------------------------------------------------------------       
 iii) in the form of characters
           
@@ -56,14 +66,23 @@ int main () {
        char ch = 'A';
        for(int j= 0; j< n; j++){
            cout << ch <<" ";
-           ch = ch + 1;
+           ch = ch + 1;//IF YOU DONT PUT THIS THEN OUUPUT IS:A A A A 
+                                                         //  A A A A 
+                                                         //  A A A A 
+                                                         //  A A A A 
        }
        cout << endl;
    }
    return 0;
 }
+OUTPUT:
+A B C D 
+A B C D 
+A B C D 
+A B C D 
 -----------------------------------------------------------------------------------------------------
                               continous square pattern 
+                           (Here we make a variable & update that)
 i) in form of numbers
 
 #include <iostream>
@@ -86,6 +105,12 @@ int main () {
 
    return 0;
 }
+OUTPUT:
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16 
+after pattern : 17
 __________________________________________________________________________________________________________
 ii) in form of characters
 
@@ -109,3 +134,9 @@ int main () {
 
    return 0;
 }
+OUTPUT:
+a b c d 
+e f g h 
+i j k l 
+m n o p 
+after pattern : q

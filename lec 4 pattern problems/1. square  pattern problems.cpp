@@ -27,11 +27,11 @@ int main () {
    }
    return 0;
 }
-OUTPUT:
- *  *  *  * 
- *  *  *  * 
- *  *  *  * 
- *  *  *  * 
+//OUTPUT:
+// *  *  *  * 
+//*  *  *  * 
+// *  *  *  * 
+// *  *  *  * 
 ----------------------------------------------------------------------------------------------------------
                            2nd type
 i) in the form of numbers
@@ -51,11 +51,11 @@ int main () {
    }
    return 0;
 }
-OUTPUT:
-1 2 3 4 
-1 2 3 4 
-1 2 3 4 
-1 2 3 4 
+// OUTPUT:
+// 1 2 3 4 
+// 1 2 3 4 
+// 1 2 3 4 
+// 1 2 3 4 
 ------------------------------------------------------------------------------------------------       
 iii) in the form of characters
           
@@ -78,11 +78,11 @@ int main () {
    }
    return 0;
 }
-OUTPUT:
-A B C D 
-A B C D 
-A B C D 
-A B C D 
+// OUTPUT:
+// A B C D 
+// A B C D 
+// A B C D 
+// A B C D 
 -----------------------------------------------------------------------------------------------------
                              3rd type continous square pattern 
                            (Here we make a variable & update that)
@@ -108,12 +108,12 @@ int main () {
 
    return 0;
 }
-OUTPUT:
-1 2 3 4 
-5 6 7 8 
-9 10 11 12 
-13 14 15 16 
-after pattern : 17
+// OUTPUT:
+// 1 2 3 4 
+// 5 6 7 8 
+// 9 10 11 12 
+// 13 14 15 16 
+// after pattern : 17
 __________________________________________________________________________________________________________
 ii) in form of characters
 
@@ -137,9 +137,9 @@ int main () {
 
    return 0;
 }
-OUTPUT:
-a b c d 
-e f g h 
-i j k l 
-m n o p 
-after pattern : q
+// OUTPUT:
+// a b c d 
+// e f g h 
+// i j k l 
+// m n o p 
+// after pattern : q

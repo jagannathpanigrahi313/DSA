@@ -1683,6 +1683,29 @@ int main (){
     return 0;
 }
 ```
+_______________________________________________________________________________________________________
+Q 2) calculate N factorial?
+```cpp
+#include <iostream>
+using namespace std;
 
+int factorialN (int n){
+    int fact = 1;
 
+    for (int i = 1; i <= n; i++){
+        fact*= i;//fact = fact * i
+    }
+    return fact;
+}
+int main (){
+    cout << factorialN(4) << endl;
+    cout << factorialN(5) << endl;
+    return 0;
+}
+//OUTPUT :
+//24
+//120
+```
+
+## Function Memory
 

@@ -1722,6 +1722,44 @@ int main (){
 
 
 1) Every function is stored in this stack memory in the form of stack frames
+   
 2) function ke jitne bhi related variables hote he vho uni ke sath Function kepure logic kesath stack frame me store hote hai
 3) jis bhi  function me hum abhi hai i.e hamara contrpl hai vho call stack ke sabse upar rahenge & jaise hi ham return kardenge hum us function se bahar ho jayenge
    
+![Image](https://github.com/user-attachments/assets/472abf8a-1418-479b-b83c-ea765008de6e)
+
+4) in any function return statement is last statement after that if you will cout anything then it will not  come
+5) we can write return;---> it means no value return
+   this you can write between any statement in void function
+
+
+## Pass by value
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int sum(int a, int b){
+    return a + b;
+}
+int main (){
+    int x= 5, y= 4;
+    cout << sum(x,y) << endl;
+    return 0;
+}
+//OUTPUT : 9
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int sum(int a, int b){
+    return a + b;
+}
+int main (){
+    int a = 5, b= 4;
+    cout << sum(a,b) << endl;
+    return 0;
+}
+//OUTPUT : 9
+```

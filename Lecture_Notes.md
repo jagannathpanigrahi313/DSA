@@ -118,11 +118,11 @@ int main() {
 ## Type Conversion and Type Casting
 
 
-                        converting data type from from one type to another
+                        *converting data type from from one type to another*
 
 ### (1) type casting 
-    (implict)  this compiler does
-Small byte to big byte 
+       (implicit)  this compiler does
+       Small byte to big byte 
 
 EX 1: char to int
 ```cpp
@@ -139,8 +139,8 @@ int main() {
 }
 ```
 ### (2) type casting 
-    (Explicit) this Programmer does 
-Big byte to small byte
+       (Explicit) this Programmer does 
+       Big byte to small byte
 
 Ex 1 :double to int
 ```cpp
@@ -203,6 +203,7 @@ int main() {
   return 0;
 }
 ```
+
 ```cpp
 #include <iostream>
 using namespace std ;   

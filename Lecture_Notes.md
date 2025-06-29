@@ -1548,7 +1548,9 @@ OUTPUT:
 ## What are Functions
 
 Function defination : it is used when we have to any same thing again & again after sometimes 
+
 Function syntax : 
+
 ```cpp
 returntype printhello(){
 
@@ -1556,7 +1558,9 @@ cout <<"hello";
 
 }
 ```
+
 Not to bring returndency we use this means same code again and again
+
 -----------------------------------------------------------------------------------------
 ```cpp
 #include <iostream>
@@ -1576,6 +1580,7 @@ int main() {
 }
 //OUTPUT :hello
 //        hello
+```
 ------------------------------------------------------------------------
 ```cpp
 #include <iostream>
@@ -1599,8 +1604,11 @@ int main() {
 ```
 -----------------------------------------------------------------------------------
 parameters---->means input---> i.e are nothing but the copy of arguments
+
 arguments are the actual values passed through a function--> they are literals means values that cannot change
+
 Function syntax means input
+
 ```cpp  
 #include <iostream>
 using namespace std;

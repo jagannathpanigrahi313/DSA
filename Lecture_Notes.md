@@ -1255,6 +1255,7 @@ char ch = 'A';
 ```
 
 ## Inverted Triangle Pattern
+![Image](https://github.com/user-attachments/assets/4190d8a3-fe38-4b46-bc97-72c2c648a66a)
 
 
 Q1)

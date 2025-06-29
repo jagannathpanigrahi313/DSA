@@ -1483,10 +1483,10 @@ int main () {
 //   *
 ```
 
-![Image](https://github.com/user-attachments/assets/67a8f213-5a97-484a-b8b3-5bfaeaefdd2b)
+
 
 ## Butterfly Pattern
-
+![Image](https://github.com/user-attachments/assets/060db60f-a4b6-46eb-8478-a5779e68a37e)
 ```cpp
 
 #include <iostream>

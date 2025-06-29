@@ -1716,9 +1716,12 @@ int main (){
 ```
 
 ## Function Memory
+
 ![Image](https://github.com/user-attachments/assets/dfa624e4-6dc7-4830-95b2-c423c6453d38)
+![Image](https://github.com/user-attachments/assets/fe4f6d5a-9e91-4679-93e0-fc477ffad96a)
+
 
 1) Every function is stored in this stack memory in the form of stack frames
 2) function ke jitne bhi related variables hote he vho uni ke sath Function kepure logic kesath stack frame me store hote hai
 3) jis bhi  function me hum abhi hai i.e hamara contrpl hai vho call stack ke sabse upar rahenge & jaise hi ham return kardenge hum us function se bahar ho jayenge
-4)  
+   

@@ -276,9 +276,10 @@ int main(){
 this operator needs only one operand
 
 ### 1. increment++
+```cpp
 #include <iostream>
 using namespace std ;   
- ```cpp   
+   
 int main() {
    int a = 10;
 
@@ -514,6 +515,7 @@ return 0;
 this are statement which can be written instead of if -else statement
 
 condition? statement 1: statement 2;
+
 ```cpp
 #include <iostream> 
 using namespace std;
@@ -879,9 +881,7 @@ int main() {
 }
 ```
 
-# Lecture 4
-
-## Square Pattern Problems
+# Lecture 4 -----> Patern Problems
 
 
 ---------To print n lines (rows), the outer loop must run n times.
@@ -892,12 +892,12 @@ generaly we start the algorithm loops from i=0 to j=0
         EX: if a loop is starting from i=1 to n (to print n no. numbers of line)-------
                                        i=0 to n-1 (to print n no. numbers of line)----| this both are same
 
-### 1) square pattern
+## 1) square pattern 
                    HERE, outerloop (no. lines)---> n times
                          inner loop(no. words) ----> n no's in each line ntimes
           
-                            1st type                    
-#### i) in the form of stars
+                              1st type                    
+### i) in the form of stars
 ```cpp
 #include <iostream>
 using namespace std;
@@ -920,9 +920,9 @@ int main () {
 // *  *  *  *
 ```
 ----------------------------------------------------------------------------------------------------------
-                           2nd type
-i) in the form of numbers
-
+                                2nd type
+### i) in the form of numbers
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -942,10 +942,11 @@ int main () {
 // 1 2 3 4 
 // 1 2 3 4 
 // 1 2 3 4 
-// 1 2 3 4 
+// 1 2 3 4
+```
 ------------------------------------------------------------------------------------------------       
-iii) in the form of characters
-          
+### iii) in the form of characters
+```cpp          
 #include <iostream>
 using namespace std;
 
@@ -969,12 +970,13 @@ int main () {
 // A B C D 
 // A B C D 
 // A B C D 
-// A B C D 
+// A B C D
+```
 -----------------------------------------------------------------------------------------------------
-                             3rd type continous square pattern 
+                           3rd type continous square pattern 
                            (Here we make a variable & update that)
-i) in form of numbers
-
+### i) in form of numbers
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1001,9 +1003,10 @@ int main () {
 // 9 10 11 12 
 // 13 14 15 16 
 // after pattern : 17
+```
 __________________________________________________________________________________________________________
-ii) in form of characters
-
+### ii) in form of characters
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1033,7 +1036,7 @@ int main () {
 ```
 
 ## Triangle Pattern Problems
-```cpp
+
 Outer loop	Controls the rows
 Inner loop	Prints character multiple times per row
 
@@ -1042,8 +1045,8 @@ HERE, outerloop (no. lines)---> 0 to n-1
                                   0 to i
 
                                            1st type( Same Character Repeated Per Row)
-1) in the from of  numbers
-
+### 1) in the from of  numbers
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1061,9 +1064,10 @@ int main () {
    }
    return 0;
 }
+```
 -----------------------------------------------------------------------
-2) in the from of  numbers 
-
+### 2) in the from of  numbers 
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1082,9 +1086,10 @@ int main () {
    
    return 0;
 }
+```
 ---------------------------------------------------------------
-3) in the from of characters 
-
+### 3) in the from of characters 
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1104,8 +1109,10 @@ int main () {
     }
     return 0;
 }
+```
 ----------------------------------------------------------------------------------------------
                                         2nd type (Character Increment Pattern)
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1125,8 +1132,10 @@ int main () {
 
    return 0;
 }
+```
 ------------------------------------------------------------------------------------------------------
                          3rd type ( Left-Aligned Number Triangle)      
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1146,12 +1155,13 @@ int main () {
 
     return 0;
 }
+```
 ----------------------------------------------------------------------------------------------------
-      NOTE : THE cout line where output comes due that all types made till here
+   NOTE : THE cout line where output comes due that all types made till here
 ----------------------------------------------------------------------------------------------------------
-                                            REVERSE triangle pattern
+                                   REVERSE triangle pattern
 I ) in the form of numbers
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1170,9 +1180,9 @@ int main () {
 
     return 0;
 }
-
+```
 ii) in the form of characters
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1195,10 +1205,9 @@ int main () {
 
 ## Floyd's Triangle Pattern
 
-```cpp
 
 1) in the from of  numbers
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1218,9 +1227,10 @@ int main () {
    }
    return 0;
 }
+```
 --------------------------------------------------------------------------------
 2) in the from of  characters
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1246,9 +1256,9 @@ char ch = 'A';
 
 ## Inverted Triangle Pattern
 
-```cpp
-Q1)
 
+Q1)
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1276,8 +1286,10 @@ int main () {
 
     return 0;
 }
+```
 --------------------------------------------------------------------
 Q2)
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1302,8 +1314,10 @@ int main () {
 
     return 0;
 }
+```
 -------------------------------------------------------------------------------
 Q3)
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1361,13 +1375,15 @@ int main () {
     }     
     return 0;
 }
-OUTPUT :
-   1
-  121
- 12321
-1234321
+//OUTPUT :
+//   1
+//  121
+// 12321
+//1234321
+```
 -------------------------------------------------------------------
- #include <iostream>
+```cpp 
+#include <iostream>
 using namespace std;
 
 int main () {
@@ -1392,15 +1408,15 @@ int main () {
     }     
     return 0;
 }
-OUTPUT :
-       1
-      121
-     12321
-    1234321
-   123454321
-  12345654321
- 1234567654321
-123456787654321
+//OUTPUT :
+//       1
+//      121
+//     12321
+//    1234321
+//   123454321
+//  12345654321
+// 1234567654321
+//123456787654321
 ```
 
 ## Hollow Diamond pattern

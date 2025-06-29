@@ -1427,6 +1427,10 @@ int main () {
 
 
 
+![Image](https://github.com/user-attachments/assets/67a8f213-5a97-484a-b8b3-5bfaeaefdd2b)
+
+
+
 ```cpp
 #include <iostream>
 using namespace std;

@@ -1717,3 +1717,4 @@ int main (){
 
 ## Function Memory
 
+1) Every function is stored in this stack memory in the form of stack frames

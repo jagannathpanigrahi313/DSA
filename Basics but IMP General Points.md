@@ -73,3 +73,9 @@ A word or sentence (e.g., string name = "Alice";)
 Printing full text (e.g., cout << "Hello";)
 Comparing text (e.g., if (name == "Admin"))
                + is operator
+____________________________________________________________________________
+345 % 10 = 5 → last digit  
+345 / 10 = 34  
+34 % 10 = 4 → next digit  
+34 / 10 = 3  
+3 % 10 = 3 → next digit  

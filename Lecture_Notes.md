@@ -1807,6 +1807,7 @@ int main (){
 //x = 5
 ```
 Q 1) calculate sum of digits of a number
+![Image](https://github.com/user-attachments/assets/f78bcf02-9fed-4151-90c8-dbade2c2d5c5)
 ```cpp
 #include <iostream>
 using namespace std;

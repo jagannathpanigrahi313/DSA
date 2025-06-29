@@ -48,9 +48,9 @@ int main() {
   
   return 0; 
 }
-
-(1) int ----> it stores interger number
-
+```
+### (1) int ----> it stores interger number
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -61,9 +61,9 @@ int main() {
   
   return 0; 
 }
-
-(2) char 
-
+```
+### (2) char 
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -74,9 +74,9 @@ int main() {
   
   return 0; 
 }
-
-(3) float------->it stores decimal no.
-
+```
+### (3) float------->it stores decimal no.
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -87,9 +87,9 @@ int main() {
 
  return 0;
 }
-
-(4) bool---> it gives only boolean value i.e true (1) or false(0)
-  
+```
+### (4) bool---> it gives only boolean value i.e true (1) or false(0)
+ ```cpp 
 #include <iostream>
 using namespace std;
 
@@ -100,9 +100,9 @@ int main() {
 
  return 0;
 }
-
-(5) double----> it stores decimal no.
-
+```
+### (5) double----> it stores decimal no.
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -117,15 +117,15 @@ int main() {
 
 ## Type Conversion and Type Casting
 
-```cpp
+
                         converting data type from from one type to another
 
-(1) type casting 
+### (1) type casting 
     (implict)  this compiler does
 Small byte to big byte 
 
 EX 1: char to int
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -137,13 +137,13 @@ int main() {
   
   return 0; 
 }
-
-(2) type casting 
+```
+### (2) type casting 
     (Explicit) this Programmer does 
 Big byte to small byte
 
 Ex 1 :double to int
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -158,11 +158,11 @@ int main() {
 ```
 
 ## Binary Operators
-```cpp
+
 this operator needs two operand
 
-ARITMETIC OPERATOR
-
+### i) ARITMETIC OPERATOR
+```cpp
 #include <iostream>
 using namespace std ;   
     
@@ -176,7 +176,9 @@ int main() {
   cout << "modulo = " << (a % b) << endl;
   return 0; 
 }
+```
  ---------------------------------------------------------------------------------------------------------  
+```cpp
 #include <iostream> 
 using namespace std ;
 
@@ -187,11 +189,11 @@ int main() {
   cout << (a / b) << endl ;//2.5
   return 0;
 }
-
+```
 
 
 BY type casting method
-
+```cpp
 #include <iostream> 
 using namespace std ;
 
@@ -200,8 +202,8 @@ int main() {
   cout << (5 / (double)2) << endl;//2.5
   return 0;
 }
-
-
+```
+```cpp
 #include <iostream>
 using namespace std ;   
     
@@ -211,9 +213,9 @@ int main() {
   cout <<ans<<endl;// 2
   return 0;
 }
-
-RELATIONAL OPERATOR  --> give boolean value
-
+```
+### ii) RELATIONAL OPERATOR  --> give boolean value
+```cpp
 #include <iostream>
 using namespace std ;   
     
@@ -227,8 +229,8 @@ int main() {
   cout << (3 != 5) << endl; //true -> 1
   return 0;
 }
-
-LOGICAL OPERAIOR -->(1) OR (||)pipe perator 
+```
+### iii) LOGICAL OPERAIOR -->(1) OR (||)pipe perator 
                       |----> any one true then true
                       |---->cout << (  ) || (  ) << endl;
 
@@ -239,17 +241,17 @@ LOGICAL OPERAIOR -->(1) OR (||)pipe perator
               (3) NOT (!)
                   |---->reverse the boolean value
                   |---->cout << !( ) << endl ;
-```
+
 
 ## Sum of Two Numbers
-```cpp
+
 psuedo code 
 
 1 input a & b 
 2 sum = a + b
 3 print sum
 
-CODE :
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -269,13 +271,13 @@ int main(){
 
 ## Unary Operators
 
-```cpp
+
 this operator needs only one operand
 
-1. increment++
+### 1. increment++
 #include <iostream>
 using namespace std ;   
-    
+ ```cpp   
 int main() {
    int a = 10;
 
@@ -284,7 +286,8 @@ int main() {
   cout << "a = "<< a << endl; //11
   return 0;
 }
-
+```
+```cpp
 #include <iostream>
 using namespace std ;   
     
@@ -296,9 +299,9 @@ int main() {
   cout << "a = "<< a << endl; //11
   return 0;
 }
-
-2. decrement--
-
+```
+### 2. decrement--
+```cpp
   #include <iostream>
 using namespace std ;   
     
@@ -310,7 +313,8 @@ int main() {
   cout << "a = "<< a << endl; //9
   return 0;
 }
-
+```
+```cpp
 #include <iostream>
 using namespace std ;   
     
@@ -342,9 +346,10 @@ if (condition ){
 }
 return 0;
 }
+```
 ______________________________________________________________________________
 Q 1) to check a number is positive or negative
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -358,8 +363,9 @@ if (n >= 0){
 }
 return 0;
 }
-
+```
 Q 2) to check a person can vote or not through its age
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -376,8 +382,9 @@ int main(){
 
 return 0;
 }
-
+```
 Q 3) to check a number is odd or even 
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -423,9 +430,11 @@ if (condition ){
     
 return 0;
 }
+```
 ___________________________________________________________________________________
 
 Q 1. to check a student grade through marks
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -473,9 +482,11 @@ if (condition ){
     
 return 0;
 }
+```
 ___________________________________________________________________________________
 
 Q 1. to check a student grade through marks
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -498,11 +509,11 @@ return 0;
 ```
 
 ## Ternary Statement
-```cpp
+
 this are statement which can be written instead of if -else statement
 
 condition? statement 1: statement 2;
-
+```cpp
 #include <iostream> 
 using namespace std;
 
@@ -515,14 +526,14 @@ int main () {
 ```
 
 ## Loops
-```cpp
+
 note: count = count +1 OR count + = 1 OR count++
       i =  i +2 OR i + = 2 
   
-1 ) while loop
+### 1 ) while loop
 
 Q 1. print 1 to 10 
-  
+```cpp  
 #include <iostream>    
 using namespace std;     
                          
@@ -536,9 +547,9 @@ int main () {
   cout <<endl;//output : 1 2 3 4 5 6 7 8 9 10 
  return 0;
 }
-
+```
 Q 2. print 1 to n 
-
+```cpp
 #include <iostream>    |output :1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 
 using namespace std;    
                         
@@ -554,8 +565,10 @@ int main () {
   cout <<endl;
  return 0;
 }
+```
 _______________________________________________________________________________________
-2 ) for loop
+### 2 ) for loop
+```cpp
 #include <iostream>     
 using namespace std;     
                          
@@ -568,9 +581,9 @@ int main () {
       cout << endl;
 return 0;
 }
-
+```
 Q 1) print sum of numbers from 1 to n
-      
+ ```cpp     
 #include <iostream>           
 using namespace std;          
                         
@@ -585,9 +598,9 @@ int main () {
   cout<<"sum = "<< sum << endl;//output : sum = 1275
  return 0;
 }
+```
 
-
-
+```cpp
 #include <iostream>           
 using namespace std;          
                         
@@ -605,8 +618,9 @@ int main () {
   cout<<"sum = "<< sum << endl;//output : sum = 15
  return 0;
 }
-
+```
 Q 2) sum of all odd numbers from 1 to n
+```cpp
 #include <iostream>     
 using namespace std;     
                          
@@ -623,8 +637,10 @@ int main () {
   cout <<"odd sum = "<< oddsum <<endl;// output: oddsum = 625 
  return 0;
 }
+```
 _____________________________________________________________________________________________
-3) do-while loop
+### 3) do-while loop
+```cpp
 #include <iostream>           
 using namespace std;          
                         
@@ -635,8 +651,9 @@ int main () {
        
  return 0;
 }
-
+```
 Q 1) print 1 to n numbers
+```cpp
 #include <iostream>           
 using namespace std;          
                         
@@ -652,10 +669,10 @@ int main () {
       cout << endl;//1 2 3 4 5 6 7 8 9 10 
       return 0;
 }
-
+```
 **Q 2) check if a number is prime or not
       
-
+```cpp
 #include <iostream>           
 using namespace std;          
                         
@@ -681,8 +698,9 @@ if(isprime == true){
 return 0;
 }
 
-
-----------------------------------------------another method-----------------------------------------------------------------------
+```
+----------------------------------------------another method-----------------------------------------------------------------
+```cpp
 #include <iostream>           
 using namespace std;          
                         
@@ -710,11 +728,11 @@ return 0;
 ```
 
 ## Nested Loop
-```cpp
+
  it means loop inside a loop
 
 Q 1) to print 5 times  * in 5 line
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -725,9 +743,9 @@ int main() {
     }
 return 0;
 }
-
+```
 Q 2) to print x times * in one line 
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -738,9 +756,9 @@ int main() {
     }
 return 0;
 }
-
+```
 Q 3) to print x times * in 5 line 
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -754,9 +772,9 @@ int main() {
      }
 return 0;
 }
-
+```
 Q 4) to print x times * in n line
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -774,8 +792,9 @@ return 0;
 ```
 
 ## Homework
-```cpp
+
 Q 1) sum of all numbers from 1 to N which are divisible by K
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -795,8 +814,9 @@ int main() {
     cout << endl;
     return 0;
 }
-
+```
 Q 2) print factorial of a single number N
+```cpp
 #include <iostream>             // Include input-output library
 using namespace std;            // So we can use cout, cin without std::
 
@@ -815,9 +835,9 @@ int main() {
 
     return 0;                   // End of program
 }
-
+```
 Q 3)print Factorial from 1 to 6(increasing  order)
-  
+ ```cpp 
 #include <iostream>             // Include input-output functions
 using namespace std;            // Avoid typing std:: repeatedly
 
@@ -832,10 +852,11 @@ int main() {
 
     return 0;                   // End of program
 }
+```
 ----------------------------------------------------------------------------------
 Q 4) Print factorials from 6 to 1 (reverse order)
-  
-  #include <iostream>             // For input/output
+ ```cpp 
+#include <iostream>             // For input/output
 using namespace std;            // Use standard namespace
 
 int main() {
@@ -861,7 +882,7 @@ int main() {
 
 ## Square Pattern Problems
 
-```cpp
+
 ---------To print n lines (rows), the outer loop must run n times.
 |||||||||To print n symbols (or words) in each line, the inner
           loop must run n times for each outer loop iteration.
@@ -870,13 +891,13 @@ generaly we start the algorithm loops from i=0 to j=0
         EX: if a loop is starting from i=1 to n (to print n no. numbers of line)-------
                                        i=0 to n-1 (to print n no. numbers of line)----| this both are same
 
-1) square pattern
+### 1) square pattern
                    HERE, outerloop (no. lines)---> n times
                          inner loop(no. words) ----> n no's in each line ntimes
           
                             1st type                    
-i) in the form of stars
-
+#### i) in the form of stars
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -895,7 +916,8 @@ int main () {
 // *  *  *  * 
 //*  *  *  * 
 // *  *  *  * 
-// *  *  *  * 
+// *  *  *  *
+```
 ----------------------------------------------------------------------------------------------------------
                            2nd type
 i) in the form of numbers

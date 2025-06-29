@@ -1765,3 +1765,46 @@ int main (){
 }
 //OUTPUT : 9
 ```
+```cpp
+#include <iostream>
+using namespace std;
+
+int sum(int a, int b){
+    a = a + 10;//15
+    b = b + 10;//14
+    return a + b;//29
+}
+int main (){
+    int a= 5, b= 4;
+    cout << sum(a,b) << endl;
+
+    cout << a << endl;//5
+    cout << b << endl;//4
+    return 0;
+}
+//output :
+29
+5
+4
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+void changex(int x){
+   x = 2 * x;
+   cout << "x = "<< x << endl;
+}
+int main (){
+    int x = 10;
+    changex(x);
+
+    cout<<"x = "<< x << endl;
+    return 0;
+}
+//OUTPUT:
+//x = 10
+//x = 5
+```
+Q 1) calculate sum of digits of a number
+

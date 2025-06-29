@@ -1716,5 +1716,6 @@ int main (){
 ```
 
 ## Function Memory
+![Image](https://github.com/user-attachments/assets/dfa624e4-6dc7-4830-95b2-c423c6453d38)
 
 1) Every function is stored in this stack memory in the form of stack frames

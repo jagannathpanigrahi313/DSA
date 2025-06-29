@@ -1425,7 +1425,7 @@ int main () {
 ## Hollow Diamond pattern
 ![Image](https://github.com/user-attachments/assets/0b8b13b2-ddbd-4253-994e-c4e37a591965)
 
-
+![Image](https://github.com/user-attachments/assets/81f4c567-8214-4078-8f13-d9945c7e011d)
 ```cpp
 #include <iostream>
 using namespace std;

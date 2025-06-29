@@ -1807,4 +1807,24 @@ int main (){
 //x = 5
 ```
 Q 1) calculate sum of digits of a number
+```cpp
+#include <iostream>
+using namespace std;
 
+int sumofdigits(int num){
+    int digsum = 0;
+
+    while(num > 0){
+        int lastdig = num % 10;
+        num /= 10;
+
+        digsum += lastdig;
+    }
+    return digsum;
+}
+int main (){
+   cout << "sum = " << sumofdigits(2356) <<endl; 
+    return 0;
+}
+//OUTPUT: sum = 16
+```

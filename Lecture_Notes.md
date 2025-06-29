@@ -1348,7 +1348,7 @@ int main () {
 ```
 
 ## Pyramid Pattern
-
+[Image](https://github.com/user-attachments/assets/cc157312-baad-47c0-86e5-d80d985ca0c8)
 ```cpp
 #include <iostream>
 using namespace std;

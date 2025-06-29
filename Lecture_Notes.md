@@ -1735,6 +1735,8 @@ int main (){
 
 ## Pass by value
 
+![Image](https://github.com/user-attachments/assets/36f0c539-5655-43e7-8def-cc1bed9e1619)
+
 ```cpp
 #include <iostream>
 using namespace std;

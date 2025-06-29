@@ -1423,6 +1423,7 @@ int main () {
 ```
 
 ## Hollow Diamond pattern
+![Image](https://github.com/user-attachments/assets/609e6988-6ebe-479e-9bd2-2f6140e32ec4)
 
 ```cpp
 #include <iostream>

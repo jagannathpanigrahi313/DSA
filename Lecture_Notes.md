@@ -1547,7 +1547,6 @@ OUTPUT:
 
 ## What are Functions
 
-``` cpp
 Function defination : it is used when we have to any same thing again & again after sometimes 
 Function syntax : returntype printhello(){
 
@@ -1556,7 +1555,7 @@ Function syntax : returntype printhello(){
                   }
 Not to bring returndency we use this means same code again and again
 -----------------------------------------------------------------------------------------
-
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1572,9 +1571,10 @@ int main() {
     //like this many times in code 
     return 0;
 }
-OUTPUT :hello
-        hello
+//OUTPUT :hello
+//        hello
 ------------------------------------------------------------------------
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1591,13 +1591,14 @@ int main() {
     
     return 0;
 }
-OUTPUT:hello
-       val = 3
+//OUTPUT:hello
+//       val = 3
+```
 -----------------------------------------------------------------------------------
 parameters---->means input---> i.e are nothing but the copy of arguments
 arguments are the actual values passed through a function--> they are literals means values that cannot change
 Function syntax means input
-  
+```cpp  
 #include <iostream>
 using namespace std;
 
@@ -1611,8 +1612,10 @@ int main() {
 
     return 0;
 }
-OUTPUT : 15
-  -----------------------------------------------------------------------------------
+//OUTPUT : 15
+```
+-----------------------------------------------------------------------------------
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1626,9 +1629,11 @@ int main() {
 
     return 0;
 }
-OUTPUT : 15.9
+//OUTPUT : 15.9
+```
   -----------------------------------------------------------------------------
-  #include <iostream>
+```cpp
+#include <iostream>
 using namespace std;
 
 //min of two numbers
@@ -1645,9 +1650,11 @@ int main() {
 
     return 0;
 }
-OUTPUT : min = 3
+//OUTPUT : min = 3
+```
 __________________________________________________________________________________________________
 Q 1) calculate sum of numbers from 1 to N
+```cpp
 #include <iostream>
 using namespace std;
 

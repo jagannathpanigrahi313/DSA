@@ -1548,11 +1548,14 @@ OUTPUT:
 ## What are Functions
 
 Function defination : it is used when we have to any same thing again & again after sometimes 
-Function syntax : returntype printhello(){
+Function syntax : 
+```cpp
+returntype printhello(){
 
-                  cout <<"hello";
+cout <<"hello";
 
-                  }
+}
+```
 Not to bring returndency we use this means same code again and again
 -----------------------------------------------------------------------------------------
 ```cpp

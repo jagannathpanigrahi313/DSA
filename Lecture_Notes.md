@@ -922,6 +922,8 @@ int main () {
 ----------------------------------------------------------------------------------------------------------
                                 2nd type
 ### i) in the form of numbers
+![Image](https://github.com/user-attachments/assets/0f4d4b5b-3875-4612-aaaa-80d9dd592291)
+
 ```cpp
 #include <iostream>
 using namespace std;

@@ -1830,6 +1830,8 @@ int main (){
 //OUTPUT: sum = 16
 ```
 Q 2) calculate nCr Binomial coefficient for n & r
+    nCr = n! / r! (n-r)!
+    
 ```cpp
 #include <iostream>
 using namespace std;
@@ -1858,4 +1860,140 @@ int main (){
     return 0;
 }
 //OUTPUT: 28
+```
+
+## HOMEWORK
+
+Q 1) Write a function to check if a number is prime or not
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;       // Numbers <= 1 are not prime
+    if (n == 2) return true;        // 2 is the only even prime number
+
+    // Check from 2 to square root of n
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) return false; // If divisible, not prime
+    }
+    return true; // No divisors found => prime
+}
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (isPrime(num))
+        cout << num << " is a prime number." << endl;
+    else
+        cout << num << " is not a prime number." << endl;
+
+    return 0;
+}
+
+//OUTPUT :
+//Enter a number: 11
+//11 is a prime number.
+
+//Enter a number: 12
+//12 is not a prime number.
+```
+Q 2)write a function to print all prime numbers from 2 to N
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is prime or not
+bool isPrime(int num) {
+    // Prime numbers are greater than 1
+    if (num <= 1) return false;
+
+    // 2 is the only even prime number
+    if (num == 2) return true;
+
+    // Check for divisibility from 2 to √num
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            // If divisible by i, then num is not prime
+            return false;
+        }
+    }
+    // No divisors found => it's a prime number
+    return true;
+}
+
+// Function to print all prime numbers from 2 to N
+void printPrimes(int N) {
+    cout << "Prime numbers from 2 to " << N << " are: ";
+
+    // Loop from 2 to N and check each number
+    for (int i = 2; i <= N; i++) {
+        if (isPrime(i)) {
+            // If i is prime, print it
+            cout << i << " ";
+        }
+    }
+    cout << endl; // New line after printing all primes
+}
+
+int main() {
+    int N;
+
+    // Ask user to enter the value of N
+    cout << "Enter the value of N: ";
+    cin >> N;
+
+    // Call the function to print prime numbers
+    printPrimes(N);
+
+    return 0;
+}
+OUTPUT:
+Enter the value of N: 10
+Prime numbers from 2 to 10 are: 2 3 5 7 
+```
+Q 3) write a function to print nth Fibonacci
+
+Fibonacci series ---> The Fibonacci series is a sequence of numbers where:
+                      Each number is the sum of the two preceding ones, starting from 0 and 1.
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to return the nth Fibonacci number
+int fibonacci(int n) {
+    // First two Fibonacci numbers are 0 and 1
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+
+    int a = 0; // F(0)
+    int b = 1; // F(1)
+    int fib = 0;
+
+    // Loop from 2 to n to calculate nth Fibonacci
+    for (int i = 2; i <= n; i++) {
+        fib = a + b; // Current Fibonacci number
+        a = b;       // Update a to previous b
+        b = fib;     // Update b to current fib
+    }
+
+    return fib; // Return the nth Fibonacci number
+}
+
+int main() {
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    // Call the function and print result
+    cout << "The " << n << "th Fibonacci number is: " << fibonacci(n) << endl;
+
+    return 0;
+}
+//OUTPUT :
+//Enter the value of n: 20
+//The 20th Fibonacci number is: 6765
 ```

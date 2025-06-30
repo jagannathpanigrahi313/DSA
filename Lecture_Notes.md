@@ -1957,7 +1957,7 @@ Prime numbers from 2 to 10 are: 2 3 5 7
 ```
 Q 3) write a function to print nth Fibonacci
 
-Fibonacci series ---> The Fibonacci series is a sequence of numbers where:
+Fibonacci series ---> The Fibonacci series is a sequence of numbers where:                                  
                       Each number is the sum of the two preceding ones, starting from 0 and 1.
 ```cpp
 #include <iostream>

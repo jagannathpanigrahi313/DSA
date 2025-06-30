@@ -1997,3 +1997,79 @@ int main() {
 //Enter the value of n: 20
 //The 20th Fibonacci number is: 6765
 ```
+
+
+## Switch function
+***not imp
+
+🔷 What is a switch statement?
+The switch statement is used when you want to check one variable against many possible values (called cases). It's like using multiple if-else statements, but easier and cleaner when you're checking one variable.
+
+Switch Syntax 
+```cpp
+switch (expression) {
+    case value1:
+        // code to run if expression == value1
+        break;
+    case value2:
+        // code to run if expression == value2
+        break;
+    ...
+    default:
+        // code to run if no case matches
+}
+```
+🔹 Example: Check day of the week
+```cpp
+#include <iostream> // for input/output
+using namespace std;
+
+int main() {
+    int day; // variable to store user input
+
+    cout << "Enter a number (1 to 7): "; // asking user to enter a number
+    cin >> day; // taking input from user and storing in 'day'
+
+    // switch statement checks value of 'day'
+    switch(day) {
+        case 1: // if day is 1
+            cout << "Monday" << endl; // print Monday
+            break; // exit switch after matching case
+
+        case 2: // if day is 2
+            cout << "Tuesday" << endl; // print Tuesday
+            break;
+
+        case 3: // if day is 3
+            cout << "Wednesday" << endl;
+            break;
+
+        case 4: // if day is 4
+            cout << "Thursday" << endl;
+            break;
+
+        case 5: // if day is 5
+            cout << "Friday" << endl;
+            break;
+
+        case 6: // if day is 6
+            cout << "Saturday" << endl;
+            break;
+
+        case 7: // if day is 7
+            cout << "Sunday" << endl;
+            break;
+
+        default: // if none of the above cases match
+            cout << "Invalid input! Enter number between 1 and 7." << endl;
+    }
+
+    return 0; // end of program
+}
+
+//OUTPUT:
+//Enter a number (1 to 7): 4
+//Thursday
+```
+# Lecture 6 -Binary number system 
+

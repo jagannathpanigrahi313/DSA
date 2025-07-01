@@ -2089,7 +2089,7 @@ Answer : (42) base10 = (101010) base2
 ```cpp
 EX 2 :
 Divisor | quotient   remainder
-2       | 42         0  /\
+2       | 50         0  /\
 2       | 25         1  |
 2       | 12         0  |
 2       | 6          0  |
@@ -2097,7 +2097,32 @@ Divisor | quotient   remainder
 2       | 1          1  | 
         | 0
 Answer : (50) base10 = (110010) base2
+
+#include <iostream>
+using namespace std;
+
+int decToBinary(int decNum){
+    int ans = 0, pow = 1;
+    
+    while(decNum > 0){
+        int rem = decNum % 2; // gives the last binary digit
+        decNum /= 2; //moves to the next byte
+        
+        ans += rem * pow;  //pow is used to place each bit at the correct decimal place.
+        pow *= 10;
+    }
+    
+    return ans;
+}
+
+int main() {
+    int decNum = 50;
+    cout << decToBinary(decNum) << endl;
+    return 0;
+}
+
 ```
+![Screenshot from 2025-07-01 19-07-04](https://github.com/user-attachments/assets/20ce21dc-979c-4059-82d1-10df5c67b5bb)
 ```cpp
 EX 3:
 Divisor | quotient   remainder
@@ -2107,4 +2132,4 @@ Divisor | quotient   remainder
         | 0
 Answer : (5) base10 = (101) base2
 ```
-![Screenshot from 2025-07-01 19-07-04](https://github.com/user-attachments/assets/20ce21dc-979c-4059-82d1-10df5c67b5bb)
+

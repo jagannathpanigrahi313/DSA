@@ -2073,3 +2073,35 @@ int main() {
 ```
 # Lecture 6 -Binary number system 
 
+## Decimal to Binary conversion ----> base is 10,2 of decimal no. & binary no. respectively
+   
+EX 1 : 
+Divisor | quotient   remainder
+2       | 42         0  /\
+2       | 21         1  |
+2       | 10         0  |
+2       | 5          1  |
+2       | 2          0  |
+2       | 1          1  | 
+        | 0
+Answer : (42) base10 = (101010) base2
+
+EX 2 :
+Divisor | quotient   remainder
+2       | 42         0  /\
+2       | 25         1  |
+2       | 12         0  |
+2       | 6          0  |
+2       | 3          1  |
+2       | 1          1  | 
+        | 0
+Answer : (50) base10 = (110010) base2
+
+EX 3:
+Divisor | quotient   remainder
+2       | 5          1  /\
+2       | 2          0  |
+2       | 1          1  |
+        | 0
+Answer : (5) base10 = (101) base2
+![Screenshot from 2025-07-01 19-07-04](https://github.com/user-attachments/assets/20ce21dc-979c-4059-82d1-10df5c67b5bb)

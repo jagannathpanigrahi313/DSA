@@ -2132,4 +2132,43 @@ Divisor | quotient   remainder
         | 0
 Answer : (5) base10 = (101) base2
 ```
+Q  ) To print Binary numbers from 1 to 10
+```cpp
+#include <iostream> // for input/output
+using namespace std;
 
+int decToBinary(int decNum){
+     int ans = 0, pow = 1;
+     
+     while(decNum > 0){
+        int rem = decNum % 2;
+        decNum /= 2;
+
+        ans += (rem * pow);
+        pow *= 10 ; 
+     }
+
+     return ans;//binary form
+}
+
+int main() {
+   int decNum = 42;
+
+//we know Now only this much will run  
+   for(int i = 1; i <= 10; i++){
+   cout << decToBinary(i) <<endl;
+   }
+    return 0; // end of program
+}
+//OUTPUT :
+//1
+//10
+//11
+//100
+//101
+//110
+//111
+//1000
+//1001
+//1010
+```

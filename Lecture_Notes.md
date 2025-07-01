@@ -2106,10 +2106,10 @@ int decToBinary(int decNum){
     
     while(decNum > 0){
         int rem = decNum % 2; // gives the last binary digit
-        decNum /= 2; //moves to the next byte
+        decNum /= 2; //moves to the next byte(right shift)       // decNum = decNum + 1
         
         ans += rem * pow;  //pow is used to place each bit at the correct decimal place.
-        pow *= 10;
+        pow *= 10; //pow = pow * 10
     }
     
     return ans;

@@ -2074,6 +2074,10 @@ int main() {
 # Lecture 6 -Binary number system 
 
 ## Decimal to Binary conversion ----> base is 10,2 of decimal no. & binary no. respectively
+
+Short trick : ....32,16,8,4,2,1 [2 raisedto power]----> like this binary numbercomes from decimal no. 
+note : For odd numbers the last binary number is 1 (always)    
+
  ```cpp  
 EX 1 : 
 Divisor | quotient   remainder
@@ -2173,5 +2177,50 @@ int main() {
 //1010
 ```
 ## Binary to Decimal conversion
+
 ![Screenshot from 2025-07-01 21-56-58](https://github.com/user-attachments/assets/9f6f699a-e305-4474-9885-702cb6afb1d1)
 ![Screenshot from 2025-07-02 19-56-01](https://github.com/user-attachments/assets/82b7bca6-239c-459d-95b5-d441ef243e9a)
+```cpp
+#include <iostream> // for input/output
+using namespace std;
+
+int binToDecimal(int binNum){
+     int ans = 0, pow = 1;
+     
+     while(binNum > 0){
+        int rem = binNum % 10;
+        ans += (rem * pow);
+
+        binNum /= 10;
+        pow *= 2 ; 
+     }
+
+     return ans;//binary form
+}
+
+int main() {
+   
+   cout << binToDecimal(1010) <<endl;
+   
+    return 0; // end of program
+}
+```
+## Addition of binary numbers
+```cpp
+0   |  0  | 1  | 1  
++
+0   |  1  | 0  | 1
+____________________
+0   |  1  | 1  | 10
+
+1(carry)
+11
++
+01
+___
+100
+```
+## Two's Complement
+
+![Screenshot from 2025-07-02 22-15-14](https://github.com/user-attachments/assets/f5e21778-eabc-42b7-b9bf-70a6a9d1008d)
+![Screenshot from 2025-07-02 22-20-35](https://github.com/user-attachments/assets/5bbabfc8-693f-4958-91cb-1140d3c603c0)

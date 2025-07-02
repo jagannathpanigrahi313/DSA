@@ -2172,3 +2172,6 @@ int main() {
 //1001
 //1010
 ```
+## Binary to Decimal conversion
+![Screenshot from 2025-07-01 21-56-58](https://github.com/user-attachments/assets/9f6f699a-e305-4474-9885-702cb6afb1d1)
+![Screenshot from 2025-07-02 19-56-01](https://github.com/user-attachments/assets/82b7bca6-239c-459d-95b5-d441ef243e9a)

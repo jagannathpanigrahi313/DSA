@@ -2221,6 +2221,10 @@ ___
 100
 ```
 ## Two's Complement
+decimal to binary
+![Screenshot from 2025-07-02 22-20-35](https://github.com/user-attachments/assets/5bbabfc8-693f-4958-91cb-1140d3c603c0)
+if zero then +ve & if one then -ve 
 
 ![Screenshot from 2025-07-02 22-15-14](https://github.com/user-attachments/assets/f5e21778-eabc-42b7-b9bf-70a6a9d1008d)
-![Screenshot from 2025-07-02 22-20-35](https://github.com/user-attachments/assets/5bbabfc8-693f-4958-91cb-1140d3c603c0)
+
+

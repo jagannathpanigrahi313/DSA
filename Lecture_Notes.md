@@ -2221,10 +2221,18 @@ ___
 100
 ```
 ## Two's Complement
-decimal to binary
+### Decimal to Binary
 ![Screenshot from 2025-07-02 22-20-35](https://github.com/user-attachments/assets/5bbabfc8-693f-4958-91cb-1140d3c603c0)
+
 if zero then +ve & if one then -ve 
 
 ![Screenshot from 2025-07-02 22-15-14](https://github.com/user-attachments/assets/f5e21778-eabc-42b7-b9bf-70a6a9d1008d)
 
+### Binary to Decimal
 
+if we know 10110 binary number is -ve then 
+![Screenshot from 2025-07-02 22-35-53](https://github.com/user-attachments/assets/d00fc548-d137-4387-9220-408976ec115a)
+
+Q 1) ![Screenshot from 2025-07-02 22-44-11](https://github.com/user-attachments/assets/04df1d12-f22e-4e36-a074-a86e8f130005)
+
+H.W ) convert -12 to  Binary & reverse

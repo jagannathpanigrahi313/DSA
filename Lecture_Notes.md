@@ -2362,5 +2362,21 @@ int x;//4bytes---> 32bits ---> -2^31 to +2^31-1 till here numbers can store BUT 
 3) long long
 4) signed
 5) unsigned 
+```cpp
+ #include <iostream> // for input/output
+using namespace std;
 
-          
+
+int main() {
+
+   cout << sizeof(long int) << endl;// int you put or dont put int only comes
+   cout << sizeof(short ) << endl;
+   cout << sizeof(long long ) << endl;
+
+    return 0; // end of program
+}
+//OUTPUT: 16
+          2
+          8
+```
+         

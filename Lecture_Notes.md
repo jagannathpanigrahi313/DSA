@@ -2567,3 +2567,4 @@ OUTPUT:
 0//error
 21955//error
 ```
+## Loops on Arrays

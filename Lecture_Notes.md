@@ -2311,8 +2311,8 @@ using namespace std;
 int main() {
    int a = 10 , b = 1;
 
-   cout << (10 << 2) <<endl;
-   cout << (a >> b) << endl;
+   cout << (10 << 2) <<endl;//left shift operator
+   cout << (a >> b) << endl;//right shift operator
    
     return 0; // end of program
 }

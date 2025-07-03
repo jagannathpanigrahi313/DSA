@@ -2258,14 +2258,64 @@ ________
 
  ## 1) bitwise AND &---> similar to logical AND
        Any one false(0) then false
+```cpp
+#include <iostream> // for input/output
+using namespace std;
 
+int main() {
+   int a = 6 , b = 10;
+
+   cout << (a & b) <<endl;
+  
+    return 0; // end of program
+}
+//OUTPUT : 10
+```
   ## 2) Biwise OR | ----> similar to logical OR
         any one true(1) then true
+```cpp
+#include <iostream> // for input/output
+using namespace std;
 
+int main() {
+   int a = 6 , b = 10;
+
+   cout << (a | b) <<endl;
+  
+    return 0; // end of program
+}
+
+```
   ## 3) bitwise  ^ ----> XOR (exclusive OR)
          same bit then 0
-         diffrent bit then 1
+```cpp
+#include <iostream> // for input/output
+using namespace std;
 
+int main() {
+   int a = 6 , b = 10;
+
+   cout << (a ^ b) <<endl;
+  
+    return 0; // end of program
+}
+//OUTPUT : 12
+```
  ![Screenshot from 2025-07-03 12-30-41](https://github.com/user-attachments/assets/ef20a2eb-068f-4b60-b829-c4b136f2c7c3)
 
 ![Screenshot from 2025-07-03 12-37-39](https://github.com/user-attachments/assets/e45d253d-722d-4f45-a0c5-0cfbfff29ff3)
+```cpp
+#include <iostream> // for input/output
+using namespace std;
+
+int main() {
+   int a = 10 , b = 1;
+
+   cout << (10 << 2) <<endl;
+   cout << (a >> b) << endl;
+   
+    return 0; // end of program
+}
+//OUTPUT : 40
+//         5
+```

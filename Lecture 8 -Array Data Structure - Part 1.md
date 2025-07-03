@@ -7,13 +7,15 @@ int marks1,marks2,marks3, marks4, marks5;
 It stores same datatype
 contiguous in memory + linar (linarly data are imagined)
 
-_____________________________
-|     |     |    |     |     |---------->Array of one variable
-______________________________
+_______________________________________
+|        |       |      |       |      |---------->Array of one variable
+_______________________________________
 
 Array syntax
 datatype variable [items]; //Here only arrays are created i.e array is initialized
+
 datatype variable [items] = {store data in items};//Here arrays are created & then values are stored i.e array  & data bothis initialized
+
 //you can initialize only value and don't put items
 ```cpp
 #include <iostream>

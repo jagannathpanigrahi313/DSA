@@ -2360,8 +2360,8 @@ int x;//4bytes---> 32bits ---> -2^31 to +2^31-1 till here numbers can store BUT 
 1) long  datatype
 2) short
 3) long long
-4) signed
-5) unsigned 
+4) signed-------->+ve OR -ve
+5) unsigned------> only +ve 
 ```cpp
  #include <iostream> // for input/output
 using namespace std;
@@ -2379,4 +2379,92 @@ int main() {
           2
           8
 ```
-         
+H.W 1) Figure out how to find if a number is power of 2 without any loop         
+```cpp
+#include <iostream>
+using namespace std;
+
+bool isPowerOf2(int n) {
+    return n > 0 && (n & (n - 1)) == 0;//1. n > 0
+                                       //Power of 2 must be positive.
+                                       //So this ensures that n is not 0 or negative.
+                                       //Example: Let’s take n = 8
+//It's a bitwise AND operation.
+//For powers of 2, the binary form has only 1
+
+//n = 8 = 1000
+//n-1 = 7 = 0111
+//n & (n-1) = 1000 & 0111 = 0000 ✅
+//So, (n & (n - 1)) == 0 confirms it has only one bit set, which is the rule for power of 2.
+
+}
+
+int main() {
+    int num = 16;
+    if (isPowerOf2(num))
+        cout << num << " is a power of 2\n";
+    else
+        cout << num << " is NOT a power of 2\n";
+    return 0;
+}
+//OUTPUT:16 is a power of 2
+```
+with loop
+```cpp
+#include <iostream>
+using namespace std;
+
+bool isPowerOf2Loop(int n) {
+    if (n <= 0)
+        return false;
+
+    while (n % 2 == 0) {
+        n /= 2;
+    }
+
+    return n == 1;
+}
+
+int main() {
+    int num = 32;
+    if (isPowerOf2Loop(num))
+        cout << num << " is a power of 2\n";
+    else
+        cout << num << " is NOT a power of 2\n";
+    return 0;
+}
+//OUTPUT:32 is a power of 2
+```
+H.W 2)Write a function to reverse an integer n.
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to reverse a given integer
+int reverseNumber(int n) {
+    int reversed = 0;
+
+    while (n != 0) {
+        int digit = n % 10;       // Get the last digit
+        reversed = reversed * 10 + digit; // Add digit to reversed number
+        n /= 10;                  // Remove the last digit from n
+    }
+
+    return reversed;
+}
+
+int main() {
+    int number;
+    cout << "Enter an integer: ";
+    cin >> number;
+
+    int result = reverseNumber(number);
+    cout << "Reversed number is: " << result << endl;
+
+    return 0;
+}
+//OUTPUT :
+//Enter an integer: 125
+//Reversed number is: 521
+
+```

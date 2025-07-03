@@ -330,6 +330,8 @@ int main() {
   return 0;
 }
 ```
+# Lecture 3 - Conditional Statements & Loops
+
 ## conditional statement(if-else)
 
 ```cpp
@@ -2254,7 +2256,7 @@ H.W ) convert -12 to  Binary & reverse
 ________
  01100  
      
- # Lecture 6 - Bitwise operator
+ # Lecture 7 - Bitwise operator
 
  ## 1) bitwise AND &---> similar to logical AND &&
        Any one false(0) then false

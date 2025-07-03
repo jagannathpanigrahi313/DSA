@@ -35,3 +35,31 @@ int main() {
     return 0;
 }
 ```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int marks [5] = {99,100,54,36,88};
+
+
+    cout << marks[0] << endl;
+    cout << marks[1] << endl;
+    cout << marks[2] << endl;
+    cout << marks[3] << endl;
+    cout << marks[4] << endl;
+    
+    //0 to size-1
+    cout << marks[5] << endl;//error
+    cout << marks[-1] << endl;//error
+    return 0;
+}
+OUTPUT:
+99
+100
+54
+36
+88
+0//error
+21955//error
+```

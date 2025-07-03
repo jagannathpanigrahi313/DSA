@@ -2236,3 +2236,36 @@ if we know 10110 binary number is -ve then
 Q 1) ![Screenshot from 2025-07-02 22-44-11](https://github.com/user-attachments/assets/04df1d12-f22e-4e36-a074-a86e8f130005)
 
 H.W ) convert -12 to  Binary & reverse
+
+(1) 1100
+
+(2) 01100
+
+(3) 10011(1's complement)
+(4)    +1
+    10100
+
+ (10100)base2 = (-12)base10
+
+2's complement 
+ 10100 binary number reverse is    ---> & we know this is -ve 
+ 01011(1's complement)
++    1
+________
+ 01100  
+     
+ # Lecture 6 - Bitwise operator
+
+ ## 1) bitwise AND &---> similar to logical AND
+       Any one false(0) then false
+
+  ## 2) Biwise OR | ----> similar to logical OR
+        any one true(1) then true
+
+  ## 3) bitwise  ^ ----> XOR (exclusive OR)
+         same bit then 0
+         diffrent bit then 1
+
+ ![Screenshot from 2025-07-03 12-30-41](https://github.com/user-attachments/assets/ef20a2eb-068f-4b60-b829-c4b136f2c7c3)
+
+![Screenshot from 2025-07-03 12-37-39](https://github.com/user-attachments/assets/e45d253d-722d-4f45-a0c5-0cfbfff29ff3)

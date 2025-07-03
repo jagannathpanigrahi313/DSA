@@ -2256,7 +2256,7 @@ ________
      
  # Lecture 6 - Bitwise operator
 
- ## 1) bitwise AND &---> similar to logical AND
+ ## 1) bitwise AND &---> similar to logical AND &&
        Any one false(0) then false
 ```cpp
 #include <iostream> // for input/output
@@ -2271,7 +2271,7 @@ int main() {
 }
 //OUTPUT : 10
 ```
-  ## 2) Biwise OR | ----> similar to logical OR
+  ## 2) Biwise OR | ----> similar to logical OR ||
         any one true(1) then true
 ```cpp
 #include <iostream> // for input/output
@@ -2319,3 +2319,48 @@ int main() {
 //OUTPUT : 40
 //         5
 ```
+## Operaor Precedence
+1) unary operator
+2) Arithmetic operator
+3) bitwise operator
+4) logical operator
+5) asignment operator
+![Screenshot from 2025-07-03 13-05-14](https://github.com/user-attachments/assets/7b967cfa-5e1c-415a-bf17-7418563ba9df)
+
+
+## scope
+1) local scope---> if-else loop OR for loop OR one function OR Block of Code{ } ke variables are local variables which cannot be used out
+
+2) Global scope ----> written outside everthing in first & this variable can be used many times in loop
+                     are global variables
+```cpp
+#include <iostream> // for input/output
+using namespace std;
+
+int x =10;
+
+int fun(){
+   cout << x << endl;
+}
+int main() {
+   fun();
+   cout << x << endl;
+
+    return 0; // end of program
+}
+//OutOut 10
+         10
+```
+
+
+int x;//4bytes---> 32bits ---> -2^31 to +2^31-1 till here numbers can store BUT t store at 2^32 then we extend cpacity 
+
+## Data type Modifiers ----> change meaning of datatypes ---> increase OR decrese the size of data types
+
+1) long  datatype
+2) short
+3) long long
+4) signed
+5) unsigned 
+
+          

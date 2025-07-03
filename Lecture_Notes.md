@@ -2379,7 +2379,8 @@ int main() {
           2
           8
 ```
-H.W 1) Figure out how to find if a number is power of 2 without any loop         
+H.W 1) Figure out how to find if a number is power of 2 without any loop   
+bitwise method
 ```cpp
 #include <iostream>
 using namespace std;
@@ -2409,7 +2410,76 @@ int main() {
 }
 //OUTPUT:16 is a power of 2
 ```
-with loop
+bitwise left shift (<<) method with a loop
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is a power of 2 using bitwise left shift
+bool isPowerOf2(int n) {
+    for (int i = 0; i < 31; i++) {         // 2^0 to 2^30
+        if ((1 << i) == n)                 // 1 shifted i times = 2^i
+            return true;                  // Found match → it's power of 2
+    }
+    return false;                         // No match → not power of 2
+}
+
+int main() {
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (isPowerOf2(num))
+        cout << num << " is a power of 2\n";
+    else
+        cout << num << " is NOT a power of 2\n";
+
+    return 0;
+}
+//OUTPUT:
+//Enter a number: 18
+//18 is NOT a power of 2
+```
+✅ Logic Using >> (Right Shift):
+If the number is a power of 2, we can divide it by 2 (right shift) until it becomes 1.
+If during this process, we get any odd number (other than 1) → it's not a power of 2.
+```CPP
+#include <iostream>
+using namespace std;
+
+// Function to check if number is power of 2 using right shift
+bool isPowerOf2(int n) {
+    if (n <= 0)
+        return false;
+
+    while (n > 1) {
+        if (n % 2 != 0)      // if not divisible by 2, not a power of 2
+            return false;
+        n = n >> 1;          // divide by 2 using right shift
+    }
+
+    return true;             // reached 1 → it's a power of 2
+}
+
+int main() {
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (isPowerOf2(num))
+        cout << num << " is a power of 2\n";
+    else
+        cout << num << " is NOT a power of 2\n";
+
+    return 0;
+}
+//OUTPUT:
+//Enter a number: 22
+//22 is NOT a power of 2
+```
+with loop method
 ```cpp
 #include <iostream>
 using namespace std;

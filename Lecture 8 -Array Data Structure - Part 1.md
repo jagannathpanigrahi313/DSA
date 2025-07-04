@@ -7,7 +7,7 @@ int marks1,marks2,marks3, marks4, marks5;
 It stores same datatype
 contiguous in memory + linear (linarly data are imagined)
 
-  _______________________________________
+_______________________________________
 |        |       |      |       |      |---------->Array of only one variable
 _______________________________________
     0         1     2       3      4----->index
@@ -75,7 +75,7 @@ int main() {
 ```
 
 output kardenge all values in the form of loop
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -195,3 +195,49 @@ int main() {
 //         largest =22
 ```
 H.W ) Find in which index the smallest & largest value are stored in array
+```cpp
+#include <iostream>
+#include <climits> // For INT_MAX and INT_MIN
+using namespace std;
+
+int main() {
+    // Array of numbers
+    int nums[] = {5, 15, 22, 1, -15, -24};
+
+    // Automatically calculate array size
+    int size = sizeof(nums) / sizeof(nums[0]);
+
+    // Initialize smallest to a very large number
+    // Initialize largest to a very small number
+    int smallest = INT_MAX;
+    int largest = INT_MIN;
+
+    // To store the index of smallest and largest numbers
+    int smallestIndex = -1;
+    int largestIndex = -1;
+
+    // Loop through the array
+    for (int i = 0; i < size; i++) {
+        // If current number is smaller than current smallest
+        if (nums[i] < smallest) {
+            smallest = nums[i];      // update smallest value
+            smallestIndex = i;       // update its index
+        }
+
+        // If current number is larger than current largest
+        if (nums[i] > largest) {
+            largest = nums[i];       // update largest value
+            largestIndex = i;        // update its index
+        }
+    }
+
+    // Output the result
+    cout << "Smallest value is " << smallest << " at index " << smallestIndex << endl;
+    cout << "Largest value is " << largest << " at index " << largestIndex << endl;
+
+    return 0;
+}
+//OUTPUT:
+//Smallest value is -24 at index 5
+//Largest value is 22 at index 2
+```

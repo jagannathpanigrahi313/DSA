@@ -12,6 +12,7 @@ _______________________________________
 _______________________________________
 
 Array syntax
+
 datatype variable [items]; //Here only arrays are created i.e array is initialized
 
 datatype variable [items] = {store data in items};//Here arrays are created & then values are stored i.e array  & data bothis initialized

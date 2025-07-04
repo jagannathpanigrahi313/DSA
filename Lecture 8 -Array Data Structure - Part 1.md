@@ -242,8 +242,9 @@ int main() {
 //Largest value is 22 at index 2
 ```
 # Pass by Refrence(address)----> we pass the address to a function
-data structure is full used by primitive data type EX:array
 
+data structure is full used by primitive data type EX: array
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -272,3 +273,4 @@ int main() {
 // in function
 // in main
 // 2 4 6 
+```

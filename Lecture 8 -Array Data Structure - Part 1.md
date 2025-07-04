@@ -52,7 +52,7 @@ OUTPUT:
 21955//we got garbage value
 ```
 
-here we printed 5 elements 5 cout statement BUT for 100 elements how canwe do therefore we use  Loops on Arrays
+here we printed 5 elements 5 cout statement BUT for 100 elements how can we do therefore we use  Loops on Arrays
 # Loops on Arrays
 ```cpp
 #include <iostream>
@@ -126,7 +126,7 @@ int main() {
 ```
 Q )Find smallest value in array
 Method 1:
-```
+```cpp
 #include <iostream>
 #include <climits> // for INT_MAX
 using namespace std;
@@ -147,7 +147,7 @@ int main() {
 //OUTPUT: smallest =-24
 ```
 Method 2 Using only if condition: not preferable
-```
+```cpp
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -171,7 +171,7 @@ int main() {
 ```
 Q )Find smallest & largest value in array
 
-```
+```cpp
 #include <iostream>
 #include <climits>//This line is necessary if you are using INT_MAX or INT_MIN.
 using namespace std;

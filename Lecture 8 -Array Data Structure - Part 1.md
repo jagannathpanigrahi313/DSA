@@ -241,3 +241,34 @@ int main() {
 //Smallest value is -24 at index 5
 //Largest value is 22 at index 2
 ```
+# Pass by Refrence(address)----> we pass the address to a function
+data structure is full used by primitive data type EX:array
+
+#include <iostream>
+using namespace std;
+
+void changeArr(int arr[],int size){
+    cout << "in function\n";
+    for(int i = 0;i < size;i++){
+        arr[i] = 2 * arr[i];
+    }
+}
+int main() {
+    int arr[] = {1,2,3};
+
+    changeArr(arr,3);//Function call
+
+    cout << "in main\n";//therfore 2 4 6
+
+    for(int i = 0;i<3;i++){
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+
+    return 0;
+}
+//OUTPUT:
+// in function
+// in main
+// 2 4 6 

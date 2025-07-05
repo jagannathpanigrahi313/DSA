@@ -302,6 +302,7 @@ int main() {
 //6 
 ```
 # Reverse an array
+![Screenshot from 2025-07-05 13-25-17](https://github.com/user-attachments/assets/d101cb66-f698-4c5b-a3fe-b8158aef33fb)
 ```cpp
 #include <iostream>
 #include <climits>//optional
@@ -319,6 +320,7 @@ void reverseArray(int arr[],int sz){
    
 
 int main() {
+
     int arr[] = {1,2,3,4,5};
     int sz = 5;
 

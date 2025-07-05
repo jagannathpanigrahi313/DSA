@@ -232,7 +232,7 @@ int main() {
   return 0;
 }
 ```
-### iii) LOGICAL OPERAIOR -->(1) OR (||)pipe perator 
+### iii) LOGICAL OPERAIOR -->(1) OR (||)pipe operator 
                       |----> any one true then true
                       |---->cout << (  ) || (  ) << endl;
 

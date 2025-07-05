@@ -423,6 +423,47 @@ int main() {
 ```
 H.W 3)Write a function to print all unique values in an array.
 ```cpp
+#include <iostream>
+using namespace std;
+
+// Function to print all unique values (only once in array)
+void printUnique(int arr[], int size) {
+    bool isUnique;
+
+    // Loop through each element in the array
+    for (int i = 0; i < size; i++) {
+        isUnique = true; // Assume current element is unique
+
+        // Check if arr[i] appears again in array (excluding itself)
+        for (int j = 0; j < size; j++) {
+            if (i != j && arr[i] == arr[j]) {
+                isUnique = false; // Found a duplicate
+                break;
+            }
+        }
+
+        // If no duplicate found, print the unique element
+        if (isUnique) {
+            cout << arr[i] << " ";
+        }
+    }
+}
+
+int main() {
+    int arr[] = {4, 5, 6, 7, 4, 5, 9, 10};  // Sample array
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Unique elements in the array are: ";
+    printUnique(arr, size);
+    cout << endl;
+
+    return 0;
+}
+
+//4 5 ---> apears twice
+
+//OUTPUT:
+//6 7 9 10----> appear once
 
 ```
 H.W 4)Write a function to print intersection of two arrays.

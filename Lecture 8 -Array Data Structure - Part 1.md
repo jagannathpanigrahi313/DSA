@@ -1,4 +1,4 @@
-Data Structures are basic structures which are used to store data Where there are many types of data
+**Data Structures(DS)** are basic structures which are used to store data Where there are many types of data
 Algorithm are steps/ process
 
 To store 5 students marks we make 5 variable But for 1000 students we cant make therefore arrays camed
@@ -20,7 +20,7 @@ For array the valid index is from 0 to size-1
 
 **datatype variable [items]**; //Here only arrays are created i.e array is initialized
 
-datatype variable [items] = {store data in items};//Here arrays are created & then values are stored i.e array  & data bothis initialized
+**datatype variable [items] **= {store data in items};//Here arrays are created & then values are stored i.e array  & data bothis initialized
 
 //you can initialize only value and don't put items
 ```cpp
@@ -146,7 +146,7 @@ int main() {
 }
 //OUTPUT: smallest =-24
 ```
-Method 2 Using only if condition: not preferable
+**Method 2:** Using only if condition: not preferable
 ```cpp
 #include <iostream>
 #include <climits>//mandotry for INT_MAX 

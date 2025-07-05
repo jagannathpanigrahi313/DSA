@@ -466,7 +466,52 @@ int main() {
 //6 7 9 10----> appear once
 
 ```
-H.W 4)Write a function to print intersection of two arrays.
+H.W 4)Write a function to print intersection of two arrays. i.e., elements that are common in both arrays:
 ```cpp
+#include <iostream>
+using namespace std;
+
+// Function to print intersection of two arrays
+void printIntersection(int arr1[], int size1, int arr2[], int size2) {
+    cout << "Intersection: ";
+    
+    for (int i = 0; i < size1; i++) {
+        // Check if arr1[i] is in arr2
+        for (int j = 0; j < size2; j++) {
+            if (arr1[i] == arr2[j]) {
+                
+                // Check if already printed (to avoid duplicates)
+                bool alreadyPrinted = false;
+                for (int k = 0; k < i; k++) {
+                    if (arr1[k] == arr1[i]) {
+                        alreadyPrinted = true;
+                        break;
+                    }
+                }
+
+                if (!alreadyPrinted) {
+                    cout << arr1[i] << " ";
+                }
+
+                break; // Move to next element in arr1
+            }
+        }
+    }
+
+    cout << endl;
+}
+
+int main() {
+    int arr1[] = {1, 2, 3, 4, 5, 2};
+    int arr2[] = {3, 4, 5, 6, 7, 3};
+    int size1 = sizeof(arr1) / sizeof(arr1[0]);
+    int size2 = sizeof(arr2) / sizeof(arr2[0]);
+
+    printIntersection(arr1, size1, arr2, size2);
+
+    return 0;
+}
+//output:
+//Intersection: 3 4 5
 
 ```

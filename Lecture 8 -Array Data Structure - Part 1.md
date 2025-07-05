@@ -128,7 +128,7 @@ Q )Find smallest value in array
 Method 1:
 ```cpp
 #include <iostream>
-#include <climits> // for INT_MAX
+#include <climits> // mandatory for INT_MAX 
 using namespace std;
 
 int main() {
@@ -149,7 +149,7 @@ int main() {
 Method 2 Using only if condition: not preferable
 ```cpp
 #include <iostream>
-#include <climits>
+#include <climits>//mandotry for INT_MAX 
 using namespace std;
 
 int main() {
@@ -197,7 +197,7 @@ int main() {
 H.W ) Find in which index the smallest & largest value are stored in array
 ```cpp
 #include <iostream>
-#include <climits> // For INT_MAX and INT_MIN
+#include <climits> //Mandotary For INT_MAX and INT_MIN
 using namespace std;
 
 int main() {
@@ -277,7 +277,7 @@ int main() {
 # Linear search
 ```cpp
 #include <iostream>
-#include <climits>
+#include <climits>//optional
 using namespace std;
 
 int linearsearch(int arr[],int sz,int target){
@@ -300,4 +300,132 @@ int main() {
 }
 //OUTPUT:
 //6 
+```
+# Reverse an array
+```cpp
+#include <iostream>
+#include <climits>//optional
+using namespace std;
+
+void reverseArray(int arr[],int sz){
+    int start = 0,end = sz-1;
+
+    while(start < end){
+        swap(arr[start],arr[end]);
+        start++;
+        end--;
+    }
+}
+   
+
+int main() {
+    int arr[] = {1,2,3,4,5};
+    int sz = 5;
+
+    reverseArray(arr, sz);
+
+    for (int i= 0;i< sz;i++){
+        cout << arr[i] <<" ";
+    }
+    cout << endl;
+    return 0;
+}
+//OUTPUT:
+// 5 4 3 2 1
+```
+H.W 1) Write a function to calculate sum and product of all numbers in an array.
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to calculate sum and product of array elements
+void sumAndProduct(int arr[], int size) {
+    int sum = 0;
+    int product = 1;
+
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];          // add each element to sum
+        product *= arr[i];      // multiply each element to product
+    }
+
+    // Display result
+    cout << "Sum = " << sum << endl;
+    cout << "Product = " << product << endl;
+}
+
+int main() {
+    int arr[] = {2, 4, 6};
+    int size = 3;
+
+    sumAndProduct(arr, size);
+
+    return 0;
+}
+//OUTPUT:
+//Sum = 12
+//Product = 48
+```
+H.W 2) Write a function to swap max & min number of an array.
+```cpp
+#include <iostream>
+using namespace std;
+
+// Function to swap the maximum and minimum elements in the array
+void swapMaxMin(int arr[], int size) {
+    // If array has 0 or 1 element, swapping is not needed
+    if (size <= 1) return;
+
+    int maxIndex = 0;  // Assume the first element is the maximum
+    int minIndex = 0;  // Assume the first element is the minimum
+
+    // Loop to find actual max and min index
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > arr[maxIndex]) {
+            maxIndex = i;  // Found a bigger value, update maxIndex
+        }
+        if (arr[i] < arr[minIndex]) {
+            minIndex = i;  // Found a smaller value, update minIndex
+        }
+    }
+
+    // Now swap the values at maxIndex and minIndex
+    int temp = arr[maxIndex];
+    arr[maxIndex] = arr[minIndex];
+    arr[minIndex] = temp;
+}
+
+// Main function to test the swapMaxMin
+int main() {
+    int arr[] = {10, 20, 5, 30, 2, 40, 15};  // Sample array
+    int size = sizeof(arr) / sizeof(arr[0]);  // Calculate number of elements
+
+    // Print the original array
+    cout << "Original array: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    // Call the function to swap max and min
+    swapMaxMin(arr, size);
+    // Print the array after swapping
+    cout << "After swapping max and min: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+//OUTPUT:
+//Original array: 10 20 5 30 2 40 15 
+//After swapping max and min: 10 20 5 30 40 2 
+```
+H.W 3)Write a function to print all unique values in an array.
+```cpp
+
+```
+H.W 4)Write a function to print intersection of two arrays.
+```cpp
+
 ```

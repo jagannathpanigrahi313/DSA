@@ -250,7 +250,9 @@ int main() {
 psuedo code 
 
 1 input a & b 
+
 2 sum = a + b
+
 3 print sum
 
 ```cpp

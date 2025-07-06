@@ -100,6 +100,7 @@ int main(){
 # Diffrence between colon(:) and semicolon
 
 ✅ : (Colon) → Used in Range-Based for Loop
+
 ✅ Example:
 ```cpp
 for (int i : vec) {
@@ -108,6 +109,7 @@ for (int i : vec) {
 ```
 🔍 Meaning:
 Reads as: “For each element i in the container vec”
+
 Used to automatically iterate over containers like arrays, vectors, strings, etc.
 
 Introduced in C++11
@@ -125,9 +127,13 @@ for (int i = 0; i < 3; i++) {
 for (initialization ; condition ; update)
 ```
 ; separates three parts:
+
 Initialization → int i = 0
+
 Condition → i < 3
+
 Update → i++
+
  ✅ Used when you need more control (like skipping, indexing, etc.)
 
 🔁 Visual Comparison
@@ -140,5 +146,6 @@ Introduced in 	 C++11	                           Available in all versions of C+
 
 ✅ When to use which?
 Use : when you just want to access each element in a container
+
 Use ; when you need indexes, custom logic, or want to skip elements
 

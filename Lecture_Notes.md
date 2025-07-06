@@ -267,7 +267,7 @@ int main(){
     cout << " enter b:";
     cin >> b;
 
-    int sum a + b ;
+    int sum (a + b) ;
     cout << "sum = "<< sum <<endl;
     return 0;
 }

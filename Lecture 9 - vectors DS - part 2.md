@@ -6,7 +6,8 @@ STL(Standard template library)
 
 #vector syntax
 
-1)
+1) vector<datatype> vector_name;
+   
 ```cpp
 #include <iostream>
 #include <vector>//headerfile
@@ -18,7 +19,7 @@ int main(){
     return 0;
 }
 ```
-2)
+2) vector<datatype> vector_name = { val1, val2, val3, ...};
 ```cpp
 #include <iostream>
 #include <vector>
@@ -26,12 +27,13 @@ using namespace std;
 
 int main(){
     vector<int> vec ={1,2,3}; 
-    cout<<vec[3]<<endl;//3
+    cout<<vec[2]<<endl;//3
     return 0;
 }
 ```
 
-3)
+3) vector<datatype> vector_name(size, value);
+
 
 ```cpp
 #include <iostream>
@@ -39,7 +41,7 @@ int main(){
 using namespace std;
 
 int main(){
-    vector<int> vec (5,0);//(sizeofthevector,inindex which value will be stored)explain
+    vector<int> vec (5,0);// (size of the vector, initial value for all elements)
 
     cout << vec[0] << endl;
     cout << vec[1] << endl;
@@ -60,8 +62,9 @@ For each loop
 using namespace std;
 
 int main(){
-    vector<int> vec (3,0); //explain
-    for(int i : vec){
+    vector<int> vec (3,0); //3 elements in total.Each initialized to 0
+                           //so it's equivalent to vector<int> vec = {0, 0, 0};
+    for(int i : vec){//For every integer i in the vector vec" i takes the value of each element in the vector one by one
         cout<< i <<endl;//0
     }
     return 0;
@@ -71,6 +74,7 @@ int main(){
 // 0
 // 0
 ```
+Diffrence between colon(:) and semicolon
 ```cpp
 #include <iostream>
 #include <vector>

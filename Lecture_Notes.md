@@ -2290,6 +2290,8 @@ int main() {
 ```
   ## 3) bitwise  ^ ----> XOR (exclusive OR)
          same bit then 0
+note : n ^ n = 0
+       n ^ 0 = n
 ```cpp
 #include <iostream> // for input/output
 using namespace std;

@@ -97,7 +97,7 @@ int main(){
 // e
 ```
 
-# Diffrence between colon(:) and semicolon
+# Diffrence between colon(:) and semicolon(;)
 
 ✅ : (Colon) → Used in Range-Based for Loop
 
@@ -135,14 +135,14 @@ Condition → i < 3
 Update → i++
 
  ✅ Used when you need more control (like skipping, indexing, etc.)
-
+```
 🔁 Visual Comparison
-Feature	      : (Colon)	                        ; (Semicolon)
-Loop Type	    Range-based	                     Classic
-Use Case	       Looping through a container easily	Full control over loop logic
-Syntax Example	 for (int x : vec)	               for (int i = 0; i < 3; i++)
-Works With	    Containers like vector, array	   Any numeric range / logic
-
+Feature	        : (Colon)	                           ; (Semicolon)
+Loop Type	     Range-based	                         Classic
+Use Case	        Looping through a container easily	 Full control over loop logic
+Syntax Example	  for (int x : vec)	                   for (int i = 0; i < 3; i++)
+Works With	     Containers like vector, array	       Any numeric range / logic
+```
 
 ✅ When to use which?
 Use : when you just want to access each element in a container

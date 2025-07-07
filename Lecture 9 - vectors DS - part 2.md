@@ -6,8 +6,8 @@ STL(Standard template library)
 
 #vector syntax
 
-1) vector<datatype> vector_name;
-   
+1) ```
+   vector <datatype> vector_name;
 ```cpp
 #include <iostream>
 #include <vector>//headerfile
@@ -19,7 +19,8 @@ int main(){
     return 0;
 }
 ```
-2) vector<datatype> vector_name = { val1, val2, val3, ...};
+2) ```
+   vector<datatype> vector_name = { val1, val2, val3, ...};
 ```cpp
 #include <iostream>
 #include <vector>
@@ -32,9 +33,8 @@ int main(){
 }
 ```
 
-3) vector<datatype> vector_name(size, value);
-
-
+3) ```
+   vector<datatype> vector_name(size, value);
 ```cpp
 #include <iostream>
 #include <vector>

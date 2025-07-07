@@ -289,3 +289,4 @@ int main(){
 // size = 3
 // capacity = 4
 ```
+136. single number (in leetcode)

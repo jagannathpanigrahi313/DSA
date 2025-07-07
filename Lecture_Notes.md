@@ -162,7 +162,7 @@ int main() {
 
 this operator needs two operand
 
-### i) ARITMETIC OPERATOR
+### 1) ARITMETIC OPERATOR
 ```cpp
 #include <iostream>
 using namespace std ;   
@@ -216,7 +216,7 @@ int main() {
   return 0;
 }
 ```
-### ii) RELATIONAL OPERATOR  --> give boolean value
+### 2) RELATIONAL OPERATOR  --> give boolean value
 ```cpp
 #include <iostream>
 using namespace std ;   
@@ -232,7 +232,7 @@ int main() {
   return 0;
 }
 ```
-### iii) LOGICAL OPERAIOR -->(1) OR (||)pipe operator 
+### 3) LOGICAL OPERAIOR -->(1) OR (||)pipe operator 
                       |----> any one true then true
                       |---->cout << (  ) || (  ) << endl;
 

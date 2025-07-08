@@ -12,7 +12,7 @@ _Time Complexity_ is baiscally the amount of **time taken/operations** as functi
 
 ![Screenshot from 2025-07-07 21-29-29](https://github.com/user-attachments/assets/06adc708-15d8-4fbb-b868-6ece544be9f1)
 
-worst case **scenaries/complexity** --> input size(n) ^^^
+worst case **scenaries / complexity** --> input size(n) ^^^
 
 best case --> 
 
@@ -28,4 +28,15 @@ best case -->
 
 ![Screenshot from 2025-07-08 15-36-18](https://github.com/user-attachments/assets/596fe5ac-9254-4d44-ad1c-0b88e3772548)
 
+code ouccupies space in two types:
+![Screenshot from 2025-07-08 15-54-16](https://github.com/user-attachments/assets/0588ce11-2849-4ee9-91e1-c144b8e4a7f9)
+
+EX 1 : we have imput : array[] and then we have to bring in ouutput : squareArray[]
+
+
+![Screenshot from 2025-07-08 16-03-12](https://github.com/user-attachments/assets/3db77165-34f8-4e5c-ac92-79cf33bf39e0)
+
+![Screenshot from 2025-07-08 16-25-06](https://github.com/user-attachments/assets/4306bdf9-fa9a-4319-a6ad-49af98bc995f)
+
+![Screenshot from 2025-07-08 16-17-34](https://github.com/user-attachments/assets/441460f4-a744-43bf-a81f-ed50f355eb27)
 

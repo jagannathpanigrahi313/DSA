@@ -290,3 +290,7 @@ int main(){
 // capacity = 4
 ```
 136. single number (in leetcode)
+
+H.W 1) Write a code of Linear search for vectors
+
+H.W 2) Write a reverse code on vectors in function write 

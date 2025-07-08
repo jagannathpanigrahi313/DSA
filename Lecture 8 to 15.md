@@ -817,3 +817,9 @@ int main(){
 H.W 1) Write a code of Linear search for vectors
 
 H.W 2) Write a reverse code on vectors in function write 
+
+# Lecture 10 - Kadane's Algorithm | Maximum Subarray Sum
+
+## Basics of subarray concept 
+
+subarray is a single part of conyinuos array

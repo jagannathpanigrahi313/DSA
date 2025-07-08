@@ -12,7 +12,7 @@ _Time Complexity_ is baiscally the amount of **time taken/operations** as functi
 
 ![Screenshot from 2025-07-07 21-29-29](https://github.com/user-attachments/assets/06adc708-15d8-4fbb-b868-6ece544be9f1)
 
-worst case scenaries --> input size(n) ^^^
+worst case **scenaries/complexity** --> input size(n) ^^^
 
 best case --> 
 

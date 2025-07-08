@@ -822,4 +822,8 @@ H.W 2) Write a reverse code on vectors in function write
 
 ## Basics of subarray concept 
 
-subarray is a single part of conyinuos array
+subarray is a single part of continuos array
+![Screenshot from 2025-07-08 20-42-53](https://github.com/user-attachments/assets/6ab558e4-3531-4ab3-888d-283b4e0fc45e)
+![Screenshot from 2025-07-08 20-44-51](https://github.com/user-attachments/assets/91e99c08-5085-429d-aaf0-c5a171c21ff4)
+![Screenshot from 2025-07-08 20-45-11](https://github.com/user-attachments/assets/61adeb55-7cd6-4cf0-880b-e7ec662ce075)
+![Screenshot from 2025-07-08 20-47-55](https://github.com/user-attachments/assets/4a2ccfde-7130-414f-83ac-268269c35cd1)

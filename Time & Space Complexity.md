@@ -42,8 +42,7 @@ EX 1 : we have imput : array[] and then we have to bring in ouutput : squareArra
 
 ![Screenshot from 2025-07-08 16-35-27](https://github.com/user-attachments/assets/7d2c1233-337a-4d47-9ae8-374e36d04346)
 # Common Time complexities
-1) O(n)
-used when no loop / no recursion we want
+## 1) O(1)---> used when no loop / no recursion we want
 
 ![Screenshot from 2025-07-08 16-42-23](https://github.com/user-attachments/assets/4ac105bc-3ecd-49da-b6c8-93ada97ad923)
 
@@ -53,4 +52,20 @@ SEcond case
 O(1)--->read as bego of 1 time
 ![Screenshot from 2025-07-08 16-42-44](https://github.com/user-attachments/assets/5dddea86-e644-4c08-80fd-aedfedd8bd5d)
 
+## 2) O(n) ---> linear time complexity 
 
+ By running the loop & adding the sum of two numbers 
+ By Moore's voting algorithm 
+ 
+![Screenshot from 2025-07-08 17-11-56](https://github.com/user-attachments/assets/e5eadce8-e6ae-49e5-9456-5e2ea73bda8a)
+
+![Screenshot from 2025-07-08 17-12-19](https://github.com/user-attachments/assets/9e8be6da-6f1f-4d86-a124-672e4a20ebc9)
+
+![Screenshot from 2025-07-08 17-12-44](https://github.com/user-attachments/assets/b457b82a-891d-4cec-b7d7-dc31a2855d5e)
+
+## 3) O(n^2)
+
+![Screenshot from 2025-07-08 17-25-02](https://github.com/user-attachments/assets/29661a9f-287b-4eba-b7dc-99050a008f6f)
+![Screenshot from 2025-07-08 17-35-18](https://github.com/user-attachments/assets/e7d16842-59f0-4c75-9043-e99ef08d38ea)
+# 4) O(n^3)
+![Screenshot from 2025-07-08 17-37-18](https://github.com/user-attachments/assets/1a7d7232-4f79-498f-9a9b-1f87d5aa0125)

@@ -1,3 +1,5 @@
+# Lecture 8 -Array Data Structure - Part 1
+
 **Data Structures(DS)** are basic structures which are used to store data Where there are many types of data
 Algorithm are steps/ process
 

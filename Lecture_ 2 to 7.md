@@ -2240,13 +2240,12 @@ if we know 10110 binary number is -ve then
 Q 1) ![Screenshot from 2025-07-02 22-44-11](https://github.com/user-attachments/assets/04df1d12-f22e-4e36-a074-a86e8f130005)
 
 H.W ) convert -12 to  Binary & reverse
-
+```
 (1) 1100
-
 (2) 01100
-
 (3) 10011(1's complement)
 (4)    +1
+   _______
     10100
 
  (10100)base2 = (-12)base10
@@ -2257,7 +2256,7 @@ H.W ) convert -12 to  Binary & reverse
 +    1
 ________
  01100  
-     
+  ```   
  # Lecture 7 - Bitwise operator
 
  ## 1) bitwise AND &---> similar to logical AND &&

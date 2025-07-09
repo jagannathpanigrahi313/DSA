@@ -827,3 +827,30 @@ subarray is a single part of continuos array
 ![Screenshot from 2025-07-08 20-44-51](https://github.com/user-attachments/assets/91e99c08-5085-429d-aaf0-c5a171c21ff4)
 ![Screenshot from 2025-07-08 20-45-11](https://github.com/user-attachments/assets/61adeb55-7cd6-4cf0-880b-e7ec662ce075)
 ![Screenshot from 2025-07-08 20-47-55](https://github.com/user-attachments/assets/4a2ccfde-7130-414f-83ac-268269c35cd1)
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+    int n= 5;
+    int arr[5] = {1,2,3,4,5};
+
+    for(int st=0; st<n ;st++){
+        for(int end=st; end<n ;end++){
+           for(int i=st;i<=end;i++){
+            cout << arr[i];
+           }
+            cout<< " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+// OUTPUT :
+// 1 12 123 1234 12345 
+// 2 23 234 2345 
+// 3 34 345 
+// 4 45 
+// 5 
+```

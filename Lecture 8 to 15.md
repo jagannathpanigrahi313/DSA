@@ -927,3 +927,17 @@ int main(){
 <img width="1920" height="1080" alt="Screenshot from 2025-07-10 17-48-33" src="https://github.com/user-attachments/assets/f3c05afc-c20d-4843-a4be-53022b494507" />
 
 53. Maximum Subarray(Leetcode)
+ ```
+  | Part          | Meaning                                                               |
+| ------------- | --------------------------------------------------------------------- |
+| `vector<int>` | A **dynamic array of integers**, like `[1, 2, 3, -4]`                 |
+| `&`           | **Pass-by-reference**, meaning it doesn’t make a copy of the array    |
+| `nums`        | The **name** of the input variable (you can use any name, like `arr`) |
+
+int maxSubArray(vector<int>& nums)
+this line means
+🗣️ “This function is called maxSubArray, takes one input which is a reference to a vector of integers named nums, and it returns an integer.”
+```
+
+# Lecture 11 - Majority Element 
+in

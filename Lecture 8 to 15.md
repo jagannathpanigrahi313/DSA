@@ -854,11 +854,11 @@ int main(){
 // 4 45 
 // 5 
 ```
-# Maximum Subarray sum 
+## Maximum Subarray sum 
 The maximum subarray does not have to include all elements.
 Sometimes excluding negative values gives a higher sum!
 
- ## By Brute Force Approach (O(n²))
+ ### By Brute Force Approach (O(n²))
 ```cpp
 #include <iostream>     // For standard input/output
 #include <climits>      // For INT_MIN constant
@@ -921,7 +921,7 @@ int main(){
 // OUTPUT :
 //max subarray sum = 15
 ```
-## using Kadane's Algorithm
+### using Kadane's Algorithm
 <img width="1920" height="1080" alt="Screenshot from 2025-07-10 17-31-57" src="https://github.com/user-attachments/assets/282302c6-9bc4-4165-bb25-dea789b1df36" />
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-10 17-48-33" src="https://github.com/user-attachments/assets/f3c05afc-c20d-4843-a4be-53022b494507" />

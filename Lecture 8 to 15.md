@@ -854,3 +854,76 @@ int main(){
 // 4 45 
 // 5 
 ```
+# Maximum Subarray sum 
+The maximum subarray does not have to include all elements.
+Sometimes excluding negative values gives a higher sum!
+
+ ## By Brute Force Approach (O(n²))
+```cpp
+#include <iostream>     // For standard input/output
+#include <climits>      // For INT_MIN constant
+
+using namespace std;
+
+int main() {
+    // Initialize array with 4 elements
+    int arr[4] = {-1, 7, 4, 5};
+    // Store the size of the array
+    int n = 4;
+
+    // Initialize maxsum with the smallest possible integer
+    // Ensures any subarray sum will be larger than this initially
+    int maxsum = INT_MIN;
+
+    // Outer loop: iterate through each possible starting index of subarray
+    for (int st = 0; st < n; st++) {
+        int cursum = 0;  // Reset current sum for this subarray start
+
+        // Inner loop: iterate through each possible ending index from 'st'
+        for (int end = st; end < n; end++) {
+            cursum += arr[end];  // Add current element to current sum
+
+            // Update maxsum if a higher subarray sum is found
+            maxsum = max(cursum, maxsum);
+        }
+    }
+
+    // Print the maximum subarray sum found
+    cout << "max subarray sum = " << maxsum << endl;
+
+    return 0;
+}
+// OUTPUT :
+//max subarray sum = 16
+```
+```cpp
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main(){
+    int arr[7] = {3,-4,5,4,-1, 7,-8};
+    int n= 7;
+
+    int maxsum = INT_MIN;
+
+    for(int st=0; st<n ; st++){
+        int cursum =0;
+        for(int end=st;end<n;end++){
+            cursum += arr[end];
+            maxsum =max(cursum,maxsum);
+        }
+    }
+    cout << "max subarray sum = " << maxsum << endl;
+
+    return 0;
+}
+// OUTPUT :
+//max subarray sum = 15
+```
+## using Kadane's Algorithm
+<img width="1920" height="1080" alt="Screenshot from 2025-07-10 17-31-57" src="https://github.com/user-attachments/assets/282302c6-9bc4-4165-bb25-dea789b1df36" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-10 17-48-33" src="https://github.com/user-attachments/assets/f3c05afc-c20d-4843-a4be-53022b494507" />
+
+53. Maximum Subarray(Leetcode)

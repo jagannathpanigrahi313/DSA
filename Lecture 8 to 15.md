@@ -940,4 +940,51 @@ this line means
 ```
 
 # Lecture 11 - Majority Element 
-in
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 14-47-50" src="https://github.com/user-attachments/assets/ff63d509-118a-47f0-821e-01dfa97d08bb" />
+(<img width="1920" height="1080" alt="Screenshot from 2025-07-11 14-24-02" src="https://github.com/user-attachments/assets/03d8ae29-fef9-4cfa-a322-b487a34503ea" />
+```cpp
+#include <iostream>  // for input/output operations
+#include <vector>    // to use the vector container
+using namespace std;
+
+// Function to find indices of two elements whose sum equals target
+vector<int> pairsum(vector<int> nums, int target) {
+    vector<int> ans;       // To store the answer indices
+    int n = nums.size();   // Get the size of the input vector
+
+    // Traverse all pairs using nested loops
+    for(int i = 0; i < n; i++) {
+        for(int j = i + 1; j < n; j++) {
+            // Check if the sum of nums[i] and nums[j] is equal to target
+            if (nums[i] + nums[j] == target) {
+                ans.push_back(i); // Store the index of the first number//Print ans[0], then print a comma, then print ans[1], then go to a new line.
+                ans.push_back(j); // Store the index of the second number
+                return ans;       // Return early as pair is found
+            }
+        }
+    }
+
+    // If no pair is found, return empty vector
+    return ans;
+}
+
+int main() {
+    // Input vector and target value
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 9;
+
+    // Call the function to get the pair indices
+    vector<int> ans = pairsum(nums, target);
+
+    // Check if a pair was found before printing
+    if (ans.size() >= 2) {
+        cout << ans[0] << "," << ans[1] << endl;  // Print the indices
+   // } else {
+   //     cout << "No valid pair found." << endl;   // If not found
+  //  }
+
+    return 0;  // End of main function
+}
+// OUTPUT :
+// 0, 1
+```

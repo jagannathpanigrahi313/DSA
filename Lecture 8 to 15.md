@@ -940,6 +940,7 @@ this line means
 ```
 
 # Lecture 11 - Majority Element 
+
 ## Pair sum
 ### by brute's Force approach O(n^2)
 <img width="1920" height="1080" alt="Screenshot from 2025-07-11 14-47-50" src="https://github.com/user-attachments/assets/ff63d509-118a-47f0-821e-01dfa97d08bb" />
@@ -992,4 +993,151 @@ int main() {
 // OUTPUT :
 // 0, 1
 ```
-### by 
+### by optimization/optimal approach
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 15-48-05" src="https://github.com/user-attachments/assets/6d596f2b-9b6d-4c05-98c1-54af96b3f96c" />
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> pairSum(vector<int> nums, int target) {
+    vector<int> ans;
+    int n = nums.size();
+    int i = 0, j = n - 1;
+
+    while (i < j) {
+        int pairSum = nums[i] + nums[j];
+        if (pairSum > target) {
+            j--;
+        } else if (pairSum < target) {
+            i++
+;
+        } else {
+            ans.push_back(i);
+            ans.push_back(j);
+            return ans;  // return immediately
+        }
+    }
+
+    return ans; // empty vector if not found
+}
+
+int main() {
+    vector<int> nums = {2, 7, 11, 15};  // ✅ MUST be sorted!
+    int target = 13;
+
+    vector<int> ans = pairSum(nums, target);
+    
+    if (!ans.empty()) { //This line means:ans is empty or not before accessing ans[0] and ans[1].
+        cout << ans[0] << ", " << ans[1] << endl;
+    } else {
+        cout << "No valid pair found" << endl;
+    }
+
+    return 0;
+}
+//OUTPUT:
+//0, 2
+```
+sorted array means first small numbers stored then big numbers
+
+## Majority Element 
+### By brute force approach O(n^2)
+    it checks how's frequency is more in array where ,M.E  > n/2 times n means no. of boxes in array
+```cpp  
+    class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size(); // Get the total number of elements in the array
+
+        // Loop through each element in the array
+        for (int val : nums) {
+            int freq = 0; // Initialize frequency counter for current element
+
+            // Count how many times 'val' appears in the array
+            for (int el : nums) {
+                if (el == val) {
+                    freq++; // Increment frequency if match is found
+                }
+            }
+
+            // If frequency is greater than half of the array size, return the element
+            if (freq > n / 2) {
+                return val; // Majority element found
+            }
+        }
+
+        // In case no majority element exists (though problem says one always exists)
+        return -1;
+    }
+};
+```
+### by optimization approach O(nlogn)
+    here we sort the array
+```cpp
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size(); // Get the total number of elements in the array
+
+        // Step 1: Sort the array
+        // Majority element will always be in the middle after sorting
+        sort(nums.begin(), nums.end());
+
+        // Step 2: Count frequencies
+        int freq = 1;             // Count of current element
+        int ans = nums[0];        // Initialize answer with first element
+
+        for (int i = 1; i < n; i++) {
+            // If current element is same as previous, increment frequency
+            if (nums[i] == nums[i - 1]) {
+                freq++;
+            } else {
+                // If not same, reset frequency count to 1
+                freq = 1;
+                ans = nums[i];
+            }
+
+            // If frequency crosses n/2, return the element
+            if (freq > n / 2) {
+                return ans;
+            }
+        }
+
+        // For LeetCode, majority is always guaranteed, so return ans
+        return ans;
+    }
+};
+```
+### by Moore's voting algorithm 
+```cpp
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+       int freq = 0, ans = 0;
+
+    for(int i=0;i< nums.size();i++) {
+        if (freq == 0){
+            ans = nums[i];
+        }
+        if (ans == nums [i]){
+            freq++;
+        }else{
+             freq--;
+        }
+    }
+here you have to put when we dont know ans i.e majority element will exist or not
+ int count = 0;
+    for(int val : nums){
+        if(val == ans){
+            count++;
+        }
+    }
+
+    if(count > n/2) => ans
+    else => -1 
+    return ans;
+//--------------
+    }
+};
+```

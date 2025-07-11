@@ -1217,4 +1217,25 @@ EX: Sorting Algorihm
 ## 4) O(n^3)
 ![Screenshot from 2025-07-08 17-37-18](https://github.com/user-attachments/assets/1a7d7232-4f79-498f-9a9b-1f87d5aa0125)
 
-## 5) O(logn)
+## 5) O(logn) - in any algorithm if you see any value is decreasing then it takes O(logn)time
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 18-16-17" src="https://github.com/user-attachments/assets/5f38b627-b3b4-4ca2-919c-f7e76e62f6b9" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 18-15-26" src="https://github.com/user-attachments/assets/e56f1dc6-7832-489f-8195-3287bfb4a1c4" />
+
+## 6) O(nlogn)
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 18-26-52" src="https://github.com/user-attachments/assets/ca55a9ca-ea4d-47f8-866d-61788d1f95a7" />
+
+## 7) Exponential time complexity (2^n),(3^n),(4^n),(5^n),....
+     it is a worst time 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 18-26-40" src="https://github.com/user-attachments/assets/e0abf65d-3485-4eb4-a789-0e93b8bde0d1" />
+
+## 8) O(n!) - it is more worst then (7)
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 18-36-46" src="https://github.com/user-attachments/assets/883218bc-9168-4759-bbe3-92520940feba" />
+
+note : Recursion means a function calls itself, directly or indirectly.
+
+## solving 
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 19-02-06" src="https://github.com/user-attachments/assets/6effc5be-eac6-4898-aff1-aee0fce4abde" />
+

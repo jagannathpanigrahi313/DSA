@@ -940,8 +940,12 @@ this line means
 ```
 
 # Lecture 11 - Majority Element 
+## Pair sum
+### by brute's Force approach O(n^2)
 <img width="1920" height="1080" alt="Screenshot from 2025-07-11 14-47-50" src="https://github.com/user-attachments/assets/ff63d509-118a-47f0-821e-01dfa97d08bb" />
-(<img width="1920" height="1080" alt="Screenshot from 2025-07-11 14-24-02" src="https://github.com/user-attachments/assets/03d8ae29-fef9-4cfa-a322-b487a34503ea" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-11 14-24-02" src="https://github.com/user-attachments/assets/03d8ae29-fef9-4cfa-a322-b487a34503ea" />
+
 ```cpp
 #include <iostream>  // for input/output operations
 #include <vector>    // to use the vector container
@@ -988,3 +992,4 @@ int main() {
 // OUTPUT :
 // 0, 1
 ```
+### by 

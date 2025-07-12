@@ -1236,6 +1236,9 @@ EX: Sorting Algorihm
 note : Recursion means a function calls itself, directly or indirectly.
 
 ## solving 
-
+1)
 <img width="1920" height="1080" alt="Screenshot from 2025-07-11 19-02-06" src="https://github.com/user-attachments/assets/6effc5be-eac6-4898-aff1-aee0fce4abde" />
+<img width="1920" height="1080" alt="Screenshot from 2025-07-12 11-59-39" src="https://github.com/user-attachments/assets/a1943c99-f8c3-4ad2-b656-275f2b7ea256" />
 
+2)
+<img width="1920" height="1080" alt="Screenshot from 2025-07-12 11-55-45" src="https://github.com/user-attachments/assets/f3405ee2-6162-4d69-985a-fd0afe5e5c3d" />

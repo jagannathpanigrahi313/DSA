@@ -1,81 +1,142 @@
-# DSA Notes Shraddha Mam
+# 📘 DSA Notes – Shraddha Mam
 
-# Introduction
+---
 
-To run a c++ file through terminal in linux
-<pre>g++ filename.cpp -o filename && ./filename</pre>
-press ctrl + / to put comment in more line one time
+## 📌 Introduction
 
-;(semicolumn)  it is a statement terminalator like a Fullstop (.) in sentence
+### ✅ Run a C++ File in Linux Terminal
 
-0 OR 1 is a binary number
+```bash
+g++ filename.cpp -o filename && ./filename
+```
+> 💡 Select and then Press `Ctrl + /` to comment multiple lines at once (in supported editors).
 
-any one binary number is of 1 bit
-        8 bits = 1 byte
+---
 
-variables are containersto store data 
-          it can be letter/word But word must not stand from any digit
+### 📍 Semicolon `;`
 
-*  diffrence between float and double
-| You write           | Works? | Good Practice? | Why?                                                                       |
-| ------------------- | ------ | -------------- | -------------------------------------------------------------------------- |
-| `float a = 3.14;`   | ✅      | ❌              | 3.14 is a `double`, not exact match                                        |
-| `float a = 3.14f;`  | ✅      | ✅              | `f` matches float exactly                                                  |
-| `double b = 3.14;`  | ✅      | ✅              | `3.14` is already `double`                                                 |
-| `double b = 3.14f;` | ✅      | ❌              | You’re giving a float to a double (less precise → more precise, not ideal) |
+Acts like a **full stop (.)** in a sentence. It **terminates a statement**.
 
+---
 
-Q  diffrence between \n and << end l
+### 🔢 Binary Basics
 
-#include <iostream>             | OUTPUT: hello world 
-using namespace std;            |         jaga 
-                                |
-int main() {                    | if not put \n then output is 
-                                |                              hello worldjaga
-    cout << "hello world\n";    |
-    cout << "jaga"<<endl;       | NOTE: \n we put only between this "  " only
-                                |
- return 0;                      |
-}                               |
+- `0` or `1` → Binary number
+- 1 binary digit = **1 bit**
+- **8 bits = 1 byte**
 
+---
 
-syntax --> means Rules of c++
+### 📦 Variables
 
-An operand is a value or variable on which an operator works.
-EX: a + b here a and b are operand
---------------------------------------------------------------------------
-1. Single Quotes ' '
-Used for: Single characters
-Data type: char
-Size: 1 byte
+Variables are **containers** to store data.
 
-Example: 'A', 'z', '1', '#'
+- Can be a **letter** or **word**
+- ❌ Must not start with a digit
 
-ASCII: Yes, 'A' = 65, 'a' = 97, etc.
+---
 
-📌 Use ' ' when you need:
-A single letter (e.g., char ch = 'A';)
+## 🔍 Difference Between `float` and `double`
 
-ASCII value calculations
-Character comparisons (like if (ch >= 'A' && ch <= 'Z'))
+| You Write            | ✅ Works? | 👍 Good Practice? | 💬 Why?                                                                          |
+|----------------------|----------|-------------------|----------------------------------------------------------------------------------|
+| `float a = 3.14;`    | ✅        | ❌                 | `3.14` is a `double`, not an exact match                                         |
+| `float a = 3.14f;`   | ✅        | ✅                 | `f` makes it a float exactly                                                     |
+| `double b = 3.14;`   | ✅        | ✅                 | `3.14` is already a `double`                                                    |
+| `double b = 3.14f;`  | ✅        | ❌                 | Giving a `float` to a `double` (less precise → more precise, not ideal)         |
 
-2. Double Quotes " "`
-Used for: Strings of characters
-Data type: const char* (or string)
-Size: More than 1 byte (depends on string length)
+---
 
-Example: "A", "apple", "123", " " (even one letter is a string)
-Ends with null character (\0)
+## 🔄 Difference Between `\n` and `endl`
 
-📌 Use " "` when you need:
+### 💡 Code Example
 
-A word or sentence (e.g., string name = "Alice";)
-Printing full text (e.g., cout << "Hello";)
-Comparing text (e.g., if (name == "Admin"))
-               + is operator
-____________________________________________________________________________
-345 % 10 = 5 → last digit  
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "hello world\n";
+    cout << "jaga" << endl;
+    return 0;
+}
+```
+
+### 🧠 Output
+
+```
+hello world
+jaga
+```
+
+> 🔸 If you don’t use `\n`, output = `helloworldjaga`  
+> 🔸 `\n` is used **inside quotes (" ")**  
+> 🔸 `endl` is used to insert newline and **flush output buffer**
+
+---
+
+## ⚙️ Syntax
+
+"**Syntax**" means the **rules** of C++ — how code must be written to be valid.
+
+---
+
+## 🧠 Operands & Operators
+
+An **operand** is a value/variable on which an operator works.
+
+🧾 Example: `a + b` → `a` and `b` are operands, `+` is the operator
+
+---
+
+## 🔤 Quotes in C++
+
+### 1️⃣ Single Quotes `' '`
+
+- Used for: **Single characters**
+- Data type: `char`
+- Size: 1 byte
+- Examples: `'A'`, `'z'`, `'1'`, `'#'`
+
+📌 Use `' '` when:
+- You need a **single character** → `char ch = 'A';`
+- ASCII calculations or comparisons → `if (ch >= 'A' && ch <= 'Z')`
+
+---
+
+### 2️⃣ Double Quotes `" "`
+
+- Used for: **Strings**
+- Data type: `const char*` or `string`
+- Size: More than 1 byte (ends with `\0`)
+- Examples: `"A"`, `"apple"`, `"123"`, `" "`
+
+📌 Use `" "` when:
+- You need a **word/sentence** → `string name = "Alice";`
+- Outputting text → `cout << "Hello";`
+- Comparing strings → `if (name == "Admin")`
+
+---
+
+## ➕ Modulo and Division Example
+
+Extract digits of a number:
+
+```
+345 % 10 = 5   → last digit  
 345 / 10 = 34  
-34 % 10 = 4 → next digit  
+34 % 10 = 4    → next digit  
 34 / 10 = 3  
-3 % 10 = 3 → next digit  
+3 % 10 = 3     → next digit
+```
+
+---
+
+## ⏱️ Time Complexity
+
+| Method                | Time Complexity |
+|-----------------------|-----------------|
+| Normal multiplication | O(n)            |
+| Binary Exponentiation | O(log n)        |
+
+---

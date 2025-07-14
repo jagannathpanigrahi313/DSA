@@ -1258,10 +1258,53 @@ we had studied in time complexity lesson that any code will succesfully submited
 If n becomes very large, like 2^31 (a common upper limit for a 32-bit signed integer), this method becomes too slow.
 You can only do about 10^8 operations in 1 second (typical competitive programming limit).
 So, O(n) time will take too long and lead to TLE (Time Limit Exceeded).
-
-✅ Better Way: Binary Exponentiation (coming next ):
-
+---
+✅ Better Way: Binary Exponentiation :-->it does not uses loop for i = 0 to n
+it Uses:
+x *= x → squares the base
+n /= 2 → halves the exponent
+if (n % 2 == 1) → multiplies result when needed
+Time: O(log n)
+Fast for large powers (like x^1000000000)
+---
 It reduces time complexity from O(n) to O(log n).
 Works fast even when n is very large like 2^31
+---
+pow(x, n)--->Function call to compute power
+xⁿ or "compute x to the power n"--->Mathematical description
+---
+
+50.Pow(x,n) - leetcode 
+by Binary Exponentiation method
+```cpp
+class Solution {
+public:
+    double myPow(double x, int n) {
+        if (n == 0) return 1.0;//corner cases(if conditional)**optional**
+        if(x == 0) return 0.0;
+        if (x == 1) return 1.0;
+        if (x = -1 && n%2 == 0) return 1.0;
+        if (x = -1 && n%2 != 0) return -1.0;
 
 
+        long binform = n;
+        double ans = 1;
+
+        // handle negative exponent
+        if(binform < 0){
+            x = 1 / x;
+            binform = -binform; // convert to positive
+        }
+         //handle positve exponent
+        while(binform > 0){
+            if(binform % 2 == 1){
+                ans *= x;
+            }
+            x *= x;//squares of base
+            binform /= 2;//halves the exponeint 
+        }
+
+        return ans;
+    }
+};
+```

@@ -1273,6 +1273,10 @@ Works fast even when n is very large like 2^31
 pow(x, n)--->Function call to compute power
 xⁿ or "compute x to the power n"--->Mathematical description
 ---
+<img width="1920" height="1080" alt="Screenshot from 2025-07-13 17-53-20" src="https://github.com/user-attachments/assets/57c02653-e5c2-4c0b-a3ef-c8eefdcdd36a" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-13 17-54-05" src="https://github.com/user-attachments/assets/462848d1-f4fd-4bc1-b212-8f3f6968dc04" />
+<img width="1920" height="1080" alt="Screenshot from 2025-07-13 18-02-21" src="https://github.com/user-attachments/assets/2c41c051-2fc1-48a7-9cee-5e2ad0132877" />
 
 50.Pow(x,n) - leetcode 
 by Binary Exponentiation method
@@ -1308,3 +1312,50 @@ public:
     }
 };
 ```
+<img width="1920" height="1080" alt="Screenshot from 2025-07-14 15-03-30" src="https://github.com/user-attachments/assets/38464545-0f0e-4feb-b715-2ab54770d96f" />
+121. Best Time to Buy and Sell Stock-leetcode 
+```cpp
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int maxProfit = 0, bestBuy = prices[0];
+ 
+        for (int i = 1;i< prices.size();i++){
+            if(prices[i] > bestBuy){
+                maxProfit = max(maxProfit ,prices[i] - bestBuy);
+            }
+            bestBuy = min (bestBuy, prices [i]); 
+        }
+        return maxProfit;
+    }
+};
+```
+# Lecture 14 - Container with Most Water Problem
+## by Brute Approach
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-14 18-29-32" src="https://github.com/user-attachments/assets/63e834e2-941f-460c-9bbf-269f08886ebc" />
+
+```cpp
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int maxWater = 0;
+
+        for(int i = 0;i<height.size();i++){
+            for(int j = i+1;j<height.size();j++){
+            int w = j-i;
+            int ht = min(height[i], height[j]);
+            int currWater = w * ht;
+            
+            maxWater = max(maxWater, currWater);
+            }
+        }
+        return maxWater;
+    }
+};
+```
+<img width="1920" height="1080" alt="Screenshot from 2025-07-14 19-00-33" src="https://github.com/user-attachments/assets/a853ec51-8587-4457-be37-f06cb312afae" />
+
+we need n <= 10^5 therefore tle will come
+
+## by two pointer approach

@@ -1252,13 +1252,14 @@ note : Recursion means a function calls itself, directly or indirectly.
 # Lecture 13 - Buy and Sell Stock Problem and Pow(X,N) Power exponential Problem - Leetcode 
 
 <img width="1920" height="1080" alt="edffbc1d-19ab-4691-a05b-0d63ce7de6b6" src="https://github.com/user-attachments/assets/c34073f2-1b9e-456f-a264-dd1645663c0c" />
+
 ```
 we had studied in time complexity lesson that any code will succesfully submited ony when ther 10^8 operation will be done 
 
 If n becomes very large, like 2^31 (a common upper limit for a 32-bit signed integer), this method becomes too slow.
 You can only do about 10^8 operations in 1 second (typical competitive programming limit).
 So, O(n) time will take too long and lead to TLE (Time Limit Exceeded).
----
+----------------------------------------------------------------------------------------
 ✅ Better Way: Binary Exponentiation :-->it does not uses loop for i = 0 to n
 it Uses:
 x *= x → squares the base
@@ -1266,13 +1267,14 @@ n /= 2 → halves the exponent
 if (n % 2 == 1) → multiplies result when needed
 Time: O(log n)
 Fast for large powers (like x^1000000000)
----
+---------------------------------------------------------------------------------------------
 It reduces time complexity from O(n) to O(log n).
 Works fast even when n is very large like 2^31
----
+---------------------------------------------------------------------------------------
 pow(x, n)--->Function call to compute power
 xⁿ or "compute x to the power n"--->Mathematical description
----
+------------------------------------------------------------------------------------------
+
 ```
 <img width="1920" height="1080" alt="Screenshot from 2025-07-13 17-53-20" src="https://github.com/user-attachments/assets/57c02653-e5c2-4c0b-a3ef-c8eefdcdd36a" />
 

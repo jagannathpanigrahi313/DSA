@@ -994,7 +994,9 @@ int main() {
 // 0, 1
 ```
 ### by optimization/optimal approach
+
 <img width="1920" height="1080" alt="Screenshot from 2025-07-11 15-48-05" src="https://github.com/user-attachments/assets/6d596f2b-9b6d-4c05-98c1-54af96b3f96c" />
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -1021,7 +1023,9 @@ vector<int> pairSum(vector<int> nums, int target) {
 
     return ans; // empty vector if not found
 }
+```
 
+```cpp
 int main() {
     vector<int> nums = {2, 7, 11, 15};  // ✅ MUST be sorted!
     int target = 13;
@@ -1039,6 +1043,7 @@ int main() {
 //OUTPUT:
 //0, 2
 ```
+
 sorted array means first small numbers stored then big numbers
 
 ## Majority Element 
@@ -1137,7 +1142,7 @@ here you have to put when we dont know ans i.e majority element will exist or no
     if(count > n/2) => ans
     else => -1 
     return ans;
-//--------------
+
     }
 };
 ```
@@ -1283,6 +1288,7 @@ xⁿ or "compute x to the power n"--->Mathematical description
 
 50.Pow(x,n) - leetcode 
 by Binary Exponentiation method
+
 ```cpp
 class Solution {
 public:
@@ -1318,6 +1324,7 @@ public:
 <img width="1920" height="1080" alt="Screenshot from 2025-07-14 15-03-30" src="https://github.com/user-attachments/assets/38464545-0f0e-4feb-b715-2ab54770d96f" />
 121. Best Time to Buy and Sell Stock-leetcode 
 ```cpp
+
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -1332,6 +1339,7 @@ public:
         return maxProfit;
     }
 };
+
 ```
 # Lecture 14 - Container with Most Water Problem
 ## by Brute Approach
@@ -1339,6 +1347,7 @@ public:
 <img width="1920" height="1080" alt="Screenshot from 2025-07-14 18-29-32" src="https://github.com/user-attachments/assets/63e834e2-941f-460c-9bbf-269f08886ebc" />
 
 ```cpp
+
 class Solution {
 public:
     int maxArea(vector<int>& height) {

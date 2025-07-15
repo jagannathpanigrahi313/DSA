@@ -1357,6 +1357,6 @@ public:
 ```
 <img width="1920" height="1080" alt="Screenshot from 2025-07-14 19-00-33" src="https://github.com/user-attachments/assets/a853ec51-8587-4457-be37-f06cb312afae" />
 
-we need n <= 10^5 therefore tle will come
+we need n <= 10^5 therefore this will come
 
 ## by two pointer approach

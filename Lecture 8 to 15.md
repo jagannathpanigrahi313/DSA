@@ -1321,10 +1321,12 @@ public:
     }
 };
 ```
-<img width="1920" height="1080" alt="Screenshot from 2025-07-14 15-03-30" src="https://github.com/user-attachments/assets/38464545-0f0e-4feb-b715-2ab54770d96f" />
-121. Best Time to Buy and Sell Stock-leetcode 
-```cpp
 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-14 15-03-30" src="https://github.com/user-attachments/assets/38464545-0f0e-4feb-b715-2ab54770d96f" />
+
+121. Best Time to Buy and Sell Stock-leetcode
+     
+```cpp
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -1342,6 +1344,7 @@ public:
 
 ```
 # Lecture 14 - Container with Most Water Problem
+
 ## by Brute Approach
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-14 18-29-32" src="https://github.com/user-attachments/assets/63e834e2-941f-460c-9bbf-269f08886ebc" />

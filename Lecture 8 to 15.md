@@ -1403,7 +1403,57 @@ public:
 };
 ```
 # Lecture - 15
-## Product of Array Except Self
+## 238) Product of Array Except Self-leetcode
 ### by Brute force approach 
 
+by using division operotor 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-16 13-59-17" src="https://github.com/user-attachments/assets/9db8b88a-fadc-48d0-bc0b-fc15f1aeaf1d" />
 
+without using division operator
+
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> ans(n,1);
+
+        for(int i = 0; i<n ; i++){
+            for(int j = 0; j<n ; j++){
+                if(i != j){
+                    ans[i] *= nums[j];
+                }
+            }
+        }
+        return ans;
+    }
+};
+```
+
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> ans(n,1);
+
+        for(int i = 0; i<n ; i++){
+           int prod = 1;
+            for(int j = 0; j<n ; j++){
+                if(i != j){
+                    prod *= nums[j];
+                }
+            }
+            ans[i] = prod;
+        }
+        return ans;
+    }
+};
+```
+
+
+| Pattern                        | Time Complexity |
+| ------------------------------ | --------------- |
+| One loop                 →     | O(n)            |
+| Nested loop (2 levels)   →     | O(n²)           |
+| Loop inside loop inside loop → | O(n³)           |

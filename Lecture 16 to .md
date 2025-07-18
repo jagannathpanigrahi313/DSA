@@ -197,7 +197,7 @@ int main() {
 // output:
 // inside main fnx :20
 ```
-alias (&)---> a ke liye hi ham dusra variable b use kar rahai hai but memory ke andar hum same location ka baat kar rahe hai 
+alias (&)---> a ke liye hi ham dusra variable b use kar rahai hai BUT memory ke andar hum same location ka baat kar rahe hai 
 ```cpp
 #include <iostream>
 using namespace std;
@@ -220,5 +220,82 @@ int main() {
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 17-50-02" src="https://github.com/user-attachments/assets/3d12e234-88eb-4ddd-9965-d1735e5ae186" />
 
-so pass by refrence in c++ is onlu done through pointers/alias
+so pass by refrence in c++ is only done through pointers/alias
 
+## Array Pointers 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-18 18-12-17" src="https://github.com/user-attachments/assets/100a9550-52cd-4ee2-b45c-c8cc354a619c" />
+
+```cpp
+#include <iostream>
+using namespace std;
+
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+//    int a = 15, b = 15;
+//    int* ptr = &a;
+//    ptr = &b;
+
+//    int a = 15;
+//    arr = &b;here arr is modifiable value means not changeable therefore arr is a constant variable
+
+   cout << arr << endl;//pointer
+   cout << *arr << endl;//pointer => 1
+    return 0;
+}
+// output:
+// 0x7ffc6f674670
+// 1
+```
+
+## Pointer Arithmtic
+### increment(++)/decrement(--)
+
+```cpp
+#include <iostream>
+using namespace std;
+
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int a = 10;
+   int* ptr = &a;
+
+   cout << ptr << endl;
+   ptr++;//increment of +1 BUT of int memory
+   cout << ptr << endl;//+4 byte
+   ptr--;
+   cout << ptr << endl;//-4 byte
+    return 0;
+}
+// output:
+// 0x7fffad7a1064
+// 0x7fffad7a1068
+// 0x7fffad7a1064
+```
+### Add/ Subtract number
+```cpp
+#include <iostream>
+using namespace std;
+
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int a = 10;
+   int* ptr = &a;
+
+   cout << ptr << endl;
+   ptr = ptr + 2;//2int => 8B
+   cout << ptr << endl;//+8 byte
+   ptr = ptr - 2;
+   cout << ptr << endl;
+    return 0;
+}
+// output:
+// 0x7fffc5c2daa4
+// 0x7fffc5c2daac
+// 0x7fffc5c2daa4
+```

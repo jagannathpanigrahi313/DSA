@@ -152,3 +152,73 @@ int main() {
 ```
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 16-50-55" src="https://github.com/user-attachments/assets/f8a511d5-d1e8-4cbc-bff7-e383d3a0c529" />
+
+## Pass by refernce 
+whenever a function has any parameter it can be - pass by value / reference
+```cpp
+#include <iostream>
+using namespace std;
+
+void changeA(int a){//pass by val
+    a = 20;
+}
+
+int main() {
+    int a = 10;
+
+    changeA(a);
+
+   cout << "inside main fnx :" << a << endl;//20
+    return 0;
+}
+// output:
+// inside main fnx :10
+```
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-18 17-28-48" src="https://github.com/user-attachments/assets/b91a087e-3bc5-4ddb-b586-1be15201d720" />
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void changeA(int* ptr){//pass by reference using pointers
+    *ptr = 20;
+}
+
+int main() {
+    int a = 10;
+    changeA(&a);
+
+ 
+   cout << "inside main fnx :" << a << endl;//20
+ 
+    return 0;
+}
+// output:
+// inside main fnx :20
+```
+alias (&)---> a ke liye hi ham dusra variable b use kar rahai hai but memory ke andar hum same location ka baat kar rahe hai 
+```cpp
+#include <iostream>
+using namespace std;
+
+void changeA(int& b){//pass by refrence using alias
+    b = 20;
+}
+
+int main() {
+    int a = 10;
+
+    changeA(a);
+
+   cout << "inside main fnx :" << a << endl;//20
+    return 0;
+}
+// output:
+// inside main fnx :20
+```
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-18 17-50-02" src="https://github.com/user-attachments/assets/3d12e234-88eb-4ddd-9965-d1735e5ae186" />
+
+so pass by refrence in c++ is onlu done through pointers/alias
+

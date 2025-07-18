@@ -1491,7 +1491,8 @@ public:
     }
 };
 ```
-therefore o bring space compextiy 
+therefore to bring space compextiy 
+
 so we here first multiply then we will not make any variable i.e extra space complexity will not be used 
 ```cpp
 class Solution {

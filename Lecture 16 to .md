@@ -122,5 +122,33 @@ int main() {
 ### NULL Pointer
 
 ```cpp
+#include <iostream>
+using namespace std;
 
+int main() {
+
+   int* ptr  ;//int** ptr;
+              //int* ptr = NULL;
+ 
+   cout << ptr << endl;
+ 
+    return 0;
+}
+// output:0
 ```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int* ptr  ;//int** ptr;
+              //int* ptr = NULL;
+ 
+   cout << *ptr << endl;//output : Segmentation fault (core dumped)
+ 
+    return 0;
+}
+```
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-18 16-50-55" src="https://github.com/user-attachments/assets/f8a511d5-d1e8-4cbc-bff7-e383d3a0c529" />

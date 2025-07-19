@@ -485,7 +485,7 @@ int main() {
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-49-43" src="https://github.com/user-attachments/assets/55631100-d282-4d24-8cdc-af5294a43afe" />
 
 in linear search we have to use 10 steps 
-but in binary search we have to use only 3 steps 
+BUT in binary search we have to use only 3 steps 
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-53-23" src="https://github.com/user-attachments/assets/52e659ad-5277-40d4-8987-30518239fe35" />
 
@@ -563,3 +563,11 @@ int main() {
    return 0;
 }
 ```
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-42-38" src="https://github.com/user-attachments/assets/b0cacff5-9012-437d-8509-ecca14b578c3" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-43-56" src="https://github.com/user-attachments/assets/0f5943f9-51c6-4804-96e4-1157a03775dd" />
+
+logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equal hota hai
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-48-17" src="https://github.com/user-attachments/assets/88dd7379-901a-4720-9953-81ca7c1e123d" />
+
+

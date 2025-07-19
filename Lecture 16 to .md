@@ -479,3 +479,87 @@ int main() {
 ```
 # Lecture 17 - Binary search algorithm
 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-01-30" src="https://github.com/user-attachments/assets/c52d2ed4-4b05-4796-b51b-0510116b37e4" />
+
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-49-43" src="https://github.com/user-attachments/assets/55631100-d282-4d24-8cdc-af5294a43afe" />
+
+in linear search we have to use 10 steps 
+but in binary search we have to use only 3 steps 
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-53-23" src="https://github.com/user-attachments/assets/52e659ad-5277-40d4-8987-30518239fe35" />
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int binarysearch(vector<int> arr, int tar){//Iterative code
+    int st=0, end=arr.size()-1;
+
+    while(st <= end){
+         int mid = (st + end) /2;
+
+         if(tar > arr[mid]){
+            st = mid+1;
+         }else if(tar < arr[mid]) {
+                 end = mid - 1;
+         }else{
+               return mid;
+         }
+    }
+    return -1;
+}
+int main() {
+    vector<int> arr1 = {-1,0,3,4,5,9,12};//odd
+    int tar1 = 12;
+
+    cout << binarysearch(arr1,tar1) << endl;
+
+    vector<int> arr2 = {-1,0,3,4,5,9,12};//even
+    int tar2 = 4;
+
+    cout << binarysearch(arr2,tar2) << endl;
+
+   return 0;
+}
+```
+optimizaton of code
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-29-03" src="https://github.com/user-attachments/assets/39b13723-9fe1-475d-a053-336474bfbbde" />
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int binarysearch(vector<int> arr, int tar){//Iterative code
+    int st=0, end=arr.size()-1;
+
+    while(st <= end){
+         int mid = st + (end-st) /2;//optimization in code
+
+         if(tar > arr[mid]){
+            st = mid + 1;//2nd half
+         }else if(tar < arr[mid]) {
+                 end = mid - 1;//1st half
+         }else{
+               return mid;
+         }
+    }
+    return -1;
+}
+int main() {
+    vector<int> arr1 = {-1,0,3,4,5,9,12};//odd
+    int tar1 = 12;
+
+    cout << binarysearch(arr1,tar1) << endl;
+
+    vector<int> arr2 = {-1,0,3,4,5,9,12};//even
+    int tar2 = 4;
+
+    cout << binarysearch(arr2,tar2) << endl;
+
+   return 0;
+}
+```

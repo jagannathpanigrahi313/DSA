@@ -563,7 +563,7 @@ int main() {
    return 0;
 }
 ```
-## Binary search by time complexity
+### Binary search by time complexity
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-42-38" src="https://github.com/user-attachments/assets/b0cacff5-9012-437d-8509-ecca14b578c3" />
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-43-56" src="https://github.com/user-attachments/assets/0f5943f9-51c6-4804-96e4-1157a03775dd" />
@@ -571,4 +571,4 @@ int main() {
 logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equal hota hai
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-48-17" src="https://github.com/user-attachments/assets/88dd7379-901a-4720-9953-81ca7c1e123d" />
 
-### Bina
+### Recursive Binary search 

@@ -8,8 +8,13 @@ hexadecimal - 16digits -(0 -9)  (a,b,c,d,e,f)
 
 &(ampersand) ---> bitwise AND operator
 &variable ---> Address of operator(used to give address of a variable)
+& ---> used in alias
+
 && ---> Logical and operotor
 
+* ---> used to mutiply
+* ---> used to derefrence  and find out the values at a particular memory addresss
+  
 ```cpp
 #include <iostream>
 using namespace std;
@@ -248,7 +253,26 @@ int main() {
 // 0x7ffc6f674670
 // 1
 ```
+```cpp
+#include <iostream>
+using namespace std;
 
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   cout << *arr << endl;//1
+   cout << *(arr+1) << endl;//2
+   cout << *(arr+2) << endl;//3
+   cout << *(arr+3) << endl;//4
+    return 0;
+}
+// output:
+// 1
+// 2
+// 3
+// 4
+```
 ## Pointer Arithmtic
 ### increment(++)/decrement(--)
 
@@ -299,3 +323,159 @@ int main() {
 // 0x7fffc5c2daac
 // 0x7fffc5c2daa4
 ```
+
+we cannot add two pointer in c++ but subtract
+### subtract pointer
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 17-14-17" src="https://github.com/user-attachments/assets/f24952df-a3af-4146-bd06-31fbc167dea6" />
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int* ptr2;//100
+   int* ptr1 = ptr2 + 2;//108
+
+   cout << ptr1 - ptr2 << endl;//2
+    return 0;
+}
+// output:
+// 2
+```
+
+### compare the pointers
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int* ptr1;//uninitialized pointer
+   int* ptr2;//uninitialized pointer
+
+   cout << ptr1 << endl;//therfore print garbage value / error comes
+   cout << ptr2 << endl;//therfore print garbage value / error comes
+
+   cout << (ptr1 < ptr2) << endl;
+   return 0;
+}
+// output:
+// adress
+// adress
+// 1 or 0
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int* ptr1 = &arr[0];//
+   int* ptr2 = &arr[2];//
+
+   cout << ptr1 << endl;
+   cout << ptr2 << endl;
+
+   cout << (ptr1 < ptr2) << endl;
+   return 0;
+}
+// output:
+// 0x7ffecdccc650
+// 0x7ffecdccc658
+// 1
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int x = 10;
+   int y = 20;
+   int* ptr1 = &x;
+   int* ptr2 = &y;
+
+   cout << ptr1 << endl;
+   cout << ptr2 << endl;
+
+   cout << (ptr2 < ptr1) << endl;
+   return 0;
+}
+// output:
+// 0x7ffeb1c888d8
+// 0x7ffeb1c888dc
+// 0
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int x = 10;
+   int y = 20;
+   int* ptr1 = &x;
+   int* ptr2 = ptr1;
+
+   cout << ptr1 << endl;
+   cout << ptr2 << endl;
+
+   cout << (ptr2 == ptr1) << endl;
+   return 0;
+}
+// output:
+// 0x7fff59467228
+// 0x7fff59467228
+// 1
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {1,2,3,4,5};
+
+   int x = 10;
+   int y = 20;
+   int* ptr1 = &x;
+   int* ptr2 = ptr1;
+
+   cout << ptr1 << endl;
+   cout << ptr2 << endl;
+
+   cout << (ptr2 != ptr1) << endl;
+   return 0;
+}
+// output:
+// 0x7ffd546ecb48
+// 0x7ffd546ecb48
+// 0
+```
+Q )predict output
+<img width="1920" height="1080" alt="Screenshot from 2025-07-19 17-55-31" src="https://github.com/user-attachments/assets/64d4b2a6-f914-4400-86bf-9adda8f420ba" />
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[] = {10,20,30,40};
+   int* ptr = arr;
+
+   cout << *(ptr+1) << endl;//20
+   cout << *(ptr+3) << endl;//40
+   ptr++;//
+   cout << *ptr << endl;//20
+   return 0;
+}
+```
+# Lecture 17 - Binary search algorithm
+

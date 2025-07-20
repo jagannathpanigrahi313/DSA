@@ -571,4 +571,4 @@ int main() {
 logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equal hota hai
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-48-17" src="https://github.com/user-attachments/assets/88dd7379-901a-4720-9953-81ca7c1e123d" />
 
-### Recursive Binary search 
+### Binary search with recursion 

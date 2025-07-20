@@ -93,5 +93,24 @@ int main() {
 we can find TC in Recursion by two methods
 1) Recurrence Relation
 2) TC = total no.of recursion calls * work done in each call(preferable method)
+---
+by 1) Recurrence Relation
 
-    
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 19-08-50" src="https://github.com/user-attachments/assets/a6b7b419-4a2a-4e7e-9dde-349a70de8322" />
+
+---
+by 2) method
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 19-32-26" src="https://github.com/user-attachments/assets/e7fba092-4312-411b-a2fc-8fc14be74aac" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 19-32-43" src="https://github.com/user-attachments/assets/1f07adc4-6d94-455d-af90-202c9067ed13" />
+
+## Space complexity in Recursion
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 20-25-41" src="https://github.com/user-attachments/assets/165bc306-db4a-478e-9f94-c0208cfad120" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 20-25-56" src="https://github.com/user-attachments/assets/14c61ad8-04c2-470f-a829-b8a1da9667f3" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 20-26-10" src="https://github.com/user-attachments/assets/c838ff7e-da59-49e4-b78c-88244c99f814" />
+
+## sum of N numbers (Recursive)

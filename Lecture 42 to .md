@@ -33,11 +33,11 @@ jitne bhi kaam loop se kar sakte hai vho saare kaam hum recursion se kar sakte h
 using namespace std;
 
 void printNums(int n){
-
-    if(n == 1){
-        cout << "1\n";
-        return ;
+    if(n == 1){          //base case
+        cout << "1\n";   //base case
+        return ;         //base case
     }
+
     cout << n << " ";//n,n-1,n-2,n-3,....to 1
     printNums(n-1);
 }
@@ -57,3 +57,41 @@ int main() {
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-20 16-42-58" src="https://github.com/user-attachments/assets/b8622202-c075-400a-9c2c-05fc96c117d3" />
 
+### Math of Recursion
+
+![Screenshot from 2025-07-20 18-14-58](https://github.com/user-attachments/assets/a1b76bef-c99b-4035-a242-8e5de72d0e38)
+
+### Recurrence Relation 
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 18-27-00" src="https://github.com/user-attachments/assets/6a68739d-a68b-42f9-9ebe-55ae2eb167c4" />
+
+Recursion always stops Base case ---> where we already know the ans i.e hamare n / parameter ki lowest value which  we already know the ans
+
+## Q1)
+<img width="1920" height="1080" alt="Screenshot from 2025-07-20 18-42-33" src="https://github.com/user-attachments/assets/3713c306-f300-4329-9327-8ec15fcc42ac" />
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int factorial(int n){
+    if(n == 0){     //base case
+        return 1;   //base case
+    }               //base case
+    
+    return n * factorial(n-1); 
+}
+
+int main() {
+    cout << factorial(5) << endl;
+    return 0;
+}
+// OUTPUT:
+// 120
+```
+## Time complexity in Recursion
+we can find TC in Recursion by two methods
+1) Recurrence Relation
+2) TC = total no.of recursion calls * work done in each call(preferable method)
+
+    

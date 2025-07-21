@@ -114,3 +114,28 @@ by 2) method
 <img width="1920" height="1080" alt="Screenshot from 2025-07-20 20-26-10" src="https://github.com/user-attachments/assets/c838ff7e-da59-49e4-b78c-88244c99f814" />
 
 ## sum of N numbers (Recursive)
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-21 21-46-25" src="https://github.com/user-attachments/assets/8330aba3-a9c4-4a97-9adb-15e666fde792" />
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int sum(int n){
+    if(n == 1){
+        return 1;
+    }
+    
+    return n + sum(n-1); 
+}
+
+int main() {
+    cout << sum(5) << endl;
+    return 0;
+}
+// OUTPUT:
+// 15
+```
+# Lecture 43 - Recursion ---> Part 2
+## Fibonacci series
+

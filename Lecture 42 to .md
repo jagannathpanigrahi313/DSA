@@ -139,4 +139,8 @@ int main() {
 # Lecture 43 - Recursion ---> Part 2
 ## Fibonacci series
 
-to find nth term formula : 't(base n)' = 't(base n-1)' + 't(base n+2)  ₂
+to find nth term formula : t(base n) = t(base n-1) + t(base n+2)  
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-22 20-50-57" src="https://github.com/user-attachments/assets/39cf3351-3056-43cb-8b43-5486dc674d98" />
+
+recursion stops in base case -->when ![Screenshot from 2025-07-22 20-53-49](https://github.com/user-attachments/assets/a66ba11d-c346-4ca0-88f5-d246aa2bb20e)

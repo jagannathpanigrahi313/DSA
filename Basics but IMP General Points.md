@@ -140,3 +140,46 @@ Extract digits of a number:
 | Binary Exponentiation | O(log n)        |
 
 ---
+
+🔢 Digits 0–9 (subscripts):
+Use these Unicode codes with Ctrl + Shift + U: 
+
+| Digit | Unicode | Result |
+| ----- | ------- | ------ |
+| 0     | 2080    | ₀      |
+| 1     | 2081    | ₁      |
+| 2     | 2082    | ₂      |
+| 3     | 2083    | ₃      |
+| 4     | 2084    | ₄      |
+| 5     | 2085    | ₅      |
+| 6     | 2086    | ₆      |
+| 7     | 2087    | ₇      |
+| 8     | 2088    | ₈      |
+| 9     | 2089    | ₉      |
+
+Example:
+To write t₁₀:
+Type: t → Ctrl + Shift + U, 2081, Enter → ₁
+Then again: Ctrl + Shift + U, 2080, Enter → ₀
+→ t₁₀
+
+🔤 Letters (like ₙ):
+Only a few subscript letters exist:
+
+| Letter | Unicode | Result |
+| ------ | ------- | ------ |
+| a      | 2090    | ₐ      |
+| e      | 2091    | ₑ      |
+| h      | 2095    | ₕ      |
+| i      | 1D62    | ᵢ      |
+| j      | 2C7C    | ⱼ      |
+| k      | 2096    | ₖ      |
+| l      | 2097    | ₗ      |
+| m      | 2098    | ₘ      |
+| n      | 2099    | ₙ      |
+| o      | 2092    | ₒ      |
+| p      | 209A    | ₚ      |
+| r      | 1D63    | ᵣ      |
+| s      | 209B    | ₛ      |
+| t      | 209C    | ₜ      |
+| x      | 2093    | ₓ      |

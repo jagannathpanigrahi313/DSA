@@ -139,3 +139,4 @@ int main() {
 # Lecture 43 - Recursion ---> Part 2
 ## Fibonacci series
 
+to find nth term formula : 't(base n)' = 't(base n-1)' + 't(base n+2)  ₂

@@ -144,3 +144,32 @@ to find nth term formula : t(base n) = t(base n-1) + t(base n+2)
 <img width="1920" height="1080" alt="Screenshot from 2025-07-22 20-50-57" src="https://github.com/user-attachments/assets/39cf3351-3056-43cb-8b43-5486dc674d98" />
 
 recursion stops in base case -->when ![Screenshot from 2025-07-22 20-53-49](https://github.com/user-attachments/assets/a66ba11d-c346-4ca0-88f5-d246aa2bb20e)
+
+509)Fibonacci number - Leetcode
+```cpp
+class Solution {
+public:
+    int fib(int n) {
+        if(n == 0 || n == 1){
+            return n;
+        }
+
+        return fib(n-1) + fib(n-2);
+    }
+};
+```
+
+## Recursive fibonacci - Time & space complexity
+
+TC = total no. of calls * workdone in each call
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-22 21-22-56" src="https://github.com/user-attachments/assets/687856c5-db95-4625-8462-b1c39618cec3" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-22 21-23-43" src="https://github.com/user-attachments/assets/cd07a46f-61ad-49ef-993f-e397bb79fdec" />
+
+SC = depth of recursive tree  * memory/space in each call 
+     OR
+     height of callstack
+   = n * 1 = O(n)
+
+     

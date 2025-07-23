@@ -159,7 +159,7 @@ public:
 };
 ```
 
-## Recursive fibonacci - Time & space complexity
+### Recursive fibonacci series - Time & space complexity
 
 TC = total no. of calls * workdone in each call
 
@@ -172,4 +172,67 @@ SC = depth of recursive tree  * memory/space in each call
      height of callstack
    = n * 1 = O(n)
 
-     
+## check if array is sorted 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-22 21-46-47" src="https://github.com/user-attachments/assets/734b0777-d1cb-476f-8185-14f35666d2b9" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-22 21-46-59" src="https://github.com/user-attachments/assets/5c074e87-ad40-4a32-836d-41116b2882d8" />
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//check if array is sorted
+bool isSorted(vector <int>arr, int n ){
+    if(n == 0 || n == 1){
+        return 1;//true
+    }
+    
+    return arr[n-1] >= arr[n-2] && isSorted(arr, n-1); 
+}
+
+int main() {
+    vector<int>arr = {1,2,3,9,5};
+
+    cout << isSorted(arr,arr.size()) << endl;
+    return 0;//false
+}
+// OUTPUT:
+// 0
+```
+### check if array is sorted - Time & Space complexity
+<img width="1920" height="1080" alt="Screenshot from 2025-07-23 20-43-15" src="https://github.com/user-attachments/assets/94e6c5b7-d9aa-437c-bb65-6b757f3903a2" />
+
+## Recursive binary search 
+mid = st + end / 2 ----> mid = st + (end - st)/2
+
+![Screenshot from 2025-07-23 20-56-49](https://github.com/user-attachments/assets/c1534197-0fb4-43f4-80fa-9a5118f3931c)
+
+if end is greater then start then also return -1 
+<img width="1920" height="1080" alt="Screenshot from 2025-07-23 21-02-44" src="https://github.com/user-attachments/assets/9e4c26cb-84f2-4cb3-831b-40629cbc50ce" />
+
+704) Binary search - Leetcode
+```cpp
+class Solution {
+public:
+    // Helper recursive function
+    int binSearch(vector<int>& arr, int tar, int st, int end) {
+        if (st <= end) {
+            int mid = st + (end - st) / 2;
+
+            if (arr[mid] == tar) return mid;
+            else if (arr[mid] < tar) {
+                return binSearch(arr, tar, mid + 1, end);
+            } else {
+                return binSearch(arr, tar, st, mid - 1);
+            }
+        }
+        return -1;
+    }
+
+    // Public search function
+    int search(vector<int>& arr, int tar) {
+        return binSearch(arr, tar, 0, arr.size() - 1);
+    }
+};
+```

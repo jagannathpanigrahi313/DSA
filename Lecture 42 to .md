@@ -98,12 +98,13 @@ by 1) Recurrence Relation
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-20 19-08-50" src="https://github.com/user-attachments/assets/a6b7b419-4a2a-4e7e-9dde-349a70de8322" />
 
----
-by 2) method
-
 <img width="1920" height="1080" alt="Screenshot from 2025-07-20 19-32-26" src="https://github.com/user-attachments/assets/e7fba092-4312-411b-a2fc-8fc14be74aac" />
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-20 19-32-43" src="https://github.com/user-attachments/assets/1f07adc4-6d94-455d-af90-202c9067ed13" />
+
+---
+by 2) method
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 13-10-53" src="https://github.com/user-attachments/assets/2ad5faad-0141-40ea-a921-e297ef133c68" />
 
 ## Space complexity in Recursion
 
@@ -171,6 +172,10 @@ SC = depth of recursive tree  * memory/space in each call
      OR
      height of callstack
    = n * 1 = O(n)
+   
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 13-10-53" src="https://github.com/user-attachments/assets/26a5df21-3104-4661-8817-ecffec48cf4f" />
+
+H.W) <img width="1920" height="1080" alt="Screenshot from 2025-07-24 13-49-11" src="https://github.com/user-attachments/assets/e4dcc1e9-dae1-4d2f-b712-2f21e789dd79" />
 
 ## check if array is sorted 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-22 21-46-47" src="https://github.com/user-attachments/assets/734b0777-d1cb-476f-8185-14f35666d2b9" />

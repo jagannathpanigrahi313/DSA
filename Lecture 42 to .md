@@ -236,4 +236,8 @@ public:
     }
 };
 ```
+<img width="1920" height="1080" alt="Screenshot from 2025-07-23 21-46-23" src="https://github.com/user-attachments/assets/3f8107f4-4ad2-443c-b71c-c9fed9ea58f5" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-23 21-46-50" src="https://github.com/user-attachments/assets/764f8981-270c-40fd-9e1e-eb31ab0b9dbe" />
+
 # Lecture 54 - Backtracking

@@ -302,7 +302,7 @@ int main(){
 ## Print all Subsets - Time Complexity
 <img width="1920" height="1080" alt=" d" src="https://github.com/user-attachments/assets/3f4bcc3e-1799-4615-8b23-097a7753f01a" />
 
-78) Subsets - Leetcode
+78) Subsets - Leetcode---> subset with unique element
 ```cpp
 class Solution {
 public:
@@ -332,3 +332,13 @@ public:
     }
 };
 ```
+90) Subset || - Leetcode ----> subset with duplicate
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 19-54-24" src="https://github.com/user-attachments/assets/d3fe576a-1ff0-435d-add1-4e62c4f13019" />
+
+exclude of a element then include of that element only ekk ke baad ek occur nahi hona chahiye OTHERWISE duplicate subset is foemed
+
+Psuedocode : 1) sort the array
+             2) calculate the subsets
+
+

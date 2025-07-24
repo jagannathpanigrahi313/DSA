@@ -246,3 +246,89 @@ public:
 <img width="1920" height="1080" alt="Screenshot from 2025-07-23 21-46-50" src="https://github.com/user-attachments/assets/764f8981-270c-40fd-9e1e-eb31ab0b9dbe" />
 
 # Lecture 54 - Backtracking
+## Print all Subsets
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 15-03-19" src="https://github.com/user-attachments/assets/bb5696b6-8d3b-4ff7-a150-0fd9759264b2" />
+
+basically every element has a choise to include or exclude which is subset of each element
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 15-18-04" src="https://github.com/user-attachments/assets/6bc030b3-686a-4c81-9e0b-0e391d962064" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 15-21-41" src="https://github.com/user-attachments/assets/380910c4-8622-4346-b819-5ad6b01f3f6d" />
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+void printSubsets(vector<int> &arr, vector<int> &ans,int i ){
+    if(i == arr.size()){
+        for(int val: ans){
+            cout << val << " " ;
+        }
+        cout << endl;
+        return;
+    }
+    
+    //include
+    ans.push_back(arr[i]);
+    printSubsets(arr,ans,i+1);
+
+    ans.pop_back();//bactracking 
+    //exclude
+    printSubsets(arr,ans,i+1);
+}
+int main(){
+    vector<int>arr = {1,2,3};
+    vector<int>ans;//store subsets
+
+   printSubsets(arr,ans,0);
+    return 0;//false
+}
+// OUTPUT:
+// 1 2 3 
+// 1 2 
+// 1 3 
+// 1 
+// 2 3 
+// 2 
+// 3
+//  
+```
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 15-32-10" src="https://github.com/user-attachments/assets/02d26de3-c3a3-44aa-82c4-504faf264556" />
+
+<img width="1920" height="1080" alt="Screenshot from 2025-07-24 16-02-51" src="https://github.com/user-attachments/assets/f013a513-5ff5-4f91-b469-4d5db167f7f0" />
+
+![Screenshot from 2025-07-24 15-32-27 (2)](https://github.com/user-attachments/assets/f7940f52-46ca-4668-999e-e5d170cc7175)
+## Print all Subsets - Time Complexity
+<img width="1920" height="1080" alt=" d" src="https://github.com/user-attachments/assets/3f4bcc3e-1799-4615-8b23-097a7753f01a" />
+
+78) Subsets - Leetcode
+```cpp
+class Solution {
+public:
+    // O(n * 2^n)
+    void getAllSubsets(vector<int> &nums, vector<int> &ans, int i, vector<vector<int>> &allSubsets) {
+        if (i == nums.size()) {
+            allSubsets.push_back(ans);
+            return;
+        }
+
+        // Include nums[i]
+        ans.push_back(nums[i]);
+        getAllSubsets(nums, ans, i + 1, allSubsets);
+
+        // Backtrack (remove last element)
+        ans.pop_back();
+
+        // Exclude nums[i]
+        getAllSubsets(nums, ans, i + 1, allSubsets);
+    }
+
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> allSubsets;
+        vector<int> ans;
+        getAllSubsets(nums, ans, 0, allSubsets);
+        return allSubsets;
+    }
+};
+```

@@ -1249,8 +1249,9 @@ note : Recursion means a function calls itself, directly or indirectly.
 <img width="1920" height="1080" alt="Screenshot from 2025-07-12 11-55-45" src="https://github.com/user-attachments/assets/f3405ee2-6162-4d69-985a-fd0afe5e5c3d" />
 
 # Recursion (Time complexities)
-
-
+# Recursion (Space complexity)
+# Recursive fibonacci series - Time & space complexity
+all in Lecture 42 folder
 
 
 

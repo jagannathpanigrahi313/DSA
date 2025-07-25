@@ -26,7 +26,9 @@ Acts like a **full stop (.)** in a sentence. It **terminates a statement**.
 - **8 bits = 1 byte**
 
 ---
-
+### do you know why the code becomes a colourfull?
+ Every word in code passes token pass rule therfore it becomes colourfull due to token passing colour customization .
+ ---
 ### 📦 Variables
 
 Variables are **containers** to store data.

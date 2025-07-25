@@ -5,7 +5,7 @@
 
 ## Boiler Plate of CPP
 ```cpp
-#include <iostream> // known as preprocessor directive //iostream header file.
+#include <iostream> //  #____ known as preprocessor directive //<____> header file.
 using namespace std;
 
 // This is the starting point of execution

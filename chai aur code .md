@@ -56,4 +56,46 @@ int main() {
 // 100000
 // 25
 ```
+```cpp
+#include <iostream> 
+using namespace std;
 
+int main() {
+     
+   float teaPrice = 49.99;
+   int roundedTeaPrice = (int) teaPrice;
+
+   int teaQuantity = 2;
+   double TotalPrice = teaPrice * teaQuantity;
+
+   cout << roundedTeaPrice << endl;
+   cout << TotalPrice << endl;
+
+   return 0;
+}
+//OUTPUT:
+// 49
+// 99.98
+```
+## Strings 
+Escape Sequence ---> Microsoft
+```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main() {
+     
+   string favoriteTea = "Lemon Tea\n";
+   string description = "Known as \"best\"Tea";
+
+   // cout << favoriteTea << endl;
+   // cout <<  description << endl;
+   cout << favoriteTea << description << endl;
+
+   return 0;
+}
+//OUTPUT:
+// Lemon Tea
+// Known as "best"Tea
+```

@@ -32,7 +32,23 @@ int main() {
 INPUT:                                         OUTPUT: 
          Enter the age ______                           your age is _______
 ```
+```cpp
+#include <iostream> 
+using namespace std;
 
+int main() {
+    const int uid = 2323;
+   //  uid = 123;
+
+    int Balance = 34;
+    Balance = 12;
+
+    cout << uid << endl;
+    cout << Balance << endl;
+
+   return 0;
+}
+```
 ## Primitive Data Types
 
 ```cpp

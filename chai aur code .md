@@ -225,6 +225,12 @@ getline(cin, text); // and this misbehaves i.e buffer comes then
 ```cpp
 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 ```
-# Lecture 5
+# Lecture 6
 a + b , here a,b are operand & + is operator
 score = 4 , here it is assignment operator
+
+# Lecture 7
+Q ) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
+```cpp
+
+```

@@ -99,3 +99,34 @@ int main() {
 // Lemon Tea
 // Known as "best"Tea
 ```
+```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main() {
+     
+   string userTea;
+   int TeaQuantity;
+
+
+   cout << "What would you like to order in tea ?\n" ;
+   getline(cin, userTea);
+
+
+   // ask for Quantity
+   cout << "how many Cups of " << userTea << " would you like to have ? ";
+   cin >> TeaQuantity;
+   
+   cout << TeaQuantity << endl;
+   cout << userTea;
+
+   return 0;
+}
+//OUTPUT:
+// What would you like to order in tea ?
+// lemon tea
+// how many Cups of lemon tea would you like to have ? 2
+// 2
+// lemon tea
+```

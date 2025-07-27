@@ -232,5 +232,49 @@ score = 4 , here it is assignment operator
 # Lecture 7
 Q ) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
 ```cpp
+#include <iostream>
+using namespace std;
 
+int main() {
+  string Teaorder;
+
+    cout << "Enter your tea order"; 
+    getline(cin, Teaorder);
+
+    if(Teaorder == "Green Tea") {
+    
+      cout << "You have ordered Green Tea" << endl;
+
+    }
+    return 0;
+}
+// OUTPUT:
+// Enter your tea orderGreen Tea
+// You have ordered Green Tea
+
+// Enter your tea order1
+```
+Q ) write a program that checks if a tea shop is open .if the current hour (input by the user ) is between 8 AM and 6 PM , the shop is open;otherwise, it's closed .
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  string Teaorder;
+
+    cout << "Enter your tea order"; 
+    getline(cin, Teaorder);
+
+    if(Teaorder == "Green Tea") {
+    
+      cout << "You have ordered Green Tea" << endl;
+
+    }
+    return 0;
+}
+// OUTPUT:
+// Enter your tea orderGreen Tea
+// You have ordered Green Tea
+
+// Enter your tea order1
 ```

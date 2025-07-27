@@ -19,7 +19,7 @@ int main() {
 // 12
 ```
 ## Data Type Ranges---> see in microsoft 
-<img width="1920" height="1080" alt="Screenshot from 2025-07-26 20-49-03" src="https://github.com/user-attachments/assets/baf0fcf1-76f6-4734-b807-59aeeb9aa8ab" />
+<img width="1920" height="1080" alt="Screenshot from 2025-07-27 14-34-08" src="https://github.com/user-attachments/assets/9fbf5a85-60d6-42ee-8640-fbc89d5f60cf" />
 
 ```cpp
 #include <iostream> 
@@ -225,3 +225,6 @@ getline(cin, text); // and this misbehaves i.e buffer comes then
 ```cpp
 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 ```
+# Lecture 5
+a + b , here a,b are operand & + is operator
+score = 4 , here it is assignment operator

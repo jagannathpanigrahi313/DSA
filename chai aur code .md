@@ -131,3 +131,97 @@ int main() {
 // 2
 // lemon tea
 ```
+H.W )
+![Screenshot from 2025-07-27 13-34-36](https://github.com/user-attachments/assets/be4422fd-5900-4576-8efb-d31f88d99d6b)
+
+challenge 1:
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    string teaType = "Green Tea";
+    float pricePerKg = 450.75;
+    char rating = 'A';
+
+    cout << "Tea Information:\n";
+    cout << "Type: \"" << teaType << "\"\n";
+    cout << "Price per kg: ₹" << pricePerKg << "\n";
+    cout << "Rating: " << rating << endl;
+
+    return 0;
+}
+//OUTPUT :
+// Tea Information:
+// Type: "Green Tea"
+// Price per kg: ₹450.75
+// Rating: A
+```
+challenge 2:
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float basePrice;
+    cout << "Enter base price of tea (in ₹): ";
+    cin >> basePrice;
+
+    float increasedPrice = basePrice * 1.10f; // 10% increase
+    int roundedPrice = static_cast<int>(increasedPrice); // explicit casting
+
+    cout << "Rounded new price after 10% increase: ₹" << roundedPrice << endl;
+
+    return 0;
+}
+//OUTPUT:
+// Enter base price of tea (in ₹): 100
+// Rounded new price after 10% increase: ₹110
+```
+challenge 3:
+```cpp
+
+#include <iostream>
+#include <limits> // for std::numeric_limits
+using namespace std;
+
+int main() {
+    // Step 1: Ask the user to enter the tea name using getline
+    string favoriteTea;
+    int cups;
+
+    // Step 2: Ask how many cups
+    cout << "Enter your favorite tea: ";
+    getline(cin, favoriteTea); // ✅ First input — no leftover newline here
+
+    cout << "How many cups do you want? ";
+    cin >> cups;
+
+    // Step 3: Clear leftover '\n' (newline) from buffer after cin
+    // ✅ Flush buffer after reading number
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+      // Step 4: Print the final message, using correct "cup" or "cups"
+    cout << "You ordered " << cups << " cup" << (cups == 1 ? "" : "s")
+         << " of \"" << favoriteTea << "\" tea. Enjoy!" << endl;
+
+    return 0;
+}
+
+// output:
+// Enter your favorite tea: lemon tea
+// How many cups do you want? 2
+// You ordered 2 cups of "lemon tea" tea. Enjoy!
+```
+Note:
+✅ You can remember it like this:
+Whenever you write:
+```cpp
+cin >> number;
+getline(cin, text); // and this misbehaves i.e buffer comes then 
+```
+👉 Just put this in between:
+```cpp
+cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+```

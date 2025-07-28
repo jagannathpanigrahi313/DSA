@@ -233,6 +233,7 @@ score = 4 , here it is assignment operator
 Q ) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
 ```cpp
 #include <iostream>
+#include <string> 
 using namespace std;
 
 int main() {
@@ -242,9 +243,9 @@ int main() {
     getline(cin, Teaorder);
 
     if(Teaorder == "Green Tea") {
-    
       cout << "You have ordered Green Tea" << endl;
-
+    } else {
+      cout << "order not recognized" << endl;
     }
     return 0;
 }
@@ -252,7 +253,8 @@ int main() {
 // Enter your tea orderGreen Tea
 // You have ordered Green Tea
 
-// Enter your tea order1
+// Enter your tea orderle
+// order not recognized
 ```
 Q ) write a program that checks if a tea shop is open .if the current hour (input by the user ) is between 8 AM and 6 PM , the shop is open;otherwise, it's closed .
 ```cpp
@@ -260,21 +262,22 @@ Q ) write a program that checks if a tea shop is open .if the current hour (inpu
 using namespace std;
 
 int main() {
-  string Teaorder;
+   int hour;
 
-    cout << "Enter your tea order"; 
-    getline(cin, Teaorder);
-
-    if(Teaorder == "Green Tea") {
+    cout << "Enter the hour of the day (0-23): ";
+    cin >> hour; 
     
-      cout << "You have ordered Green Tea" << endl;
-
+    if(hour >= 8 && hour <= 18){
+        cout << "The Tea shop is open." << endl;
+    } else {
+        cout << "The Tea shop is closed." << endl;
     }
     return 0;
 }
 // OUTPUT:
-// Enter your tea orderGreen Tea
-// You have ordered Green Tea
+// Enter the hour of the day (0-23): 5
+// The Tea shop is closed.
 
-// Enter your tea order1
+// Enter the hour of the day (0-23): 9
+// The Tea shop is open.
 ```

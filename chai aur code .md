@@ -281,3 +281,6 @@ int main() {
 // Enter the hour of the day (0-23): 9
 // The Tea shop is open.
 ```
+
+Q ) A tea shop offers discounts based on the number of tea cups ordered. write a program that checks the number of cups ordered and applies a discount :*More than 20 cups: 20% discount 
+

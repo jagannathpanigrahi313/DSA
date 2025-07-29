@@ -230,7 +230,7 @@ a + b , here a,b are operand & + is operator
 score = 4 , here it is assignment operator
 
 # Lecture 7
-Q ) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
+Q (if satement) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
 ```cpp
 #include <iostream>
 #include <string> 
@@ -256,7 +256,7 @@ int main() {
 // Enter your tea orderle
 // order not recognized
 ```
-Q ) write a program that checks if a tea shop is open .if the current hour (input by the user ) is between 8 AM and 6 PM , the shop is open;otherwise, it's closed .
+Q(if-Else statement) write a program that checks if a tea shop is open .if the current hour (input by the user ) is between 8 AM and 6 PM , the shop is open;otherwise, it's closed .
 ```cpp
 #include <iostream>
 using namespace std;
@@ -282,5 +282,48 @@ int main() {
 // The Tea shop is open.
 ```
 
-Q ) A tea shop offers discounts based on the number of tea cups ordered. write a program that checks the number of cups ordered and applies a discount :*More than 20 cups: 20% discount 
+Q(Nested if-else ) A tea shop offers discounts based on the number of tea cups ordered. write a program that checks the number of cups ordered and applies a discount :*More than 20 cups: 20% discount 
 
+. Between 10 & 20 cups : 10% discount
+
+. Less than 10 cups :No discount
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int cups;
+
+   double pricePerCup = 2.5,totalPrice,discount;
+
+    cout << "Enter the number of tea cups: ";
+    cin >> cups;
+
+    totalPrice = pricePerCup * cups ;
+
+    if(cups > 20){
+        discount = 0.20;
+    }else if(cups >= 10 && cups <= 20){
+        discount = 0.10;
+    }else{
+        discount = 0.0;
+    }
+
+    totalPrice -= (totalPrice * discount);
+
+    cout << "Total price after discount is : " << totalPrice << endl;
+    return 0;
+}
+// OUTPUT:
+// Enter the number of tea cups: 2
+// Total price after discount is : 5
+
+// Enter the number of tea cups: 20
+// Total price after discount is : 45
+```
+Q(Switch case) Write a program that lets the user select a tea type from a menu. use a switch statement to display the price based on the selected tea: Green Tea : $2
+. Black Tea : $3
+. Oolong Tea : $4
+```cpp
+
+```

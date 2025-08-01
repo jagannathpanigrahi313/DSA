@@ -225,11 +225,11 @@ getline(cin, text); // and this misbehaves i.e buffer comes then
 ```cpp
 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 ```
-# Lecture 6
+# Lecture 5
 a + b , here a,b are operand & + is operator
 score = 4 , here it is assignment operator
 
-# Lecture 7
+# Lecture 6
 Q (if satement) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
 ```cpp
 #include <iostream>
@@ -364,6 +364,42 @@ int main() {
 // 1. Green Tea
 // 2. Lemon Tea
 // 3. Oolong Tea
-// Enter your choice in number: 2
+// Enter your choice in number: 2 
 // You selected Lemon Tea. Price: $3
+```
+# Lecture 7 - Loops
+Q(while loop) write a program that keeps track of tea orders.Each time acup of tea is made, decrease the number of cups remaining the loop must run until all cups are surved
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+   int teacups;
+
+   cout << "Enter the number of tea cups to server: ";
+   cin >> teacups;
+
+   //while loop
+    while (teacups > 0) {
+        teacups--;
+        cout << "Serving tea cup number: \n" << teacups << "remaining" << endl;
+    }
+    cout << "All tea cups served. " << endl;
+    return 0;
+}
+// OUTPUT:
+// Enter the number of tea cups to server: 5
+// Serving tea cup number: 
+// 4remaining
+// Serving tea cup number: 
+// 3remaining
+// Serving tea cup number: 
+// 2remaining
+// Serving tea cup number: 
+// 1remaining
+// Serving tea cup number: 
+// 0remaining
+// All tea cups served. 
+
+//and person ranned out from tea cups
 ```

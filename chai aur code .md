@@ -325,5 +325,45 @@ Q(Switch case) Write a program that lets the user select a tea type from a menu.
 . Black Tea : $3
 . Oolong Tea : $4
 ```cpp
+#include <iostream>
+using namespace std;
 
+int main() {
+   int choise;
+   double price;
+
+   cout << "select your tea\n";
+   cout <<"1. Green Tea\n";
+   cout <<"2. Lemon Tea\n";
+   cout <<"3. Oolong Tea\n";
+   cout <<"Enter your choice in number: ";
+
+   cin >> choise;
+
+   switch(choise) {
+      case 1:
+         price = 2.50;
+         cout << "You selected Green Tea. Price: $" << price << endl;
+         break;
+      case 2:
+         price = 3.00;
+         cout << "You selected Lemon Tea. Price: $" << price << endl;
+         break;
+      case 3:
+         price = 4.00;
+         cout << "You selected Oolong Tea. Price: $" << price << endl;
+         break;
+      default:
+         cout << "Invalid choice! Please select a valid tea option." << endl;
+         break;
+   }
+    return 0;
+}
+// OUTPUT:
+// select your tea
+// 1. Green Tea
+// 2. Lemon Tea
+// 3. Oolong Tea
+// Enter your choice in number: 2
+// You selected Lemon Tea. Price: $3
 ```

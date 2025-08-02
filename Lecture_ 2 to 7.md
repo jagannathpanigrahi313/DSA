@@ -168,7 +168,7 @@ using namespace std;
 int main() {
   
   double (price) = 100.99;
-  int newprice = (imt)price;// here double data type changed to int data type
+  int newprice = (int)price;// here double data type changed to int data type
   cout << newprice  << endl;
   
   return 0; 
@@ -229,7 +229,7 @@ using namespace std ;
 int main() {
 
   int ans = (5/(double)2);
-  cout <<ans<<endl;// 2
+  cout << ans << endl;// 2
   return 0;
 }
 ```
@@ -285,7 +285,7 @@ int main(){
     cin >> b;
 
     int sum (a + b) ;
-    cout << "sum = "<< sum <<endl;
+    cout << "sum = "<< sum << endl;
     return 0;
 }
 ```

@@ -133,14 +133,14 @@ int main() {
 ```
 
 ## Type Conversion and Type Casting
-
-
+```
                         *converting data type from from one type to another*
-
+```
 ### (1) type casting 
+```
        (implicit)  this compiler does
        Small byte to big byte 
-
+```
 EX 1: char to int
 ```cpp
 #include <iostream>
@@ -156,9 +156,10 @@ int main() {
 }
 ```
 ### (2) type casting 
-       (Explicit) this Programmer does 
+```
+     (Explicit) this Programmer does 
        Big byte to small byte
-
+```
 Ex 1 :double to int
 ```cpp
 #include <iostream>

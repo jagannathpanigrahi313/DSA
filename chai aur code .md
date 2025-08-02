@@ -19,6 +19,7 @@ int main() {
 // 12
 ```
 ## Data Type Ranges---> see in microsoft 
+
 <img width="1920" height="1080" alt="Screenshot from 2025-07-27 14-34-08" src="https://github.com/user-attachments/assets/9fbf5a85-60d6-42ee-8640-fbc89d5f60cf" />
 
 ```cpp
@@ -78,7 +79,7 @@ int main() {
 // 99.98
 ```
 ## Strings 
-Escape Sequence ---> Microsoft
+Escape Sequence ---> see in Microsoft
 ```cpp
 #include <iostream> 
 #include <string>
@@ -87,7 +88,7 @@ using namespace std;
 int main() {
      
    string favoriteTea = "Lemon Tea\n";
-   string description = "Known as \"best\"Tea";
+   string description = "Known as \"best\" Tea";
 
    // cout << favoriteTea << endl;
    // cout <<  description << endl;
@@ -97,9 +98,9 @@ int main() {
 }
 //OUTPUT:
 // Lemon Tea
-// Known as "best"Tea
+// Known as "best" Tea
 ```
-# userinput 
+# user input 
 ```cpp
 #include <iostream> 
 #include <string>

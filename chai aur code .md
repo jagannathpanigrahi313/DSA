@@ -404,3 +404,25 @@ int main() {
 
 //and person ranned out from tea cups
 ```
+Q(do-while loop)Create a program that ask the if they want more tea. Keep asking them until they type "no" (case-insensetive), using a do - while loop.
+```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main() {
+     
+   string response;
+
+   do{
+      cout << "Do you want more tea(yes/no): " ;
+      getline(cin, response);
+   }while(response == "no" || response == "No");
+   return 0;
+}
+//OUTPUT:
+// Do you want more tea(yes/no): no
+// Do you want more tea(yes/no): No
+// Do you want more tea(yes/no): yes
+```
+Q(For loop) write a program 

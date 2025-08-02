@@ -150,7 +150,7 @@ int main() {
   
   char (grade) = 'a';
   int value = grade;// here char data type changed to int data type
-  cout << value  << emdl;
+  cout << value  << endl;
   
   return 0; 
 }
@@ -169,7 +169,7 @@ int main() {
   
   double (price) = 100.99;
   int newprice = (imt)price;// here double data type changed to int data type
-  cout << newprice  << emdl;
+  cout << newprice  << endl;
   
   return 0; 
 }

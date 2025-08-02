@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    const int uid = 2323;
+    const int uid = 2323;//const putted therfore cant change
    //  uid = 123;
 
     int Balance = 34;

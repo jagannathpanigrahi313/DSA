@@ -425,4 +425,37 @@ int main() {
 // Do you want more tea(yes/no): No
 // Do you want more tea(yes/no): yes
 ```
-Q(For loop) write a program 
+Q(For loop) write a program that prints the brewing instructions for making 5 cups of tea.The brewng process should be printed once for each cup using a for loop.
+```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main() {
+     
+   int teacups = 5;
+   int i = 100; // This variable is declared but not used in the loop
+
+   for(int i = 0; i < teacups; i++) {
+      cout << "Brewing cup " << i << " of tea" << endl;
+   }
+// loop() ke parenthisis me jho variable dalte hai uska scope sirf us ke loop me hi hota hai uske bahar vho variable is not idendifiable
+
+   cout << i << endl; // This will print the value of i declared outside the loop, Not inside the loop
+   cout << "Outside of the loop" ;   
+   return 0;
+}
+//OUTPUT:
+// Brewing cup 0 of tea
+// Brewing cup 1 of tea
+// Brewing cup 2 of tea
+// Brewing cup 3 of tea
+// Brewing cup 4 of tea
+// 100
+// Outside of the loop
+
+```
+Q(Break Keyword) Write a program that keeps serving tea until the user says they've had enough (input 'stop'). use a break statement to ext the loop when the user types 'stop'.
+```cpp
+
+```

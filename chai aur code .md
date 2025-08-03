@@ -457,5 +457,67 @@ int main() {
 ```
 Q(Break Keyword) Write a program that keeps serving tea until the user says they've had enough (input 'stop'). use a break statement to ext the loop when the user types 'stop'.
 ```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
 
+int main() {
+     
+    string response ;
+    
+    while(true) {
+        cout << "Do you want more tea (type 'stop' to exit)?: " ;
+         getline(cin, response);
+
+         if (response == "stop") {
+            // Exit the loop 
+             cout << "Goodbye!" << endl;
+             break;
+         }
+        
+         cout << "Here is your another cup of tea." << endl;
+    }
+    cout << "No more tea will be served to you." << endl;
+   return 0;
+}
+//OUTPUT:
+// Do you want more tea (type 'stop' to exit)?: yes
+// Here is your another cup of tea.
+// Do you want more tea (type 'stop' to exit)?: l
+// Here is your another cup of tea.
+// Do you want more tea (type 'stop' to exit)?: 2
+// Here is your another cup of tea.
+g the tea
+// Do you want more tea (type 'stop' to exit)?: stop
+// Goodbye!
+// No more tea will be served to you.
 ```
+Q(continue Keyword) write a program that skips brewing green tea if the user dislikes it .use a continue  statement to skip over green tea but brew other types of tea in a list.
+```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main() {
+     
+    string teaTypes[6] = {"Green Tea", "Black Tea", "Oolong Tea", "White Tea", "Herbal Tea","Orange Tea","Lemon Tea"};//in [] array you can put 7 but not 5
+
+    for(int i = 0; i < 6; i++) {//if extend loop to 7 then one extra line in output will come like :  Brewing... 
+      if (teaTypes[i] == "Green Tea"){
+         cout << "skipping the " <<teaTypes[i] << endl;
+         continue;
+      }
+        cout << "Brewing " << teaTypes[i] << "..." << endl;
+    }
+   return 0;
+}
+//OUTPUT:
+// skipping the Green Tea
+// Brewing Black Tea...
+// Brewing Oolong Tea...
+// Brewing White Tea...
+// Brewing Herbal Tea...
+// Brewing Orange Tea...
+// Brewing Lemon Tea..
+```
+Q(Nested loop) write a program that brews multiple cups of different types of tea.For each type 

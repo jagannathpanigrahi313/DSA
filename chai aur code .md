@@ -520,4 +520,183 @@ int main() {
 // Brewing Orange Tea...
 // Brewing Lemon Tea..
 ```
-Q(Nested loop) write a program that brews multiple cups of different types of tea.For each type 
+Q(Nested loop) write a program that brews multiple cups of different types of tea.For each type of tea, brew 3 cups using a nested loop
+```cpp
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int main() {
+     
+    string teaTypes[5] = {"Green Tea", "Black Tea", "Oolong Tea", "White Tea", "Herbal Tea"};
+
+    for(int i = 0; i < 5; i++) {
+       cout << "Brewing " << teaTypes[i] << "..." << endl;
+
+      for(int j = 1; j <= 3; j++) {
+        cout << "Brewing " << j << "cup of" << teaTypes[i] << endl;
+      }
+    }
+   return 0;
+}
+//OUTPUT:
+// Brewing Green Tea...
+// Brewing 1cup ofGreen Tea
+// Brewing 2cup ofGreen Tea
+// Brewing 3cup ofGreen Tea
+// Brewing Black Tea...
+// Brewing 1cup ofBlack Tea
+// Brewing 2cup ofBlack Tea
+// Brewing 3cup ofBlack Tea
+// Brewing Oolong Tea...
+// Brewing 1cup ofOolong Tea
+// Brewing 2cup ofOolong Tea
+// Brewing 3cup ofOolong Tea
+// Brewing White Tea...
+// Brewing 1cup ofWhite Tea
+// Brewing 2cup ofWhite Tea
+// Brewing 3cup ofWhite Tea
+// Brewing Herbal Tea...
+// Brewing 1cup ofHerbal Tea
+// Brewing 2cup ofHerbal Tea
+// Brewing 3cup ofHerbal Tea
+```
+# Lecture - 8 - Functions
+```
+// returnType functionName (parameters) {
+//    // body
+// }
+```
+```cpp
+#include <iostream>
+
+int checkTemperature(int temperature) {
+   return temperature;
+}
+
+int main () {
+   int temp = checkTemperature(50);
+   std::cout << temp << endl;
+   return 0;
+}
+// Output: 50
+```
+## Declaretion & Defination of function 
+```cpp
+#include <iostream>
+using namespace std;
+
+// function declaration & definition
+int checkTemperature(int temperature) {
+   return temperature;
+}
+
+//declaration of the function
+void serveChai(int cups);
+
+void makeTea() {
+   cout << "Boiling water ,adding tea leaves, straining..." << endl;
+}
+
+int main () {
+   int temp = checkTemperature(50);
+   cout << temp << endl;
+   makeTea();
+   serveChai(5);// calling the function & passing an argument i.e value
+   return 0;
+}
+
+// defination of the function
+void serveChai(int cups) {
+   cout << "Serving " << cups << " cups of chai." << endl;
+}
+// Output: 
+// 50
+// Boiling water, adding tea leaves, straining...
+// Serving 5 cups of chai.
+```
+```cpp
+#include <iostream>
+using namespace std;
+
+// function declaration & definition
+int checkTemperature(int temperature) {
+   return temperature;
+}
+
+//declaration of the function
+void serveChai(int cups);
+
+void makeTea() {
+   cout << "Boiling water ,adding tea leaves, straining..." << endl;
+}
+
+// default function is used when no argument is passed in that function
+void serveChai(string teaType = "Masala Tea"){
+int cups = 4; 
+cout << "serving " << teaType << endl;
+}
+
+int main () {
+   int temp = checkTemperature(50);
+   // cout << temp << endl;
+   // makeTea();
+   // serveChai(5);// calling the function & passing an argument i.e value
+   serveChai();
+   return 0;
+}
+
+
+// defination of the function
+void serveChai(int cups) {
+   cout << "Serving " << cups << " cups of chai." << endl;
+}
+
+// Output: 
+// 50
+// Boiling water, adding tea leaves, straining...
+// Serving 5 cups of chai.
+```
+## call by value
+```cpp
+#include <iostream>
+using namespace std;
+
+void pourChai(int cups) {
+   cups = cups + 5;
+   cout << "poured cups:" << cups << endl;
+}
+
+int main () {
+
+   int cups = 10;
+   pourChai(cups);
+   cout << "Total cups are: " << cups << endl;
+   return 0;
+}
+// Output: 
+// poured cups:15
+// Total cups are: 10
+```
+## Call by refrence
+```cpp
+#include <iostream>
+using namespace std;
+
+void pourChai(int & cups) {
+   cups = cups + 5;
+   cout << "poured cups:" << cups << endl;
+}
+
+int main () {
+
+   int cups = 10;
+   pourChai(cups);
+   cout << "Total cups are: " << cups << endl;
+   return 0;
+}
+// Output: 
+// poured cups:15
+// Total cups are: 15
+```
+{scope}

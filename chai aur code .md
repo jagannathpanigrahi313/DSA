@@ -683,9 +683,9 @@ int main () {
 #include <iostream>
 using namespace std;
 
-void pourChai(int & cups) {
-   cups = cups + 5;
-   cout << "poured cups:" << cups << endl;
+void pourChai(int & cups) {               //Here, instead of cups we can write other variable & output will remain same
+   cups = cups + 5;                       //Here, instead of cups we can write other variable & output will remain same
+   cout << "poured cups:" << cups << endl;//Here, instead of cups we can write other variable & output will remain same
 }
 
 int main () {
@@ -700,3 +700,8 @@ int main () {
 // Total cups are: 15
 ```
 {scope}
+# function overloading--> the datatype kitna parameter leta hai in same function 
+```cpp
+
+```
+# lambda function

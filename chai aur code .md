@@ -700,8 +700,32 @@ int main () {
 // Total cups are: 15
 ```
 {scope}
-# function overloading--> the datatype kitna parameter leta hai in same function 
+# function overloading--> the datatype kitna No. of parameter leta hai in same function 
 ```cpp
 
 ```
 # lambda function
+```cpp
+#include <iostream>
+using namespace std;
+
+int helloWorld () {
+   cout << "Hello, World!" << endl;
+   return 0;
+}
+   
+
+int main () {
+    // []lambda function
+    auto preparedchai = [](int cups){
+         cout << "Preparing " << cups << " cups of chai." << endl;
+    };
+    
+    preparedchai(2); // Calling the lambda function with 4 cups of chai
+   
+   return 0;
+}
+// Output: 
+// Preparing 2 cups of chai.
+```
+# Lecture 9 - Object Oriented Programming(OOP)

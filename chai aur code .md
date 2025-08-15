@@ -230,7 +230,7 @@ cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 a + b , here a,b are operand & + is operator
 score = 4 , here it is assignment operator
 
-# Lecture 6
+# Lecture 6 - Statements
 Q (if satement) write a program that checks if the user wants to order Green Tea. if the user types "Green Tea," the program should confirm their order.
 ```cpp
 #include <iostream>

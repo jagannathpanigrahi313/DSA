@@ -9,9 +9,17 @@
 ```bash
 g++ filename.cpp -o filename && ./filename
 ```
-> 💡 Select and then Press `Ctrl + /` to comment multiple lines at once (in supported editors).
 
 ---
+### ✅ Run a C++ File in windows Terminal
+```bash
+gcc filename.c -o filename.exe; .\filename.exe
+```
+```bash
+______ --version
+```
+---
+> 💡 Select and then Press `Ctrl + /` to comment multiple lines at once (in supported editors).
 
 ### 📍 Semicolon `;`
 

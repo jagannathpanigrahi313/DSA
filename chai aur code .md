@@ -729,3 +729,6 @@ int main () {
 // Preparing 2 cups of chai.
 ```
 # Lecture 9 - Object Oriented Programming(OOP)
+
+<img width="1240" height="791" alt="Screenshot 2025-08-15 162902" src="https://github.com/user-attachments/assets/c11a04c2-c624-428d-919e-292109321504" />
+

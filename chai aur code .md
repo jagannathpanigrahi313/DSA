@@ -79,7 +79,7 @@ int main() {
 // 99.98
 ```
 ## Strings 
-Escape Sequence ---> see in Microsoft
+### Escape Sequence ---> see in Microsoft
 ```cpp
 #include <iostream> 
 #include <string>

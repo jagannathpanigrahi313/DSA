@@ -732,3 +732,61 @@ int main () {
 
 <img width="1240" height="791" alt="Screenshot 2025-08-15 162902" src="https://github.com/user-attachments/assets/c11a04c2-c624-428d-919e-292109321504" />
 
+```cpp
+#include <iostream> 
+#include <vector>
+using namespace std;
+
+
+ class Chai{
+     public:
+        // data members (attribute)
+        string TeaName;// Name of the tea
+        int servings;// Number of servings
+        vector<string> ingredients;// list of ingredients for the tea
+
+        //Member function
+
+        void displayChaiDetails(){
+            cout << "Tea Name: " << TeaName << endl;
+            cout << "Servings: " << servings << endl;
+            cout << "Ingredients: " ;
+            for(string ingridient : ingredients ){
+                cout << ingridient << " ";
+            } 
+            cout << endl;
+        }
+ };
+
+ int main(){
+    //original form 
+    Chai chai;//capital letter word hai means class & small letter word means object
+
+    chai.TeaName = "lemon tea";
+    chai.servings = 2;
+    chai.ingredients = {"water","sugar","tea","ginger"};
+
+    chai.displayChaiDetails();
+  
+    // duplicate form 
+    Chai chaidup;
+    
+    chaidup.TeaName = "Masala chai";
+    chaidup.servings = 4;
+    chaidup.ingredients = {"water","tea","ginger","Masala"};
+
+    chaidup.displayChaiDetails();
+
+    return 0;
+ }
+// OUTPUT:
+// Tea Name: lemon tea
+// Servings: 2
+// Ingredients: water sugar tea ginger
+// Tea Name: Masala chai
+// Servings: 4
+// Ingredients: water tea ginger Masala
+
+```
+# Lecture 10 - Array, dynamic memory and Pointers in Cpp
+

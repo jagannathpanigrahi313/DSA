@@ -732,6 +732,14 @@ int main () {
 
 <img width="1240" height="791" alt="Screenshot 2025-08-15 162902" src="https://github.com/user-attachments/assets/c11a04c2-c624-428d-919e-292109321504" />
 
+## Access specifier/modifiers
+
+In C++, there are three **access specifiers**:
+
+public - members are accessible from outside the class
+private - members cannot be accessed (or viewed) from outside the class
+protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes.
+
 ```cpp
 #include <iostream> 
 #include <vector>

@@ -13,7 +13,11 @@ g++ filename.cpp -o filename && ./filename
 ---
 ### ✅ Run a C++ File in windows Terminal
 ```bash
-g++ filename.c -o filename.exe; .\filename.exe
+g++ filename.cpp -o filename.exe; .\filename.exe
+```
+### ✅ Run a C File in windows Terminal
+```bash
+gcc filename.c -o filename.exe; .\filename.exe
 ```
 ```bash
 ______ --version

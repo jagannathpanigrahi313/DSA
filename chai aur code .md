@@ -797,4 +797,23 @@ using namespace std;
 
 ```
 # Lecture 10 - Array, dynamic memory and Pointers in Cpp
+```cpp
+#include <iostream> 
+using namespace std;
 
+int main(){
+    int chaiTemperature[5] = {85,88,90,92,95};
+    
+    cout <<"Chai Temperature: ";
+    for(int i = 0; i < 5 ; i++){
+        cout << chaiTemperature[i] << "degree C  \n";
+
+    }
+    return 0 ;
+}
+// OUTPUT:
+// Chai Temperature: 88degree C
+// 90degree C
+// 92degree C
+// 95degree C
+```

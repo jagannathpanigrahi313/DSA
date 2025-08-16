@@ -797,7 +797,8 @@ using namespace std;
 
 ```
 # Lecture 10 - Array, dynamic memory and Pointers in Cpp
-```cpp array
+## Array
+```cpp 
 #include <iostream> 
 using namespace std;
 
@@ -817,7 +818,7 @@ int main(){
 // 92degree C
 // 95degree C
 ```
-```cpp array
+```cpp 
 #include <iostream> 
 using namespace std;
 
@@ -832,4 +833,95 @@ int main(){
 // OUTPUT:
 // chai cups served on day one 50
 //  chai cups served on day two 60
+```
+## Pointer
+*(astrick)---> used to declare Data type
+&(Ampersand)---> used to give the refernce of memory
+###  1D array
+```cpp
+#include <iostream> 
+using namespace std;
+
+int* PrepareChaiOrders(int cups){
+   int* orders = new int[cups];//new ---> dynamic memory ke andar allocate karta hai
+   for(int i = 0; i < cups; i++){
+      orders[i] = (i + 1) * 10;
+   }
+   return orders;
+}
+
+int main(){
+    int cups = 5;
+    int* ChaiOrders = PrepareChaiOrders(cups);
+
+    for(int i = 0; i < cups ; i++){
+       cout << "cups: " << i + 1 << " has " << ChaiOrders[i] << "ml\n" ;
+    }   
+
+    return 0 ;
+}
+// OUTPUT:
+// cups: 1 has 10ml
+// cups: 2 has 20ml
+// cups: 3 has 30ml
+// cups: 4 has 40ml
+// cups: 5 has 50ml
+```
+```cpp
+#include <iostream> 
+using namespace std;
+
+int* PrepareChaiOrders(int cups){
+   int* orders = new int[cups];//new ---> dynamic memory ke andar allocate karta hai
+   for(int i = 0; i < cups; i++){
+      orders[i] = (i + 1) * 10;
+   }
+   return orders;
+}
+
+int main(){
+    int cups = 5;
+    int* ChaiOrders = PrepareChaiOrders(cups);
+
+    for(int i = 0; i < cups ; i++){
+       cout << "cups: " << i + 1 << " has " << ChaiOrders[i] << "ml\n" ;
+    }   
+
+    //memory delete ---> clean up code
+    delete[] ChaiOrders;// in long code you will see profit of it
+    
+    return 0 ;
+}
+// OUTPUT:
+// cups: 1 has 10ml
+// cups: 2 has 20ml
+// cups: 3 has 30ml
+// cups: 4 has 40ml
+// cups: 5 has 50ml
+```
+### 2D Array
+```cpp
+#include <iostream> 
+using namespace std;
+
+int main(){
+    int ChaiSales[3][7] = { // first[] is for row & second[] is for collumn
+        {10,20,30,40,50,60,70}, // shop 1 sales for 7 days
+        {15,22,33,44,55,66,77}, // shop 2 sales for 7 days
+        {13,33,44,55,55,66,77}  // shop 3 sales for 7 days
+    }; 
+
+    for(int i = 0; i < 3 ;i++){
+        cout << "i am in shop: " << i + 1 << "\n";
+        for(int j = 0; j < 7l; j++){
+            cout << ChaiSales[i][j] << " shop \t ";  
+        }
+    }
+    return 0 ;
+}
+// OUTPUT:
+// i am in shop: 1
+// 10 shop          20 shop         30 shop         40 shop         50 shop         60 shop         70 shop      i am in shop: 2
+// 15 shop          22 shop         33 shop         44 shop         55 shop         66 shop         77 shop      i am in shop: 3
+// 13 shop          33 shop         44 shop         55 shop         55 shop         66 shop         77 shop      
 ```

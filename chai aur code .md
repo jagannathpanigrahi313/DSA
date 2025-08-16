@@ -797,7 +797,7 @@ using namespace std;
 
 ```
 # Lecture 10 - Array, dynamic memory and Pointers in Cpp
-```cpp
+```cpp array
 #include <iostream> 
 using namespace std;
 
@@ -816,4 +816,20 @@ int main(){
 // 90degree C
 // 92degree C
 // 95degree C
+```
+```cpp array
+#include <iostream> 
+using namespace std;
+
+int main(){
+    int chaiServed[7] = {50,60,85,88,90,92,95};
+
+        cout << "chai cups served on day one " << chaiServed[0];
+        cout << "\nchai cups served on day two " << chaiServed[1];
+
+    return 0 ;
+}
+// OUTPUT:
+// chai cups served on day one 50
+//  chai cups served on day two 60
 ```

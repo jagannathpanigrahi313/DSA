@@ -925,3 +925,228 @@ int main(){
 // 15 shop          22 shop         33 shop         44 shop         55 shop         66 shop         77 shop      i am in shop: 3
 // 13 shop          33 shop         44 shop         55 shop         55 shop         66 shop         77 shop      
 ```
+# Lecture 11 - Constructor, destructor and Copy Constructor in C++
+## Default Chai 
+```cpp
+#include <iostream> 
+#include <vector>
+
+using namespace std;//std::cout<<  << endl;  --->more preferable many times
+
+class Chai{
+public:
+    string TeaName;
+    int Servings;
+    vector<string> ingredients;
+
+    //Default constructor---> here class(){  } ---> NO datatype written
+    Chai(){
+          TeaName = "unknown tea" ;   //functionaliy of a funtion are set
+          Servings = 1 ;             //functionaliy of a funtion 
+          ingredients = {"Water","Tea Leaves"};  //functionaliy of a funtion 
+          cout << "Constuctor Called: " << endl;
+    }
+    void displayChaiDetails(){
+         cout << "Tea Name: " << TeaName << endl;
+         cout << "Servings: " << Servings << endl;
+         cout << "Ingridient: " ;
+         for(string ingridient : ingredients ){
+            cout << ingridient << " ";
+         }
+        cout << endl;
+    }
+};
+int main(){
+    //jab bhi object banta hai tabh hi costructor call hota hai
+    Chai DefaultChai;//isse he point par costructor call hota haii.e constructor Runs
+
+    DefaultChai.displayChaiDetails();// calling the function to display tea details
+
+    return 0 ;
+}
+// OUTPUT:
+// Constuctor Called: 
+// Tea Name: unknown tea
+// Servings: 1
+// Ingridient: Water Tea Leaves 
+```
+in one code there can be 1 or more constructor
+## Parameter constructor
+```cpp
+#include <iostream> 
+#include <vector>
+
+using namespace std;//std::cout<<  << endl;  --->more preferable many times
+
+class Chai{
+public:
+    string TeaName;
+    int Servings;
+    vector<string> ingredients;
+
+    //Parameter constructor
+    Chai(string name,int serve,vector<string> ingr){
+          TeaName = name ;       //functionaliy of a funtion are set
+          Servings = serve;      //functionaliy of a funtion are set
+          ingredients = ingr ;  //functionaliy of a funtion are set
+          cout << "Param Constuctor called " << endl;
+    }
+    void displayChaiDetails(){
+         cout << "Tea Name: " << TeaName << endl;
+         cout << "Servings: " << Servings << endl;
+         cout << "Ingridient: " ;
+         for(string ingridient : ingredients ){
+            cout << ingridient << " ";
+         }
+        cout << endl;
+    }
+};
+int main(){
+    
+    Chai lemonTea("Lemon Tea",2,{"Water","lemon","Honey"});
+
+    lemonTea.displayChaiDetails();
+
+    return 0 ;
+}
+// OUTPUT:
+// Param Constuctor called 
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey 
+```
+## copy constructor
+```cpp
+#include <iostream> 
+#include <vector>
+
+using namespace std;//std::cout<<  << endl;  --->more preferable many times
+
+class Chai{
+public:
+    string TeaName;
+    int Servings;
+    vector<string> ingredients;
+
+    //Parameter constructor
+    Chai(string name,int serve,vector<string> ingr){
+          TeaName = name ;       
+          Servings = serve;      
+          ingredients = ingr ;  
+          cout << "Param Constuctor called " << endl;
+    }
+    void displayChaiDetails(){
+         cout << "Tea Name: " << TeaName << endl;
+         cout << "Servings: " << Servings << endl;
+         cout << "Ingridient: " ;
+         for(string ingridient : ingredients ){
+            cout << ingridient << " ";
+         }
+        cout << endl;
+    }
+};
+int main(){
+    
+    Chai lemonTea("Lemon Tea",2,{"Water","lemon","Honey"});
+    lemonTea.displayChaiDetails();
+    
+    //copy the object
+    Chai copiedChai = lemonTea;
+    copiedChai.displayChaiDetails();
+
+    lemonTea.TeaName = "Modified Lemon Tea";
+
+    cout << "Lemon Tea" << endl;
+    lemonTea.displayChaiDetails();
+    cout << "copied tea" << endl;
+    copiedChai.displayChaiDetails();
+
+    return 0 ;
+}
+// OUTPUT:
+// Param Constuctor called 
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey 
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
+
+// Lemon Tea
+// Tea Name: Modified Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
+
+// copied tea
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
+```
+Till her we dont used copy constuctor and copied BUT when pointers come then problem comes
+```cpp
+#include <iostream> 
+#include <vector>
+
+using namespace std;//std::cout<<  << endl;  --->more preferable many times
+
+class Chai{
+public:
+    string* TeaName;
+    int Servings;
+    vector<string> ingredients;
+
+    //Parameter constructor
+    Chai(string name,int serve,vector<string> ingr){
+          TeaName = new string (name) ;       
+          Servings = serve;      
+          ingredients = ingr ;  
+          cout << "Param Constuctor called " << endl;
+    }
+    //to clear the memory --> Destructor made
+    ~Chai(){
+        delete TeaName;
+        cout << "Destructor Called :" << endl;
+    }
+
+    void displayChaiDetails(){
+         cout << "Tea Name: " << *TeaName << endl;
+         cout << "Servings: " << Servings << endl;
+         cout << "Ingridient: " ;
+         for(string ingridient : ingredients ){
+            cout << ingridient << " ";
+         }
+        cout << endl;
+    }
+};
+int main(){
+    
+    Chai lemonTea("Lemon Tea",2,{"Water","lemon","Honey"});
+    lemonTea.displayChaiDetails();
+    
+    //copy the object
+    Chai copiedChai = lemonTea;//Destructor is called
+    copiedChai.displayChaiDetails();
+
+    // lemonTea.TeaName = "Modified Lemon Tea";
+
+    // cout << "Lemon Tea" << endl;
+    // lemonTea.displayChaiDetails();
+    // cout << "copied tea" << endl;
+    // copiedChai.displayChaiDetails();
+
+    return 0 ;
+}
+// OUTPUT:
+// Param Constuctor called 
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey 
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
+// Destructor Called :
+// Destructor Called :
+```
+```cpp
+
+```

@@ -1298,4 +1298,7 @@ int main(){
 // Destructor Called :
 // Destructor Called :
 ```
-# Lecture 
+# Lecture 12 - Friend function
+```cpp
+
+```

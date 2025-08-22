@@ -1144,9 +1144,158 @@ int main(){
 // Tea Name: Lemon Tea
 // Servings: 2
 // Ingridient: Water lemon Honey
+// Destructor Called :// here must error but i dont get error
+// Destructor Called :
+```
+error corrected
+```cpp
+#include <iostream> 
+#include <vector>
+
+using namespace std;//std::cout<<  << endl;  --->more preferable many times
+
+class Chai{
+public:
+    string* TeaName;
+    int Servings;
+    vector<string> ingredients;
+
+    //Parameter constructor
+    Chai(string name,int serve,vector<string> ingr){
+          TeaName = new string (name) ;       
+          Servings = serve;      
+          ingredients = ingr ;  
+          cout << "Param Constuctor called " << endl;
+    }
+    // copy constructor
+    Chai(Chai& other){
+        TeaName = new string(*other.TeaName);
+        Servings = other.Servings;
+        ingredients = other.ingredients;
+        cout << "Copy Constuctor called " << endl;
+    }
+
+
+    //to clear the memory --> Destructor made
+    ~Chai(){
+        delete TeaName;
+        cout << "Destructor Called :" << endl;
+    }
+
+    void displayChaiDetails(){
+         cout << "Tea Name: " << *TeaName << endl;
+         cout << "Servings: " << Servings << endl;
+         cout << "Ingridient: " ;
+         for(string ingridient : ingredients ){
+            cout << ingridient << " ";
+         }
+        cout << endl;
+    }
+};
+int main(){
+    
+    Chai lemonTea("Lemon Tea",2,{"Water","lemon","Honey"});
+    lemonTea.displayChaiDetails();
+    
+    //copy the object
+    Chai copiedChai = lemonTea;//Destructor is called
+    copiedChai.displayChaiDetails();
+
+    // lemonTea.TeaName = "Modified Lemon Tea";
+
+    // cout << "Lemon Tea" << endl;
+    // lemonTea.displayChaiDetails();
+    // cout << "copied tea" << endl;
+    // copiedChai.displayChaiDetails();
+
+    return 0 ;
+}
+// OUTPUT:
+// Param Constuctor called 
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey 
+// Copy Constuctor called
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
 // Destructor Called :
 // Destructor Called :
 ```
 ```cpp
+#include <iostream> 
+#include <vector>
 
+using namespace std;//std::cout<<  << endl;  --->more preferable many times
+
+class Chai{
+public:
+    string* TeaName;
+    int Servings;
+    vector<string> ingredients;
+
+    //Parameter constructor
+    Chai(string name,int serve,vector<string> ingr){
+          TeaName = new string (name) ;       
+          Servings = serve;      
+          ingredients = ingr ;  
+          cout << "Param Constuctor called " << endl;
+    }
+    // copy constructor
+    Chai(Chai& other){
+        TeaName = new string(*other.TeaName);
+        Servings = other.Servings;
+        ingredients = other.ingredients;
+        cout << "Copy Constuctor called " << endl;
+    }
+
+
+    //to clear the memory --> Destructor made
+    ~Chai(){
+        delete TeaName;
+        cout << "Destructor Called :" << endl;
+    }
+
+    void displayChaiDetails(){
+         cout << "Tea Name: " << *TeaName << endl;
+         cout << "Servings: " << Servings << endl;
+         cout << "Ingridient: " ;
+         for(string ingridient : ingredients ){
+            cout << ingridient << " ";
+         }
+        cout << endl;
+    }
+};
+int main(){
+    
+    Chai lemonTea("Lemon Tea",2,{"Water","lemon","Honey"});
+    //lemonTea.displayChaiDetails();
+    
+    //copy the object
+    Chai copiedChai = lemonTea;//Destructor is called
+    //copiedChai.displayChaiDetails();
+
+    *lemonTea.TeaName = "Modified Lemon Tea";
+
+    cout << "Lemon Tea---------" << endl;
+    lemonTea.displayChaiDetails();
+    cout << "copied tea---------" << endl;
+    copiedChai.displayChaiDetails();
+
+    return 0 ;
+}
+// OUTPUT:
+// Param Constuctor called 
+// Copy Constuctor called 
+// Lemon Tea---------
+// Tea Name: Modified Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
+// copied tea---------
+// Tea Name: Lemon Tea
+// Servings: 2
+// Ingridient: Water lemon Honey
+// Destructor Called :
+// Destructor Called :
 ```
+# Lecture 

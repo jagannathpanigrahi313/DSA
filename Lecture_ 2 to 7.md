@@ -1,4 +1,3 @@
-
 # DSA Lecture Videos Notes of Shraddha Mam
 
 # Lecture 2
@@ -271,7 +270,7 @@ int main() {
 
 ## Sum of Two Numbers
 
-psuedo code 
+Psuedo code 
 
 1) input a & b 
 

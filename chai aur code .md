@@ -1299,6 +1299,47 @@ int main(){
 // Destructor Called :
 ```
 # Lecture 12 - Friend function
+A friend function in C++ is a non-member function that is granted special access to the private and protected members of a class, allowing it to manipulate these members as if it were a member function of that class
 ```cpp
+#include <iostream> 
+#include <vector>
+using namespace std;
 
+class Chai{
+     private:
+         string TeaName;
+         int Servings;
+
+    public:
+        Chai(string name, int Serve ): TeaName(name) , Servings(Serve){}
+
+        friend bool compareServings(const Chai &chai1 , const Chai &chai2);
+
+        void display() const {
+             cout << "Teaname: " << TeaName << endl;
+        }    
+};
+
+bool compareServings(const Chai &chai1 , const Chai &chai2){
+    return chai1.Servings > chai2.Servings; 
+}
+
+int main(){
+    Chai Masalachai("masala Chai", 4 );
+    Chai Gingerchai("ginger Chai", 8 );
+
+    Masalachai.display();
+    Gingerchai.display();
+
+    if(compareServings(Masalachai,Gingerchai)){
+       cout << "Masala chai has more servings" << endl;
+    }else{
+        cout << "Masala chai has less servings" << endl;
+    }
+}
+// OUTPUT:
+//
+// Teaname: masala Chai
+// Teaname: ginger Chai
+// Masala chai has less servings
 ```

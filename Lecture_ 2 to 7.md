@@ -255,7 +255,9 @@ int main() {
   return 0;
 }
 ```
-### 3) LOGICAL OPERATOR -->(1) OR (||)pipe operator 
+### 3) LOGICAL OPERATOR 
+            |
+            |-->(1) OR (||)pipe operator 
                       |----> any one true then true
                       |---->cout << (  ) || (  ) << endl;
 

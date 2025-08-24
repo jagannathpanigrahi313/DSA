@@ -926,7 +926,7 @@ int main(){
 // 13 shop          33 shop         44 shop         55 shop         55 shop         66 shop         77 shop      
 ```
 # Lecture 11 - Constructor, destructor and Copy Constructor in C++
-## Default Chai 
+## Default Cons
 ```cpp
 #include <iostream> 
 #include <vector>
@@ -1299,7 +1299,9 @@ int main(){
 // Destructor Called :
 ```
 # Lecture 12 - Friend function
+
 A friend function in C++ is a non-member function that is granted special access to the private and protected members of a class, allowing it to manipulate these members as if it were a member function of that class
+
 ```cpp
 #include <iostream> 
 #include <vector>
@@ -1342,4 +1344,10 @@ int main(){
 // Teaname: masala Chai
 // Teaname: ginger Chai
 // Masala chai has less servings
+```
+friend function is class & function also
+# Lecture 13 - 
+## Getter Setter
+```cpp
+
 ```

@@ -1417,7 +1417,7 @@ int main(){
         cout << ing << " ";
     }
     cout << endl;
-//-----------------------------------------------------------------------------------------------------------
+---
     // Creating chai object with parameterized constructor
     Chai masala("Masala Chai", 2, {"Water", "Milk", "Tea Leaves", "Sugar", "Ginger"});
 

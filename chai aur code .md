@@ -1347,7 +1347,100 @@ int main(){
 ```
 friend function is class & function also
 # Lecture 13 - 
-## Getter Setter
+## Getter & Setter
+```cpp
+#include <iostream> 
+#include <vector>
+using namespace std;
+
+class Chai{
+     private:
+         string TeaName;
+         int Servings;
+         vector<string> ingredients;
+
+    public:
+     // Default constructor (called when no arguments are passed)
+       Chai(){
+            TeaName = "unknown tea";
+            Servings = 1;
+            ingredients = {"water","Tea Leaves"};
+       }
+
+       // Parameterized constructor (called when arguments are given)
+        Chai(string name, int serve , vector<string> ingr){
+            TeaName = name;
+            Servings = serve;
+            ingredients = ingr;
+        }
+//-------------------------------------------------------------------------
+        //getter for teaName
+        string getteaName(){
+          return TeaName;
+        }
+
+        //Setter for teaName
+        void setteaName(string name){
+          //logic
+          TeaName = name;
+        } 
+//------------------------------------------------------------
+     //getter for serving
+     int getservings(){
+          return Servings;
+     } 
+
+     //setter for servings
+     void setservings(int serve){
+          Servings = serve; 
+     } 
+//-----------------------------------------------------------
+     //getter for ingre
+     vector<string> getIngredients(){
+          return ingredients;
+     }
+
+     //setter for ingr
+     void setIngredients(vector<string> ingr){
+          ingredients = ingr;
+     }
+};
+
+int main(){
+    Chai chai;
+
+    // Printing default chai details
+    cout << "Tea Name: " << chai.getteaName() << endl;   // prints "unknown tea"
+    cout << "Servings: " << chai.getservings() << endl; // prints 1
+    cout << "Ingredients: ";
+    for(string ing : chai.getIngredients()){            // prints water Tea Leaves
+        cout << ing << " ";
+    }
+    cout << endl;
+//-----------------------------------------------------------------------------------------------------------
+    // Creating chai object with parameterized constructor
+    Chai masala("Masala Chai", 2, {"Water", "Milk", "Tea Leaves", "Sugar", "Ginger"});
+
+    // Printing masala chai details
+    cout << "\nTea Name: " << masala.getteaName() << endl;  // prints "Masala Chai"
+    cout << "Servings: " << masala.getservings() << endl;  // prints 2
+    cout << "Ingredients: ";
+    for(string ing : masala.getIngredients()){             // prints custom list
+        cout << ing << " ";
+    }
+    cout << endl;
+}
+
+// OUTPUT:
+//Tea Name: unknown tea
+// Servings: 1
+// Ingredients: water Tea Leaves 
+
+// Tea Name: Masala Chai
+// Servings: 2
+// Ingredients: Water Milk Tea Leaves Sugar Ginger 
+```
+# Deligation constructor
 ```cpp
 
 ```

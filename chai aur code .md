@@ -1440,6 +1440,12 @@ int main(){
 // Servings: 2
 // Ingredients: Water Milk Tea Leaves Sugar Ginger 
 ```
+4️⃣ Summary:
+| Function | Purpose                               | Example Use                 |
+| -------- | ------------------------------------- | --------------------------- |
+| Getter   | Read private data safely              | `chai.getTeaName()`         |
+| Setter   | Update private data safely with rules | `chai.setTeaName("Masala")` |
+
 # Deligation constructor
 ```cpp
 

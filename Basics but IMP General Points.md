@@ -26,7 +26,7 @@ ______ --version
 > 💡 Select and then Press `Ctrl + /` to comment multiple lines at once (in supported editor write hos).
 
 > 💡 /*__________*/ in between this you can write 2 OR more lines it will be commited .
-> //________ this is also will be committed 
+>  💡 //________ this is also will be committed 
 
 ### 📍 Semicolon `;`
 

@@ -1,11 +1,12 @@
 # Lecture 16 - Pointers 
-
+```
 decimal - 10digits - (0 - 9)
 binary - 2digits - (0/1)
 hexadecimal - 16digits -(0 -9)  (a,b,c,d,e,f)
+```
 
 ## Memory address
-
+```
 &(ampersand) ---> bitwise AND operator
 &variable ---> Address of operator(used to give address of a variable)
 & ---> used in alias
@@ -14,6 +15,7 @@ hexadecimal - 16digits -(0 -9)  (a,b,c,d,e,f)
 
 * ---> used to mutiply
 * ---> used to derefrence  and find out the values at a particular memory addresss
+```
   
 ```cpp
 #include <iostream>

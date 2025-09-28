@@ -14,7 +14,10 @@ hexadecimal - 16digits -(0 -9)  (a,b,c,d,e,f)
 && ---> Logical and operotor
 
 * ---> used to mutiply
-* ---> used to derefrence  and find out the values at a particular memory addresss
+
+A pointer variable stores a memory address. But an address is not the actual value of the variable — it’s just a "location" in memory.
+To actually access the real value stored at that location, we use the dereference operator (*).
+
           here, Dereference = follow the address inside a pointer to fetch the real value stored there.
 ```
   

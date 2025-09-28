@@ -3,7 +3,7 @@
 # Lecture 2
 
 ## Boiler Plate of CPP
-```c++
+```cpp
 #include <iostream> //  #____ known as preprocessor directive //<____> header file.
 using namespace std;
 

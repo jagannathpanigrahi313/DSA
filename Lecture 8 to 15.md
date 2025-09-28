@@ -25,7 +25,7 @@ For array the valid index is from 0 to size-1
 **datatype variable [items] **= {store data in items};//Here arrays are created & then values are stored i.e array  & data bothis initialized
 
 //you can initialize only value and don't put items
-```c++
+```C++
 #include <iostream>
 using namespace std;
 

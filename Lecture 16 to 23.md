@@ -15,6 +15,7 @@ hexadecimal - 16digits -(0 -9)  (a,b,c,d,e,f)
 
 * ---> used to mutiply
 * ---> used to derefrence  and find out the values at a particular memory addresss
+          here, Dereference = follow the address inside a pointer to fetch the real value stored there.
 ```
   
 ```cpp

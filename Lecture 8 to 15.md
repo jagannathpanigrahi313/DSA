@@ -25,7 +25,7 @@ For array the valid index is from 0 to size-1
 **datatype variable [items] **= {store data in items};//Here arrays are created & then values are stored i.e array  & data bothis initialized
 
 //you can initialize only value and don't put items
-```C++
+<code>```C++
 #include <iostream>
 using namespace std;
 
@@ -52,7 +52,7 @@ OUTPUT:
 88
 0//we got garbage value
 21955//we got garbage value
-```
+```</code>
 
 here we printed 5 elements 5 cout statement BUT for 100 elements how can we do therefore we use  Loops on Arrays
 # Loops on Arrays

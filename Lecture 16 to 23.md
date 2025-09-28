@@ -4,7 +4,7 @@ decimal - 10digits - (0 - 9)
 binary - 2digits - (0/1)
 hexadecimal - 16digits -(0 -9)  (a,b,c,d,e,f)
 
-## Memoey address
+## Memory address
 
 &(ampersand) ---> bitwise AND operator
 &variable ---> Address of operator(used to give address of a variable)

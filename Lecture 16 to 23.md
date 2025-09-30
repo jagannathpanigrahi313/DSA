@@ -506,7 +506,7 @@ int binarysearch(vector<int> arr, int tar){//Iterative code
     int st=0, end=arr.size()-1;
 
     while(st <= end){
-         int mid = (st + end) /2;
+         int mid = (st + end) /2;//by this formula the limit of int will overflow
 
          if(tar > arr[mid]){
             st = mid+1;
@@ -545,7 +545,7 @@ int binarysearch(vector<int> arr, int tar){//Iterative code
     int st=0, end=arr.size()-1;
 
     while(st <= end){
-         int mid = st + (end-st) /2;//optimization in code
+         int mid = st + (end-st) /2;//by this formula the limit of int will not overflow optimization in code
 
          if(tar > arr[mid]){
             st = mid + 1;//2nd half

@@ -572,11 +572,13 @@ int main() {
 }
 ```
 ### Binary search by time complexity
-<img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-42-38" src="https://github.com/user-attachments/assets/b0cacff5-9012-437d-8509-ecca14b578c3" />
+<img width="1261" height="820" alt="Screenshot 2025-09-30 195620" src="https://github.com/user-attachments/assets/8f37a5cc-d0a3-498f-941b-2d97b544ecb2" />
 
-<img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-43-56" src="https://github.com/user-attachments/assets/0f5943f9-51c6-4804-96e4-1157a03775dd" />
+it is cery optimized as compared to linear search 
+<img width="1380" height="1078" alt="Screenshot 2025-09-30 201159" src="https://github.com/user-attachments/assets/001085cc-3ea3-4908-82b3-22f601cfa037" />
 
 logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equal hota hai
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 21-48-17" src="https://github.com/user-attachments/assets/88dd7379-901a-4720-9953-81ca7c1e123d" />
 
 ### Binary search with recursion 
+

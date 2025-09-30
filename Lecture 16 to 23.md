@@ -37,7 +37,7 @@ further numbers are hexadecimal number
 ```
 
 ## Pointers
-### variable address is stored to pointer   
+###1) variable address is stored to pointer   
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 14-35-36" src="https://github.com/user-attachments/assets/2cc3e044-2b41-4aa1-8d53-aea2d6331898" />
 
 ```cpp
@@ -48,10 +48,10 @@ int main() {
     int a = 10;
     int* ptr = &a;
 
-    cout << ptr << endl;
-    cout << &a << endl;
+    cout << ptr << endl;// ptr → address of a
+    cout << &a << endl;// &a → same as above address
 
-    cout << &ptr << endl;
+    cout << &ptr << endl;// &ptr → different, address of the pointer variable itself
     return 0;
 }
 // output:
@@ -78,7 +78,7 @@ int main() {
 // 0x7ffeae12da4c
 // 0x7ffeae12da50
 ```
-### pointer to pointer ---> pointer address is stored to another pointer
+###2) pointer to pointer ---> pointer address is stored to another pointer
 ```cpp
 #include <iostream>
 using namespace std;
@@ -99,7 +99,7 @@ int main() {
 // 0x7fff0ea083d8
 // 0x7fff0ea083d8
 ```
-### Derefrence operator ---> gives value of address
+###3) Derefrence operator ---> gives value of address
 
 ```cpp
 #include <iostream>
@@ -130,7 +130,7 @@ int main() {
 // 0x7ffda27637d4
 // 10
 ```
-### NULL Pointer
+###4) NULL Pointer
 
 ```cpp
 #include <iostream>

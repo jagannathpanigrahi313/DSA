@@ -37,7 +37,7 @@ further numbers are hexadecimal number
 ```
 
 ## Pointers
-###1) variable address is stored to pointer   
+### 1) variable address is stored to pointer   
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 14-35-36" src="https://github.com/user-attachments/assets/2cc3e044-2b41-4aa1-8d53-aea2d6331898" />
 
 ```cpp
@@ -78,7 +78,7 @@ int main() {
 // 0x7ffeae12da4c
 // 0x7ffeae12da50
 ```
-###2) pointer to pointer ---> pointer address is stored to another pointer
+### 2) pointer to pointer ---> pointer address is stored to another pointer
 ```cpp
 #include <iostream>
 using namespace std;
@@ -87,7 +87,7 @@ int main() {
    int a = 10;
    int* ptr = &a;
    
-   int** parptr = &ptr;//level is gone up BUT mor elevel will not go up 
+   int** parptr = &ptr;//level is gone up BUT more level will not go up 
 
     cout << &ptr << endl;
     cout << parptr << endl;
@@ -99,7 +99,7 @@ int main() {
 // 0x7fff0ea083d8
 // 0x7fff0ea083d8
 ```
-###3) Derefrence operator ---> gives value of address
+### 3) Derefrence operator ---> gives value of address
 
 ```cpp
 #include <iostream>
@@ -130,7 +130,7 @@ int main() {
 // 0x7ffda27637d4
 // 10
 ```
-###4) NULL Pointer
+### 4) NULL Pointer
 
 ```cpp
 #include <iostream>
@@ -246,10 +246,12 @@ int main() {
 
 //    int a = 15, b = 15;
 //    int* ptr = &a;
-//    ptr = &b;
+//    ptr = &b;   // ✅ Possible because ptr is a normal pointer, so it can be reassigned
+
 
 //    int a = 15;
-//    arr = &b;here arr is modifiable value means not changeable therefore arr is a constant variable
+//    arr = &b;// ❌ Error: 'arr' is not modifiable, because the arr is a constant variable
+               // It always points to the first element of the array and cannot be reassigned
 
    cout << arr << endl;//pointer
    cout << *arr << endl;//pointer => 1
@@ -280,7 +282,7 @@ int main() {
 // 4
 ```
 ## Pointer Arithmtic
-### increment(++)/decrement(--)
+### 1) increment(++)/decrement(--)
 
 ```cpp
 #include <iostream>
@@ -305,7 +307,7 @@ int main() {
 // 0x7fffad7a1068
 // 0x7fffad7a1064
 ```
-### Add/ Subtract number
+### 2) Add/ Subtract number
 ```cpp
 #include <iostream>
 using namespace std;
@@ -331,7 +333,7 @@ int main() {
 ```
 
 we cannot add two pointer in c++ but subtract
-### subtract pointer
+### 3) Subtract pointer
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 17-14-17" src="https://github.com/user-attachments/assets/f24952df-a3af-4146-bd06-31fbc167dea6" />
 
@@ -352,7 +354,7 @@ int main() {
 // 2
 ```
 
-### compare the pointers
+### 4)Compare the pointers
 
 ```cpp
 #include <iostream>

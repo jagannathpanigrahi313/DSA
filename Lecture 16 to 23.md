@@ -582,3 +582,84 @@ logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equa
 
 ### Binary search with recursion 
 
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int recBinarySearch(vector<int> arr, int tar, int st, int end) {
+    if (st <= end) {
+        int mid = st + (end - st) / 2;
+
+        if (tar > arr[mid]) { // 2nd Half
+            return recBinarySearch(arr, tar, mid + 1, end);
+        } else if (tar < arr[mid]) { // 1st Half
+            return recBinarySearch(arr, tar, st, mid - 1);
+        } else { // mid == tar → answer found
+            return mid;
+        }
+    }
+    return -1; // not found
+}
+
+int binarysearch(vector<int> arr, int tar) {
+    return recBinarySearch(arr, tar, 0, arr.size() - 1);
+}
+
+int main() {
+    vector<int> arr1 = {-1, 0, 3, 4, 5, 9, 12}; // odd size
+    int tar1 = 40;// return -1 because it doesnt exist in arr
+    cout << binarysearch(arr1, tar1) << endl;  
+
+    vector<int> arr2 = {-1, 0, 3, 4, 5, 9, 12}; // even size
+    int tar2 = 0;
+    cout << binarysearch(arr2, tar2) << endl;  // return 1 because it exist in arr
+
+    return 0;
+}
+// OUTPUT:
+// -1
+// 1
+```
+
+```cpp
+include <iostream>
+#include <vector>
+using namespace std;
+
+int iterativeBinarySearch(vector<int> arr, int target) {
+    int low = 0, high = arr.size() - 1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == target) {
+            return mid;  // target found
+        }
+        else if (arr[mid] < target) {
+            low = mid + 1; // search right half
+        }
+        else {
+            high = mid - 1; // search left half
+        }
+    }
+    return -1; // target not found
+}
+
+int main() {
+    vector<int> arr = {2, 5, 8, 12, 16, 23, 38, 45};
+    int target = 23;
+
+    int result = iterativeBinarySearch(arr, target);
+    if (result != -1)
+        cout << "Element found at index " << result;
+    else
+        cout << "Element not found";
+}
+// OUTPUT:
+// Element found at index 5
+```
+
+```cpp
+
+```

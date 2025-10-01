@@ -582,6 +582,8 @@ logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equa
 
 ### Binary search with recursion 
 
+<img width="1911" height="1079" alt="Screenshot 2025-10-01 122507" src="https://github.com/user-attachments/assets/061d758c-d71c-4820-8b52-4ef38e269b9d" />
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -698,6 +700,9 @@ int main() {
 // Element found at index 5
 ```
 # Lecture 18 
+
+ <img width="1917" height="1079" alt="Screenshot 2025-10-01 183944" src="https://github.com/user-attachments/assets/3cecb465-5f16-4c7d-82eb-2e21095a5d1e" />
+ 
 leetcode - 3 not submitted
 ```cpp
 class Solution {
@@ -729,7 +734,7 @@ public:
     }
 };
 ```
-this is submitted by gpt
+this is submitted by gpt in leetcode
 ```cpp
 class Solution {
 public:
@@ -763,5 +768,7 @@ public:
         return -1;
     }
 };
-
 ```
+# Lecture 19
+
+

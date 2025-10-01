@@ -622,6 +622,10 @@ int main() {
 // 1
 ```
 
+Binary Search works by repeatedly halving the search space in a sorted array.
+
+code implementation (iterative & recursive) in C++ with dry run
+
 ```cpp
 include <iostream>
 #include <vector>
@@ -661,5 +665,38 @@ int main() {
 ```
 
 ```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
 
+int recursiveBinarySearch(vector<int> arr, int target, int low, int high) {
+    if (low > high)
+        return -1; // base case, not found
+
+    int mid = low + (high - low) / 2;
+
+    if (arr[mid] == target)
+        return mid; // found
+    else if (arr[mid] < target)
+        return recursiveBinarySearch(arr, target, mid + 1, high); // right half
+    else
+        return recursiveBinarySearch(arr, target, low, mid - 1);  // left half
+}
+
+int main() {
+    vector<int> arr = {2, 5, 8, 12, 16, 23, 38, 45};
+    int target = 23;
+
+    int result = recursiveBinarySearch(arr, target, 0, arr.size() - 1);
+    if (result != -1)
+        cout << "Element found at index " << result;
+    else
+        cout << "Element not found";
+}
+
+// OUTPUT:
+// Element found at index 5
 ```
+# Lecture 18 
+
+

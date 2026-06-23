@@ -60,7 +60,7 @@ int main() {
   
   int (variable) = 25;
   cout << sizeof(variable)<< endl;//To see the size data tyoe in byte
-  cout << variable << emdl;
+  cout << variable << endl;
   
   return 0; 
 }
@@ -73,7 +73,7 @@ using namespace std;
 int main() {
   
   int (age) = 25;
-  cout << age << emdl;
+  cout << age << endl;
   
   return 0; 
 }
@@ -86,7 +86,7 @@ using namespace std;
 int main() {
   
   char (grade) = 'A'; //to put small char----> "a" (like this you can put)
-  cout << grade << emdl;
+  cout << grade << endl;
   
   return 0; 
 }

@@ -5,11 +5,11 @@
 ## Boiler Plate of CPP
 ```cpp
 #include <iostream> //  #____ known as preprocessor directive //<____> header file.
-using namespace std;
+using namespace std; // standard C++ library namespace (std)
 
 // This is the starting point of execution
-
 int main() {
+
    return 0;
 }
 ```

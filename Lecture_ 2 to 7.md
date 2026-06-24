@@ -425,7 +425,7 @@ int main(){
 
   if (n%2 == 0){
  cout << "even\n";
- cout << "bye \n";//you can put maby outputs 
+ cout << "bye \n";//you can put many outputs like this by cout 
      
   } else {
     cout <<"odd\n";

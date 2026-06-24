@@ -255,9 +255,9 @@ int main() {
 }
 ```
 ### 3) LOGICAL OPERATOR 
-            |-->(1) OR (||)pipe operator 
-                      |----> any one true then true
-                      |---->cout << (  ) || (  ) << endl;
+          |-->(1) OR (||)pipe operator 
+                   |----> any one true then true
+                   |---->cout << (  ) || (  ) << endl;
 
               (2) AND (&&)ampersand
                    |---->any one false then false

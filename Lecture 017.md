@@ -140,14 +140,13 @@ using namespace std;
 
 int main() {
 
-   int* ptr  ;//int** ptr;
-              //int* ptr = NULL;
+   int* ptr ;
  
    cout << ptr << endl;
  
     return 0;
 }
-// output:0
+//Output: 0x401a3b ---> garbage address 
 ```
 ```cpp
 #include <iostream>
@@ -155,13 +154,37 @@ using namespace std;
 
 int main() {
 
-   int* ptr  ;//int** ptr;
-              //int* ptr = NULL;
+   int* ptr ;
  
    cout << *ptr << endl;//output : Segmentation fault (core dumped)
  
     return 0;
 }
+// output:error will show 
+```
+<img width="305" height="100" alt="image" src="https://github.com/user-attachments/assets/5a0b8a22-d713-494b-a501-3f487f9664ad" />
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int a = 5;
+int *p = &a;
+int ** q = &p;
+
+cout << *p << endl;
+cout << ** q << endl;
+cout << p << endl;
+cout << *q << endl;
+ 
+    return 0;
+}
+// output:
+// 5
+// 5
+// 0x61ff08
+// 0x61ff08
 ```
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 16-50-55" src="https://github.com/user-attachments/assets/f8a511d5-d1e8-4cbc-bff7-e383d3a0c529" />

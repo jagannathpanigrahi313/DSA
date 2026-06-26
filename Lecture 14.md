@@ -5,7 +5,8 @@
 ## by Brute Approach
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-14 18-29-32" src="https://github.com/user-attachments/assets/63e834e2-941f-460c-9bbf-269f08886ebc" />
-
+<img width="537" height="338" alt="image" src="https://github.com/user-attachments/assets/d270818c-1f0f-4038-a56a-4a0794260a20" />
+In this 2 pointer approach ---> we do operaion on that pointer which is minimum    
 ```cpp
 class Solution {
 public:

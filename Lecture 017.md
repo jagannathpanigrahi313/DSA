@@ -100,6 +100,8 @@ int main() {
 // 0x7fff0ea083d8
 ```
 ### 3) Derefrence operator ---> gives value of address
+<img width="424" height="209" alt="image" src="https://github.com/user-attachments/assets/0bab9e64-713e-4672-a1fd-982f9c1fd85d" />
+<img width="337" height="263" alt="image" src="https://github.com/user-attachments/assets/e7955a99-d5af-4631-85e3-49daeb7f9163" />
 
 ```cpp
 #include <iostream>
@@ -115,8 +117,8 @@ int main() {
    cout << *(ptr) << endl;//10
    cout << &ptr << endl;
    cout << parptr << endl;
-   cout << *(parptr) << endl;//100
-   cout << (ptr) << endl;//100
+   cout << *(parptr) << endl;//100-->address
+   cout << (ptr) << endl;//100-->adress
    cout << **(parptr) << endl;//10
 
     return 0;

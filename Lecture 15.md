@@ -26,6 +26,7 @@ public:
     }
 };
 ```
+above is reffered or by this method also can be done
 
 ```cpp
 class Solution {
@@ -55,6 +56,8 @@ public:
 | Nested loop (2 levels)   →     | O(n²)           |
 | Loop inside loop inside loop → | O(n³)           |
 
+TC: O(n^2)
+But cnstraint is 10^5 there fore this we have optimize it 
 ### by using optimal approach for O(n)time complexity & O(1)space complexity
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-17 21-41-30" src="https://github.com/user-attachments/assets/18947f52-defd-47a2-8ee9-f4c4fb748a93" />

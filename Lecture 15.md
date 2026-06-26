@@ -2,7 +2,8 @@
 ## 238) Product of Array Except Self-leetcode
 ### by Brute force approach 
 
-by using division operotor 
+by using division operotor --> Tp Find product array jiss index ka value nikalna hai uss index ka value divide by product of full array 
+
 <img width="1920" height="1080" alt="Screenshot from 2025-07-16 13-59-17" src="https://github.com/user-attachments/assets/9db8b88a-fadc-48d0-bc0b-fc15f1aeaf1d" />
 
 without using division operator

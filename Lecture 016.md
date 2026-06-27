@@ -37,7 +37,8 @@ further numbers are hexadecimal number
 ```
 
 ## Pointers
-### 1) variable address is stored to pointer   
+### 1) variable address is stored to pointer  
+
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 14-35-36" src="https://github.com/user-attachments/assets/2cc3e044-2b41-4aa1-8d53-aea2d6331898" />
 
 ```cpp
@@ -59,6 +60,7 @@ int main() {
 // 0x7ffd66570dcc
 // 0x7ffd66570dd0
 ```
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -78,7 +80,9 @@ int main() {
 // 0x7ffeae12da4c
 // 0x7ffeae12da50
 ```
+
 ### 2) pointer to pointer ---> pointer address is stored to another pointer
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -100,6 +104,7 @@ int main() {
 // 0x7fff0ea083d8
 ```
 ### 3) Derefrence operator ---> gives value of address
+
 <img width="424" height="209" alt="image" src="https://github.com/user-attachments/assets/0bab9e64-713e-4672-a1fd-982f9c1fd85d" />
 <img width="337" height="263" alt="image" src="https://github.com/user-attachments/assets/e7955a99-d5af-4631-85e3-49daeb7f9163" />
 
@@ -163,6 +168,7 @@ int main() {
 // output:error will show 
 ```
 <img width="305" height="100" alt="image" src="https://github.com/user-attachments/assets/5a0b8a22-d713-494b-a501-3f487f9664ad" />
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -191,6 +197,7 @@ cout << *q << endl;
 
 ## Pass by refernce 
 whenever a function has any parameter it can be - pass by value / reference
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -234,6 +241,7 @@ int main() {
 // inside main fnx :20
 ```
 alias (&)---> a ke liye hi ham dusra variable b use kar rahai hai BUT memory ke andar hum same location ka baat kar rahe hai 
+
 ```cpp
 #include <iostream>
 using namespace std;

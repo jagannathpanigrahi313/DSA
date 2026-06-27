@@ -1,4 +1,4 @@
-# Lecture 16 - Pointers 
+# Lecture 16 - Pointers bdhbsygbd
 ```
 decimal - 10digits - (0 - 9)
 binary - 2digits - (0/1)

@@ -98,6 +98,9 @@ logically the time complexity(TC) = kitne operations me --> n ka value 1 ke equa
 
 ### Binary search with recursion 
 
+<img width="923" height="520" alt="image" src="https://github.com/user-attachments/assets/90314bb8-f684-4eb5-bb9f-bd92ccac20f3" />
+
+
 <img width="1911" height="1079" alt="Screenshot 2025-10-01 122507" src="https://github.com/user-attachments/assets/061d758c-d71c-4820-8b52-4ef38e269b9d" />
 
 ```cpp

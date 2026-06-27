@@ -264,7 +264,7 @@ int main() {
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 17-50-02" src="https://github.com/user-attachments/assets/3d12e234-88eb-4ddd-9965-d1735e5ae186" />
 
-so pass by refrence in c++ is only done through pointers/alias
+so pass by refrence in c++ is only done through pointers/Reference(alias)
 
 ## Array Pointers 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-18 18-12-17" src="https://github.com/user-attachments/assets/100a9550-52cd-4ee2-b45c-c8cc354a619c" />

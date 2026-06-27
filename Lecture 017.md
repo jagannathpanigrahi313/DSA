@@ -9,7 +9,7 @@
 Here, we divide array from  middle and by by formula we dicide we will take left /right side 
 
 in linear search we have to use 10 steps 
-BUT in binary search we have to use only 3 steps 
+BUT in binary search-iterative method we have to use only 3 steps 
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-53-23" src="https://github.com/user-attachments/assets/52e659ad-5277-40d4-8987-30518239fe35" />
 

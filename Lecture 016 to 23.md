@@ -7,7 +7,7 @@ In Rotated Sorted array left/ right side of mid will always sorted --> the side 
 
  <img width="1917" height="1079" alt="Screenshot 2025-10-01 183944" src="https://github.com/user-attachments/assets/3cecb465-5f16-4c7d-82eb-2e21095a5d1e" />
  
-leetcode - 3 not submitted
+leetcode - 33.Search in Rotated Sorted array --> not submitted
 ```cpp
 class Solution {
 public:

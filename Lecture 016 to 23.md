@@ -1,5 +1,7 @@
 
-# Lecture 18 
+# Lecture 18 - Search in Rotated Sorted array 
+
+here array was initially sorted but now rotated --> to search an element we will do generally linear search O(n) But will low TC we will use Binary search O(log n)
 
  <img width="1917" height="1079" alt="Screenshot 2025-10-01 183944" src="https://github.com/user-attachments/assets/3cecb465-5f16-4c7d-82eb-2e21095a5d1e" />
  

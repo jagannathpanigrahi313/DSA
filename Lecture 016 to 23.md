@@ -3,7 +3,7 @@
 
 here array was initially sorted but now rotated --> to search an element we will do generally linear search O(n) But will low TC we will use Binary search O(log n)
 
-In Rotated Sorted array left/ right side of mid will always sorted 
+In Rotated Sorted array left/ right side of mid will always sorted --> the side which will be sorted on that side only we will apply binary search  
 
  <img width="1917" height="1079" alt="Screenshot 2025-10-01 183944" src="https://github.com/user-attachments/assets/3cecb465-5f16-4c7d-82eb-2e21095a5d1e" />
  

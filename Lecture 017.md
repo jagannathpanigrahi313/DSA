@@ -6,7 +6,8 @@
 
 <img width="1920" height="1080" alt="Screenshot from 2025-07-19 20-49-43" src="https://github.com/user-attachments/assets/55631100-d282-4d24-8cdc-af5294a43afe" />
 
-Here, we divide array from  middle and by by formula we dicide we will take left /right side 
+Here, we divide array from  middle and by by formula we dicide where to seach left /right side of mid 
+And this imp step in binary search 
 
 in linear search we have to use 10 steps 
 BUT in binary search-iterative method we have to use only 3 steps 

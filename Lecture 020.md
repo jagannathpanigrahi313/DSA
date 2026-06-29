@@ -43,4 +43,5 @@ public:
     }
 };
 ```
-TC:O(log n)   SC:O(1)
+TC:O(log n)   
+SC:O(1)

@@ -46,3 +46,4 @@ public:
 ```
 TC:O(log n)   
 SC:O(1)
+<img width="386" height="213" alt="image" src="https://github.com/user-attachments/assets/0e654297-db62-4d08-aa01-d77044976d63" />

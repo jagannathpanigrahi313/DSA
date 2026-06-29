@@ -10,4 +10,4 @@ leetcode 852. Peak Index in a Mountain Array
 
 <img width="1919" height="1075" alt="Screenshot 2025-10-04 161105" src="https://github.com/user-attachments/assets/143e341a-6d87-4317-a157-9c074f374224" />
 
-# Lecture 20
+

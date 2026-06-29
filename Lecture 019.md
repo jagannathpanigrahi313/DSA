@@ -31,3 +31,4 @@ public:
     }
 };
 ```
+TC: O(log n) because every time our search space is becoming half 

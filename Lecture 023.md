@@ -72,6 +72,7 @@ int main() {
 ```
 
 whenevever min max Q will do like this solve
+
 <img width="335" height="218" alt="Screenshot 2026-06-30 182603" src="https://github.com/user-attachments/assets/e6d9d608-3701-4c2a-a31c-0519898aace8" />
 
 <img width="593" height="203" alt="Screenshot 2026-06-30 182645" src="https://github.com/user-attachments/assets/7d4316e1-5050-42cb-8796-9480d899629e" />

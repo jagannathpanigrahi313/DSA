@@ -1,7 +1,7 @@
 # Lecture 24- Sorting
 It can be done in two types ascending and descending order
 
-## Bubble sort
+## 1)Bubble sort
 
 <img width="959" height="481" alt="image" src="https://github.com/user-attachments/assets/9b984dd6-e188-44c3-a628-7b31fb53b64d" />
 
@@ -43,7 +43,7 @@ int main() {
 }
 //Output:1 2 3 4
 ```
-## Selection Sort
+## 2)Selection Sort
 <img width="863" height="284" alt="image" src="https://github.com/user-attachments/assets/01f83269-b7fa-428a-811f-628fb1dd4d9d" />
 
 ```cpp
@@ -81,7 +81,7 @@ int main() {
 }
 //Output:1 2 3 4
 ```
-## Insertion sort
+## 3)Insertion sort
 <img width="930" height="539" alt="image" src="https://github.com/user-attachments/assets/ab0a9fa4-4ef4-4b1f-9277-d2495babc2bd" />
 
 ```cpp

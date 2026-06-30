@@ -4,6 +4,14 @@
 
 <img width="526" height="539" alt="Screenshot 2026-06-30 131449" src="https://github.com/user-attachments/assets/8df6e4d1-4cc7-487d-bc23-e37732081ce1" />
 
+<img width="761" height="481" alt="image" src="https://github.com/user-attachments/assets/ab2882c0-876c-4f27-9712-ddf76e99b584" />
+
+maxallowed pages se kamm rakthe hue me hamm no. of students ko aar[i] pages hamm add karte rahte hai then if m > n then it is invalid condition 
+
+Note: m is no. of stident 
+n is no. of books
+arr[i]vaue is no. of pages
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -13,6 +21,7 @@ using namespace std;
 bool isValid(vector<int> &arr, int n, int m,int maxAllowedpages) { // maxAllowedpages --> means md value only
     int students = 1, pages = 0;
 
+//student allocatin
     for(int i = 0; i < n; i++) {
         if(arr[i] > maxAllowedpages){
             return false;

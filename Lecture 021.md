@@ -64,3 +64,53 @@ int main() {
 }
 //Output:6
 ```
+Pseudocode:
+1)FUNCTION isValid(arr, n, m, maxPages)
+```cpp
+    students = 1
+    pages = 0
+
+    FOR every book
+
+        IF book > maxPages
+            RETURN false
+
+        IF pages + currentBook <= maxPages
+            Give book to current student
+            pages += currentBook
+
+        ELSE
+            Allocate new student
+            students++
+            pages = currentBook
+
+    END FOR
+
+    RETURN (students <= m)
+```
+2)FUNCTION allocateBooks(arr, n, m)
+```cpp
+    IF m > n
+        RETURN -1
+
+    sum = total pages of all books
+
+    st = 0
+    end = sum
+    ans = -1
+
+    WHILE st <= end
+
+        mid = (st + end) / 2
+
+        IF isValid(mid)
+
+            ans = mid
+            end = mid - 1
+
+        ELSE
+
+            st = mid + 1
+
+    RETURN ans
+```

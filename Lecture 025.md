@@ -48,5 +48,25 @@ public:
 Sorted part slowly increase an unsorted part slowly decrease
 
 ```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {//O(n)
+        int n = nums.size();
+        int low = 0, mid = 0, high = n-1;
 
+        while(mid <= high) {//sing;e pass
+            if(nums[mid] == 0){//case 10
+                swap(nums[low],nums[mid]);
+                mid++; low++;
+            } else if(nums [mid] == 1){//case 2:1
+                mid++;
+            }else{//case3:2
+               swap(nums[high], nums[mid]);
+               high--;
+            }
+        }
+    }
+};
 ```
+Tc: O(n)
+SC: O(1)

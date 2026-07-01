@@ -41,3 +41,12 @@ public:
 
 <img width="674" height="165" alt="image" src="https://github.com/user-attachments/assets/93dd5817-798e-4734-8734-aa3f277be9ad" />
 
+<img width="830" height="452" alt="image" src="https://github.com/user-attachments/assets/c2b9f5d0-ddf1-471d-8386-ade8a35b70a5" />
+
+<img width="932" height="445" alt="image" src="https://github.com/user-attachments/assets/cb015efa-9e12-4690-9c7f-7ebe77560798" />
+
+Sorted part slowly increase an unsorted part slowly decrease
+
+```cpp
+
+```

@@ -1,6 +1,7 @@
 <img width="199" height="323" alt="image" src="https://github.com/user-attachments/assets/29ba1737-4fb9-4e6d-aed1-b1560cb0c294" />
 
-1)container - Vector
+1)Container 
+i) Vector :A vector is a sequence container in the C++ STL that implements a dynamic array. It stores elements in contiguous memory and automatically resizes itself when elements are inserted or removed.
 
 <img width="346" height="323" alt="image" src="https://github.com/user-attachments/assets/f51e653d-1680-422d-ac7f-3d3ce03d282e" />
 
@@ -158,3 +159,47 @@ int main() {
 // cap: 5
 // empty: 1
 ```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    cout << "vec.begin: " << *(vec.begin()) << endl;//value of start
+    cout << "vec.end: " << *(vec.end()) << endl;//value of end + 1 i.e random value
+    cout << "vec.rbegin: " << *(vec.rbegin()) << endl;//value of end
+    cout << "vec.rend: " << *(vec.rend()) << endl;//value of start - 1 i.e random value
+    return 0;
+}
+// Output:
+// vec.begin: 1
+// vec.end: 17367232
+// vec.rbegin: 5
+// vec.rend: 201360311
+```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    cout << "Forward:" ;
+    vector<int> :: iterator it;
+    for(it = vec.begin(); it != vec.end(); it++) {
+        cout << *(it) << " " ;
+    }
+
+    cout << "\nBackward:" ;
+    for(auto it = vec.rbegin(); it != vec.rend(); it++) {//vector<int> :: iterator-->auto 
+        cout << *(it) << " ";
+    }
+}
+// Output:
+// Forward:1 2 3 4 5 
+// Backward:5 4 3 2 1
+```
+ii)List Container-->it is a doubly linked list 

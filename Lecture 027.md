@@ -14,7 +14,7 @@ operation on container
 using namespace std;
 
 int main() {
-    vector<int> vec;//vector container created 
+    vector<int> vec;//vector container created--> Vector size can grow and shrink automatically
 
     vec.push_back(1);
     vec.push_back(2);
@@ -33,6 +33,29 @@ int main() {
     cout << "back: " << vec.back() << endl;
 
     // print Full array 
+    for(int val:vec){//for (int val : vec2){ /* code */ }
+        cout << val << " ";
+    }
+    cout<< endl;
+    return 0;
+}
+//Output:
+// 6
+// 8
+// val at index 2:3OR3
+// front: 1
+// back: 6
+// 1 2 3 4 5 6
+```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec(10,-1);//(size,value)-->dynamic programming - tabulation DP[][] 
+
+    // print Full array 
     for(int val:vec){
         cout << val << " ";
     }
@@ -40,11 +63,25 @@ int main() {
     return 0;
 }
 //Output:
-6
-8
-val at index 2:3OR3
-front: 1
-back: 6
-1 2 3 4 5 6
+//-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
 ```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
 
+int main() {
+    vector<int> vec1 = {1,2,3,4,5};
+
+    vector<int> vec2(vec1);
+
+    // print Full array 
+    for(int val:vec2){
+        cout << val << " ";
+    }
+    cout<< endl;
+    return 0;
+}
+//Output:
+//1 2 3 4 5
+```

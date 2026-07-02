@@ -203,3 +203,76 @@ int main() {
 // Backward:5 4 3 2 1
 ```
 ii)List Container-->it is a doubly linked list 
+
+<img width="362" height="443" alt="image" src="https://github.com/user-attachments/assets/a672df95-1f1d-4cbb-9d4b-0f3e7ec6de35" />
+
+same as vector all operation done here front ke operations are also available  
+```cpp
+#include <iostream>
+#include <vector>
+#include <list>
+using namespace std;
+
+int main() {
+    list<int> l;
+
+    l.emplace_back(1);
+    l.push_back(2);
+    l.push_front(3);
+    l.push_front(4);
+
+    l.pop_back();
+    l.pop_front();
+
+     // print Full array 
+    for(int val:l){
+        cout << val << " ";
+    }
+    cout<< endl;
+
+    return 0;
+}
+// Output:
+// 3 1
+```
+iii)Deque:Double Ended Queue 
+
+<img width="404" height="416" alt="image" src="https://github.com/user-attachments/assets/4f4bb93b-dc56-4419-a5e1-9c0065382105" />
+
+Here also same we can same all operations as vector and list
+
+<img width="384" height="224" alt="image" src="https://github.com/user-attachments/assets/65d83c0e-f54c-4b0d-9a62-f8b7f3741d8d" />
+
+```cpp
+#include <iostream>
+#include <deque>
+using namespace std;
+
+int main() {
+    deque<int> d;
+
+    d.emplace_back(1);
+    d.push_back(2);
+    d.push_front(3);
+    d.push_front(4);
+
+    d.pop_back();
+    d.pop_front();
+
+     // print Full array 
+    for(int val:d){
+        cout << val << " ";
+    }
+    cout<< endl;
+
+    cout << d[2] << endl;//garbage value
+    cout << d[1] << endl;
+
+    return 0;
+}
+// Output:
+// 3 1 
+// 2
+// 1
+```
+

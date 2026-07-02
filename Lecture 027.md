@@ -85,3 +85,76 @@ int main() {
 //Output:
 //1 2 3 4 5
 ```
+<img width="70" height="200" alt="image" src="https://github.com/user-attachments/assets/40d8627a-0912-4213-978e-a2e66fc61ce0" />
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    vec.erase(vec.begin());//after deletion index changed so acc. to that next will delete
+    vec.erase(vec.begin()+1, vec.begin()+3);// erase function will changes only size but not capacity even n erase also (+3 mans it eletes 3rd index value)
+
+    // print Full array 
+    for(int val:vec){
+        cout << val << " ";
+    }
+    cout<< endl;
+    
+    return 0;
+}
+//Output:
+//2 5
+```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    vec.insert(vec.begin() + 2,100);//(pos,element)
+
+    // print Full array 
+    for(int val:vec){
+        cout << val << " ";
+    }
+    cout<< endl;
+    
+    return 0;
+}
+//Output:
+//1 2 100 3 4 5
+```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    vec.clear();
+
+    // print Full array 
+    for(int val:vec){
+        cout << val << " ";
+    }
+    cout<< endl;
+
+    cout << "size: " << vec.size() << endl; 
+    cout << "cap: " << vec.capacity() << endl;
+    cout << "empty: " << vec.empty() << endl; // if not empty:0
+    
+    return 0;
+}
+// Output:
+//
+// size: 0
+// cap: 5
+// empty: 1
+```

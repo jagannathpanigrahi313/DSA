@@ -275,4 +275,42 @@ int main() {
 // 2
 // 1
 ```
+## Pair
+```cpp
+#include <iostream>
+#include <deque>
+using namespace std;
+
+int main() {
+    pair <int,pair< char,int >>p = {1,{'a',3}};
+
+    cout << p.first << endl;
+    cout << p.second.first << endl;
+    cout << p.second.second << endl;
+
+    return 0;
+}
+// Output:
+// 1
+// a
+// 3
+```
+```cpp
+#include <iostream>
+#include <deque>
+using namespace std;
+
+int main() {
+    pair < int,int > p = {1,3};//you can different data type pair also
+
+    cout << p.first << endl;
+    cout << p.second << endl;
+
+
+    return 0;
+}
+// Output:
+// 1
+// 3
+```
 

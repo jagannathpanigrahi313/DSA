@@ -200,3 +200,25 @@ Only a few subscript letters exist:
 | s      | 209B    | ₛ      |
 | t      | 209C    | ₜ      |
 | x      | 2093    | ₓ      |
+
+## simple loop
+```cpp
+for (datatype variable : container) {
+    // use variable
+}
+```
+Ex:
+```cpp
+vector<int> v = {10,20,30,40};
+
+for(int i = 0; i < v.size(); i++)
+{
+    cout << v[i] << " ";
+}
+```
+```cpp
+for(int val : v)
+{
+    cout << val << " ";
+}
+```

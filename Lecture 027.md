@@ -319,4 +319,50 @@ int main() {
 // 1
 // 3
 ```
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
 
+int main() {
+    vector<pair<int,int>> vec = {{1,2},{2,3},{3,4}};
+
+    vec.push_back({4,5});
+    vec.emplace_back(4,5);// in place object creats 
+    // vec.push_back(4,5); give error because it only inserts
+
+    for(auto p : vec){
+        cout << p.first << " " << p.second << endl;
+    }
+    return 0;
+}
+// Output:
+// 1 2
+// 2 3
+// 3 4
+// 4 5
+// 4 5
+```
+
+b) Stack - Follows LIFO
+
+<img width="233" height="464" alt="image" src="https://github.com/user-attachments/assets/3021ec9b-cfea-4866-9d02-e0c88552d8c0" />
+
+```cpp
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main(){
+    stack<int> s;
+
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    cout << "top = " << s.top() << endl;
+    return 0;
+}
+//Output:top = 3
+```
+<img width="198" height="299" alt="image" src="https://github.com/user-attachments/assets/77772caa-0025-4bef-91be-c0f75bdc29af" />

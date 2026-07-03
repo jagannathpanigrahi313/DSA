@@ -585,4 +585,70 @@ int main(){
 // Not found
 ```
 
+Multi Map
+
+<img width="630" height="208" alt="image" src="https://github.com/user-attachments/assets/2e92f5f6-147d-4427-9bab-33aeeb2a264d" />
+
+```cpp
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main(){
+    multimap<string,int> m;//<datatype_key, datatype_value>
+
+    m.emplace("tv",100);//Here we we cannot insert by using this[]
+    m.emplace("tv",100);
+    m.emplace("tv",100);
+    m.emplace("tv",100);
+
+    // m.erase("tv");all will deleted
+    m.erase(m.find("tv")); //only one tv will be deleted
+
+    for (auto p:m){
+        cout << p.first << " " << p.second << endl;
+    }
+    
+    return 0;
+}
+//Output:
+// tv 100
+// tv 100
+// tv 100
+```
+Unordered Map- stored randomly 
+```cpp
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+int main(){
+    unordered_map<string,int> m;//<datatype_key, datatype_value>
+
+    m.emplace("tv",100);//Here we can insert by using this[] also
+    m["laptop"] = 100;
+    m.emplace("tablet",100);
+    m.emplace("induction",100);
+
+    for (auto p:m){
+        cout << p.first << " " << p.second << endl;
+    }
+    
+    return 0;
+}
+//Output:
+// induction 100
+// tablet 100
+// laptop 100
+// tv 100
+```
+
+## Diffrence between unordered map and map
+<img width="488" height="280" alt="image" src="https://github.com/user-attachments/assets/11473778-b98c-4e09-89a8-da157c219c28" />
+
+if collision occurs then only TC of unordered map becomes O(n)
+
+v) Set container
+
+
 

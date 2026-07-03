@@ -510,3 +510,9 @@ Time Complxicty in Stack
 <img width="310" height="154" alt="image" src="https://github.com/user-attachments/assets/ff756d7a-c65f-49d8-b29b-5f084c3f2e23" />
 
 iv) Map 
+
+<img width="890" height="509" alt="image" src="https://github.com/user-attachments/assets/67655f50-09a0-420f-8ee8-2ce9b0aa6259" />
+
+Here every key is unique while value can be same/repeated
+And all kay are sorted at asending order
+

@@ -1,6 +1,8 @@
 <img width="199" height="323" alt="image" src="https://github.com/user-attachments/assets/29ba1737-4fb9-4e6d-aed1-b1560cb0c294" />
 
 1)Container 
+a) Sequence container - A container which stores sequentially data in continous manner
+
 i) Vector :A vector is a sequence container in the C++ STL that implements a dynamic array. It stores elements in contiguous memory and automatically resizes itself when elements are inserted or removed.
 
 <img width="346" height="323" alt="image" src="https://github.com/user-attachments/assets/f51e653d-1680-422d-ac7f-3d3ce03d282e" />
@@ -275,6 +277,10 @@ int main() {
 // 2
 // 1
 ```
+Note: in DSA there are two 2 Deque Vs dequeue Both are different 
+      Deque: Double Ended Queue
+      Dequeue: POP in queue
+      
 ## Pair
 ```cpp
 #include <iostream>

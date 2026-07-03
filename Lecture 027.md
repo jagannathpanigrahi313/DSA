@@ -514,5 +514,75 @@ iv) Map
 <img width="890" height="509" alt="image" src="https://github.com/user-attachments/assets/67655f50-09a0-420f-8ee8-2ce9b0aa6259" />
 
 Here every key is unique while value can be same/repeated
-And all kay are sorted at asending order
+And all kay are sorted at asending order(smallest ASCII value comes first then bigger)
+weKnow Uppercase letter A-Z:65-90, Lowercase letter a-z: 97-122
+
+```cpp
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main(){
+    map<string,int> m;//<datatype_key, datatype_value>
+
+    m["tv"] = 100;//Here Key are products & value are quantity of product
+    m["laptop"] = 100;
+    m["headphones"] = 50;
+    m["tablet"] = 120;
+    m["watch"] = 50;
+
+    for(auto p:m){
+        cout << p.first << " " << p.second<< endl;
+    }
+    return 0;
+}
+//Output:
+// headphones 50
+// laptop 100
+// tablet 120
+// tv 100
+// watch 50
+```
+```cpp
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main(){
+    map<string,int> m;//<datatype_key, datatype_value>
+
+    m["tv"] = 100;//Here Key are products & value are quantity of product
+    m["laptop"] = 100;
+    m["headphones"] = 50;
+    m["tablet"] = 120;
+    m["watch"] = 50;
+
+    m.insert({"camera",13});
+    m.emplace("jagan",13);
+    m.erase("tv");
+
+    for(auto p:m){
+        cout << p.first << " " << p.second<< endl;
+    }
+
+    cout<< " count = " << m.count("laptop")<<endl;// no. of Key_laptop 
+    cout<< " count = " << m["laptop"]<<endl;// no. of Value_laptop 
+
+    if (m.find("TV")!=m.end()) {
+        cout << "Found\n";
+    }else{
+        cout << "Not found\n";
+    }
+    
+    return 0;
+}
+//Output:
+// laptop 100
+// tablet 120
+// watch 50
+//  count = 1
+//  count = 100
+// Not found
+```
+
 

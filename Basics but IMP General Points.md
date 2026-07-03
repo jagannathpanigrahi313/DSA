@@ -222,3 +222,7 @@ for(int val : v)
     cout << val << " ";
 }
 ```
+
+Note: in DSA there are two 2 Deque Vs dequeue Both are different 
+      Deque: Double Ended Queue
+      Dequeue: POP in queue

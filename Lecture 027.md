@@ -420,3 +420,93 @@ ii)Queue - follows FIFO Principle
 
 <img width="485" height="173" alt="image" src="https://github.com/user-attachments/assets/1e713830-3f99-4bb1-a65a-ebb1a172fed3" />
 
+```cpp
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main(){
+    queue<int> q;
+
+    q.push(1);
+    q.push(2);
+    q.push(3);
+
+    while(!q.empty()) {
+        cout << q.front() << " ";
+        q.pop();
+    }
+    cout<< endl;
+
+    return 0;
+}
+//Output:1 2 3
+```
+similarly size swap eempty all will work as stack only
+
+iii) Priority queue-A priority queue is an abstract data type where each element has an assigned priority. A priority queue always processes the highest-priority elements first (Generally by default)
+
+<img width="466" height="451" alt="image" src="https://github.com/user-attachments/assets/27b3043e-469d-4c66-b2be-c6b7e62a000a" />
+
+```cpp
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main(){
+    priority_queue<int> q;
+
+    q.push(1);
+    q.push(2);
+    q.push(3);
+
+    while(!q.empty()) {
+        cout << q.top() << " ";
+        q.pop();
+    }
+    cout<< endl;
+
+    return 0;
+}
+//Output:3 2 1 
+```
+Reverse of priority queue
+```cpp
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main(){
+    priority_queue<int,vector<int>,greater<int>> q ;
+
+    q.push(1);
+    q.push(2);
+    q.push(3);
+
+    while(!q.empty()) {
+        cout << q.top() << " ";
+        q.pop();
+    }
+    cout<< endl;
+
+    return 0;
+}
+//Output:1 2 3 
+```
+Similarly other operation will work same as above 2 type 
+
+<img width="413" height="241" alt="Screenshot 2026-07-03 161326" src="https://github.com/user-attachments/assets/92da79ee-cdf3-4199-ab3c-21a841c94f6d" />
+
+Time Complexicty in Priority Queue
+
+<img width="323" height="167" alt="image" src="https://github.com/user-attachments/assets/f87b87e9-ea92-465e-8065-38824bb823b2" />
+
+Time Compexicity in Queue
+
+<img width="271" height="146" alt="image" src="https://github.com/user-attachments/assets/51ab703c-45ea-4518-b5ed-ee64cec8eb81" />
+
+Time Complxicty in Stack 
+
+<img width="310" height="154" alt="image" src="https://github.com/user-attachments/assets/ff756d7a-c65f-49d8-b29b-5f084c3f2e23" />
+
+iv) Map 

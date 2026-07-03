@@ -347,6 +347,7 @@ int main() {
 b) Stack - Follows LIFO
 
 <img width="233" height="464" alt="image" src="https://github.com/user-attachments/assets/3021ec9b-cfea-4866-9d02-e0c88552d8c0" />
+<img width="198" height="299" alt="image" src="https://github.com/user-attachments/assets/77772caa-0025-4bef-91be-c0f75bdc29af" />
 
 ```cpp
 #include <iostream>
@@ -365,4 +366,50 @@ int main(){
 }
 //Output:top = 3
 ```
-<img width="198" height="299" alt="image" src="https://github.com/user-attachments/assets/77772caa-0025-4bef-91be-c0f75bdc29af" />
+```cpp
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main(){
+    stack<int> s;
+
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    while(!s.empty()){
+        cout << s.top() << " ";//print top
+        s.pop(); //delete top
+    }
+    cout << endl;
+    return 0;
+}
+//Output:
+// 3 2 1 
+```
+```cpp
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main(){
+    stack<int> s;
+
+    s.push(1);
+    s.push(2);
+    s.push(3);
+
+    stack<int> s2;
+
+    s2.swap(s);
+
+    cout << "s.size: " << s.size() << endl;
+    cout << "s2.size: " << s2.size() << endl;
+
+    return 0;
+}
+//Output:
+// s.size: 0
+// s2.size: 3
+```

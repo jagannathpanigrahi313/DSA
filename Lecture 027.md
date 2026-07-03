@@ -343,8 +343,9 @@ int main() {
 // 4 5
 // 4 5
 ```
+b)Non continuous container
 
-b) Stack - Follows LIFO
+i) Stack - Follows LIFO
 
 <img width="233" height="464" alt="image" src="https://github.com/user-attachments/assets/3021ec9b-cfea-4866-9d02-e0c88552d8c0" />
 <img width="198" height="299" alt="image" src="https://github.com/user-attachments/assets/77772caa-0025-4bef-91be-c0f75bdc29af" />
@@ -413,3 +414,9 @@ int main(){
 // s.size: 0
 // s2.size: 3
 ```
+ii)Queue - follows FIFO Principle
+
+<img width="216" height="481" alt="image" src="https://github.com/user-attachments/assets/8b11de2d-888f-4042-abe8-a55d12a415bd" />
+
+<img width="485" height="173" alt="image" src="https://github.com/user-attachments/assets/1e713830-3f99-4bb1-a65a-ebb1a172fed3" />
+

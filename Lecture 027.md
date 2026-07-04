@@ -812,6 +812,7 @@ int main(){
 ```
 
 <img width="709" height="293" alt="image" src="https://github.com/user-attachments/assets/248411c1-2393-4135-b7f7-1f05fb829f1e" />
+
 ```cpp
 #include <iostream>
 #include <unordered_set>
@@ -821,7 +822,7 @@ using namespace std;
 int main(){
     int arr[4] = {3,5,1,2};
 
-    sort(arr,arr + 5);
+    sort(arr,arr + 5);//by default in ascending order
 
     cout<< sizeof(arr) << endl;
     for (int  val : arr){
@@ -834,4 +835,51 @@ int main(){
 //Output: 
 // 16
 // 1 2 3 5
+```
+for vector
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    vector<int> vec = {3,5,1,8,2};
+
+    sort(vec.begin(),vec.end());
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (int  val : vec){
+        cout << val << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 1 2 3 5 8
+```
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    vector<int> vec = {3,5,1,8,2};
+
+    sort(vec.begin(),vec.end(),greater<int>());//descending order done
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (int  val : vec){
+        cout << val << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 8 5 3 2 1
 ```

@@ -813,6 +813,7 @@ int main(){
 
 <img width="709" height="293" alt="image" src="https://github.com/user-attachments/assets/248411c1-2393-4135-b7f7-1f05fb829f1e" />
 
+1)
 ```cpp
 #include <iostream>
 #include <unordered_set>
@@ -862,6 +863,7 @@ int main(){
 // 12
 // 1 2 3 5 8
 ```
+2)  
 ```cpp
 #include <iostream>
 #include <vector>
@@ -885,9 +887,7 @@ int main(){
 // 12
 // 8 5 3 2 1
 ```
-
-we sorted pairs onbasis of frist value
-
+## we wil sort pairs on basis of frist value
 ```cpp
 #include <iostream>
 #include <vector>
@@ -914,8 +914,71 @@ int main(){
 // 5 2
 // 7 1
 ```
-Know we wil sorted pairs on basis of second value
+## Know we will sorted pairs on basis of second value
 
 ```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
+bool comparator(pair<int,int>p1,pair<int,int>p2){
+    if (p1.second < p2.second) return true;
+    else return false;
+}
+
+int main(){
+    vector<pair<int,int>> vec = {{3,1},{2,1},{7,1},{5,2}};
+
+    sort(vec.begin(),vec.end(),comparator);
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (auto p : vec){
+        cout << p.first << " "<<p.second << endl;
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 3 1
+// 2 1
+// 7 1
+// 5 2
+```
+## Know we will sort the pairs on basis of second value but if same two or more comes than put in order of 1st value
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+bool comparator(pair<int,int>p1,pair<int,int>p2){
+    if (p1.second < p2.second) return true;
+    if(p1.second > p2.second) return false;
+
+    if(p1.first < p2.first) return true;
+    else return false;
+}
+
+int main(){
+    vector<pair<int,int>> vec = {{3,1},{2,1},{7,1},{5,2}};
+
+    sort(vec.begin(),vec.end(),comparator);
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (auto p : vec){
+        cout << p.first << " "<<p.second << endl;
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 2 1
+// 3 1
+// 7 1
+// 5 2
 ```

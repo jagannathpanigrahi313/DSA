@@ -811,6 +811,8 @@ int main(){
 // 6 1 2 3 4
 ```
 
+# Types of STL Algorithm 
+
 <img width="709" height="293" alt="image" src="https://github.com/user-attachments/assets/248411c1-2393-4135-b7f7-1f05fb829f1e" />
 
 1)
@@ -985,3 +987,159 @@ int main(){
 
 <img width="370" height="409" alt="image" src="https://github.com/user-attachments/assets/498683c5-3277-4911-b6eb-00be1d6149b2" />
 
+1)
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+bool comparator(pair<int,int>p1,pair<int,int>p2){
+    if (p1.second < p2.second) return true;
+    if(p1.second > p2.second) return false;
+
+    if(p1.first < p2.first) return true;
+    else return false;
+}
+
+int main(){
+    vector<int> vec = {1,2,3,4,5};
+
+    reverse(vec.begin(),vec.end());
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (auto p : vec){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 5 4 3 2 1
+```
+
+Rverse in specific position
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    vector<int> vec = {1,2,3,4,5};
+
+    reverse(vec.begin() +1,vec.begin()+3);
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (auto p : vec){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 1 3 2 4 5
+```
+
+<img width="324" height="319" alt="image" src="https://github.com/user-attachments/assets/3cc1d37e-d05c-4ee3-9c6f-c62b5acdd245" />
+
+2)
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    string s = "abc";
+    string s2 = "abc";
+
+    next_permutation(s.begin(),s.end());
+    prev_permutation(s2.begin(),s2.end());
+
+    cout<<"next_permutation: "<< s << endl;
+    cout<<"prev_permutation: "<< s2 << endl;
+    
+    return 0;
+}
+// Output: 
+// next_permutation: acb
+// prev_permutation: cba
+```
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int a = 5,b = 10;
+    swap(a,b);
+    
+    cout<< "a= " << a << endl;
+    cout<< "b= " << b << endl;
+
+    cout<<"max: "<< max(4,5) << "\nmin:" << min(6,10)<<endl;
+    
+    return 0;
+}
+// Output: 
+// a= 10
+// b= 5
+// max: 5
+// min:6
+```
+
+<img width="381" height="497" alt="image" src="https://github.com/user-attachments/assets/9cb79b4c-07dc-4005-8819-e02c5e597bbe" />
+
+1)
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    cout << *min_element(vec.begin(), vec.end()) << endl;
+    cout << *max_element(vec.begin(), vec.end()) << endl;
+
+    return 0;
+}
+//Output:
+// 1
+// 5
+```
+
+2)
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    vector<int> vec = {1,2,3,4,5};
+
+    cout << binary_search(vec.begin(), vec.end(),10) << endl;//0 because doesn't exist
+    cout << binary_search(vec.begin(), vec.end(),4) << endl;//1 because it exist
+
+    return 0;
+}
+//Output:
+// 0
+// 1
+```
+3) Cout set bits- cont no. of 1's in no. But it is not efficient therefore it is not used even in company
+
+
+
+```cpp
+
+```

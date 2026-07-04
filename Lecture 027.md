@@ -836,7 +836,9 @@ int main(){
 // 16
 // 1 2 3 5
 ```
+
 for vector
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -882,4 +884,38 @@ int main(){
 //Output: 
 // 12
 // 8 5 3 2 1
+```
+
+we sorted pairs onbasis of frist value
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    vector<pair<int,int>> vec = {{3,1},{2,1},{7,1},{5,2}};
+
+    sort(vec.begin(),vec.end());
+
+    cout<< sizeof(vec) << endl;//in bytes it comes 
+    for (auto p : vec){
+        cout << p.first << " "<<p.second << endl;
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 12
+// 2 1
+// 3 1
+// 5 2
+// 7 1
+```
+Know we wil sorted pairs on basis of second value
+
+```cpp
+
 ```

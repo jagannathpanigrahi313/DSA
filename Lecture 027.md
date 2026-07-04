@@ -982,3 +982,6 @@ int main(){
 // 7 1
 // 5 2
 ```
+
+<img width="370" height="409" alt="image" src="https://github.com/user-attachments/assets/498683c5-3277-4911-b6eb-00be1d6149b2" />
+

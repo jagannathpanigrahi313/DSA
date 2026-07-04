@@ -1137,9 +1137,25 @@ int main() {
 // 1
 ```
 3) Cout set bits- cont no. of 1's in no. But it is not efficient therefore it is not used even in company
-
-
-
 ```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
+int main() {
+   int n1 = 15;
+   long int n2 = 15;
+   long long int n3 = 15;
+
+   cout << __builtin_popcount(n1) << endl;
+   cout << __builtin_popcountl(n2) << endl;
+   cout << __builtin_popcountll(n3) << endl;
+
+    return 0;
+}
+//Output:
+// 4
+// 4
+// 4
 ```

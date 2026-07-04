@@ -650,5 +650,188 @@ if collision occurs then only TC of unordered map becomes O(n)
 
 v) Set container
 
+<img width="880" height="485" alt="image" src="https://github.com/user-attachments/assets/2b790078-6e06-41ed-85f3-965ec28f70fe" />
 
+```cpp
+#include <iostream>
+#include <set>
+using namespace std;
 
+int main(){
+    set<int> s;//<datatype_key, datatype_value>
+
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(5);
+    s.insert(6);
+
+    //duplicate elements will not print or take size
+    s.insert(4);
+    s.insert(5);
+    s.insert(6);
+    
+    cout<< s.size() << endl;
+    for (auto p:s){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output:
+// 6
+// 1 2 3 4 5 6
+```
+Other operation are same as Map
+
+# Lower bound(key)- it should not be less than key
+Upper bound(key)- greater than key
+
+```cpp
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main(){
+    set<int> s;//<datatype_key, datatype_value>
+
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(6);
+
+    cout<< "lower bound = " << *(s.lower_bound(4)) << endl;
+    cout<< "lower bound = " << *(s.lower_bound(5)) << endl;//if not there then print next bigger i.e s.end(value)
+
+    cout<< "upper bound = " << *(s.upper_bound(4)) << endl;
+    
+    cout<< s.size() << endl;
+    for (auto p:s){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output:
+// lower bound = 4
+// lower bound = 6
+// upper bound = 6
+// 5
+// 1 2 3 4 6 
+```
+Multiset- here duplicate elements will also be printed
+```cpp
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main(){
+    multiset<int> s;//<datatype_key, datatype_value>
+
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(6);
+
+    s.insert(4);
+    s.insert(6);
+
+    cout<< s.size() << endl;
+    for (auto p:s){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output:
+// 7
+// 1 2 3 4 4 6 6 
+```
+lower bound & upper bound concept will work in only sorted data 
+Therefore it is not valid in Unordered set
+
+Unordered set - stores data randomly 
+TC: O(1) 
+if recurssion then TC:O(n)
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+
+int main(){
+    unordered_set<int> s;//<datatype_key, datatype_value>
+
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(6);
+
+    cout<< s.size() << endl;
+    for (auto p:s){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 5
+// 6 1 2 3 4
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+
+int main(){
+    unordered_set<int> s;//<datatype_key, datatype_value>
+
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(6);
+
+    cout<< s.size() << endl;
+    for (auto p:s){
+        cout << p << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 5
+// 6 1 2 3 4
+```
+
+<img width="709" height="293" alt="image" src="https://github.com/user-attachments/assets/248411c1-2393-4135-b7f7-1f05fb829f1e" />
+```cpp
+#include <iostream>
+#include <unordered_set>
+#include <algorithm>//sort is declared here
+using namespace std;
+
+int main(){
+    int arr[4] = {3,5,1,2};
+
+    sort(arr,arr + 5);
+
+    cout<< sizeof(arr) << endl;
+    for (int  val : arr){
+        cout << val << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}
+//Output: 
+// 16
+// 1 2 3 5
+```

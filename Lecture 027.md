@@ -1137,6 +1137,9 @@ int main() {
 // 1
 ```
 3) Cout set bits- cont no. of 1's in no. But it is not efficient therefore it is not used even in company
+
+<img width="568" height="280" alt="Screenshot 2026-07-04 184541" src="https://github.com/user-attachments/assets/527c547b-04b9-4ab5-9819-79085750a3cc" />
+
 ```cpp
 #include <iostream>
 #include <vector>

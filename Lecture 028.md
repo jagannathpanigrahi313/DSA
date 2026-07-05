@@ -64,7 +64,7 @@ int main() {
 // jagannath pani$grahi
 // Output: jagannath pani
 ```
-
+## To Fond no. of lettes in sentence
 ```cpp
 #include <iostream>
 #include <cstring>   // Required for strlen()
@@ -87,3 +87,42 @@ int main() {
 // J a g a n n a t h   P
 ```
 
+```cpp
+#include <iostream>
+#include <cstring>   // Required for strlen()
+using namespace std;
+
+int main() {
+   char str[] = "Jagannath Panigrahi";
+   int len = 0;
+
+    for(int i = 0; str[i] != '\0'; i++){
+        len++;
+    }
+    cout << "length of string array: " << len << endl;
+
+    return 0;
+}
+//Output:
+// length of string array: 19
+```
+
+```cpp
+#include <iostream>
+#include <cstring>   // Required for strlen()
+using namespace std;
+
+int main() {
+    string str = "Jagannath Panigrahi";//string is a class & str is variable
+    cout << str << endl;
+
+    //contiguous in nature & dynamic => runtime resize
+    str = "hello";// string can be modefied while charArr cannot 
+    cout << str << endl;
+
+    return 0;
+}
+//Output:
+// Jagannath Panigrahi
+// hello
+```

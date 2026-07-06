@@ -154,11 +154,14 @@ int main() {
  
     cout << (str1 == str2) << endl;//0 means True 1 means false
     cout << (str1 < str2) << endl;//0,1 comes acc. to Lexicographical order (or "dictionary order")
+    cout << str1.length() << endl;
 
     return 0;
 }
 // Output:
 // 0
 // 0
+// 9
 ```
+
 

@@ -126,3 +126,39 @@ int main() {
 // Jagannath Panigrahi
 // hello
 ```
+```cpp
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    string str1 = "jagannath";
+    string str2 = "Panigrahi";
+
+    string str3 = str1 + str2;//jointing to steps is called  Concatenation 
+    cout << str3 << endl;
+
+    return 0;
+}
+// Output:
+// jagannathPanigrahi
+```
+```cpp
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    string str1 = "jagannath";
+    string str2 = "Panigrahi";
+ 
+    cout << (str1 == str2) << endl;//0 means True 1 means false
+    cout << (str1 < str2) << endl;//0,1 comes acc. to Lexicographical order (or "dictionary order")
+
+    return 0;
+}
+// Output:
+// 0
+// 0
+```
+

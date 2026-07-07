@@ -164,4 +164,93 @@ int main() {
 // 9
 ```
 
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
 
+int main() {
+    string str;
+
+    getline(cin,str);
+
+    cout << "output: " << str << endl;
+    return 0;
+}
+// Input:
+// jagannath panigrahi
+// output: jagannath panigrahi
+```
+
+## Loops on String 
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string str;
+
+    getline(cin,str);
+
+    // for(int i = 0 ; i<= str.length();i++){
+    //     cout << str[i] << " ";
+    // }
+    // cout << endl;
+                         //OR(both give same output)
+    for(char ch: str){
+        cout << ch << " ";
+    }
+    cout << endl;
+    return 0;
+}
+// Input: jagannath panigrahi
+// Output: jagannath panigrahi
+```
+## Reverse of a string - 344 on LEetcode
+
+<img width="864" height="428" alt="image" src="https://github.com/user-attachments/assets/e8b7cb15-0b54-474e-9e82-d9d6df3a38fc" />
+
+```cpp
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int st = 0, end = s.size()-1;
+
+        while(st < end){
+            swap(s[st++],s[end--]);
+        } 
+    }
+};
+```
+OR (Solved by STL Strings)
+```cpp
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+    reverse(s.begin(),s.end());
+    }
+};
+```
+
+```cpp
+#include <iostream>
+#include <string>
+#include <algorithm>   // Required for reverse()
+using namespace std;
+
+int main() {
+    string str = "jagannath panigrahi";
+
+    reverse(str.begin(),str.end());
+    cout << str << endl;
+    return 0;
+}
+//Output:
+// iharginap htannagaj
+```
+
+Q Find if a string is palindrome or not
+```cpp
+
+```

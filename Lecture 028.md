@@ -250,7 +250,4 @@ int main() {
 // iharginap htannagaj
 ```
 
-Q Find if a string is palindrome or not
-```cpp
 
-```

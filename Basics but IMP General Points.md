@@ -226,3 +226,74 @@ for(int val : v)
 Note: in DSA there are two 2 Deque Vs dequeue Both are different 
       Deque: Double Ended Queue
       Dequeue: POP in queue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| Statement         | Purpose                                        |
+| ----------------- | ---------------------------------------------- |
+| `if`              | Execute code only if a condition is true       |
+| `if-else`         | Choose between two options                     |
+| `if-else if-else` | Choose among multiple options                  |
+| `for`             | Repeat code a known number of times            |
+| `while`           | Repeat while a condition is true               |
+| `do...while`      | Repeat at least once, then check the condition |
+
+A switch is used when you want to choose one option out of many based on a single value.
+Instead of writing many if-else if statements, switch can make the code cleaner.
+```cpp
+switch (expression)
+{
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+```
+
+Class = Blueprint/template that defines what data and functions something has.
+Object = A real instance created from that class.
+Classes help organize related data and behavior together.
+They make programs easier to write, maintain, and scale.
+
+In one sentence:
+A class defines what something is and what it can do; an object is the actual thing created from that definition

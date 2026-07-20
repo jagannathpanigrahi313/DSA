@@ -262,7 +262,7 @@ Note: in DSA there are two 2 Deque Vs dequeue Both are different
 
 
 
-
+1)
 | Statement         | Purpose                                        |
 | ----------------- | ---------------------------------------------- |
 | `if`              | Execute code only if a condition is true       |
@@ -272,7 +272,7 @@ Note: in DSA there are two 2 Deque Vs dequeue Both are different
 | `while`           | Repeat while a condition is true               |
 | `do...while`      | Repeat at least once, then check the condition |
 
-A switch is used when you want to choose one option out of many based on a single value.
+2) A switch is used when you want to choose one option out of many based on a single value.
 Instead of writing many if-else if statements, switch can make the code cleaner.
 ```cpp
 switch (expression)
@@ -289,7 +289,7 @@ switch (expression)
         // code
 }
 ```
-
+3)
 Class = Blueprint/template that defines what data and functions something has.
 Object = A real instance created from that class.
 Classes help organize related data and behavior together.
@@ -297,3 +297,21 @@ They make programs easier to write, maintain, and scale.
 
 In one sentence:
 A class defines what something is and what it can do; an object is the actual thing created from that definition
+
+4) Where does the returned value go?
+Think of it like this:
+```
+Your Program
+     │
+     │ return 0;
+     ▼
+Operating System
+```
+The operating system receives the exit code.
+```
+| Function Type  | Return Statement                    |
+| -------------- | ----------------------------------- |
+| `int main()`   | `return 0;` (or another integer)    |
+| `int add()`    | `return value;`                     |
+| `void print()` | No return needed, or just `return;` |
+```
